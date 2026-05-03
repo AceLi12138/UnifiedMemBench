@@ -1,0 +1,19 @@
+model,display_label,task_code,task_name,contextual_score,parametric_score
+Qwen3.5-9B,Qwen3.5-9B,IE,Information Extraction,0.601170,0.384741
+Qwen3.5-9B,Qwen3.5-9B,MSR,Multi-session Reasoning,0.680679,0.132643
+Qwen3.5-9B,Qwen3.5-9B,ES,Event Summarization,0.440841,0.010536
+Qwen3.5-9B,Qwen3.5-9B,TR,Temporal Reasoning,0.526451,0.030202
+Qwen3.5-9B,Qwen3.5-9B,KU,Knowledge Updating,0.583435,0.226615
+Qwen3.5-9B,Qwen3.5-9B,MA,Memory Arbitration,0.613122,0.211517
+GLM-4-9B-1M,GLM-4-9B-Chat-1M,IE,Information Extraction,0.595320,0.410497
+GLM-4-9B-1M,GLM-4-9B-Chat-1M,MSR,Multi-session Reasoning,0.528826,0.153725
+GLM-4-9B-1M,GLM-4-9B-Chat-1M,ES,Event Summarization,0.161360,0.015105
+GLM-4-9B-1M,GLM-4-9B-Chat-1M,TR,Temporal Reasoning,0.634309,0.088904
+GLM-4-9B-1M,GLM-4-9B-Chat-1M,KU,Knowledge Updating,0.520097,0.290290
+GLM-4-9B-1M,GLM-4-9B-Chat-1M,MA,Memory Arbitration,0.144042,0.108761
+Qwen2.5-7B-1M,Qwen2.5-7B-Instruct-1M,IE,Information Extraction,0.483482,0.330985
+Qwen2.5-7B-1M,Qwen2.5-7B-Instruct-1M,MSR,Multi-session Reasoning,0.244681,0.109206
+Qwen2.5-7B-1M,Qwen2.5-7B-Instruct-1M,ES,Event Summarization,0.149371,0.013742
+Qwen2.5-7B-1M,Qwen2.5-7B-Instruct-1M,TR,Temporal Reasoning,0.572162,0.012498
+Qwen2.5-7B-1M,Qwen2.5-7B-Instruct-1M,KU,Knowledge Updating,0.163216,0.199872
+Qwen2.5-7B-1M,Qwen2.5-7B-Instruct-1M,MA,Memory Arbitration,0.061086,0.099316

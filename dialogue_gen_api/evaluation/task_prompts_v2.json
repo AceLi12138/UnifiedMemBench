@@ -1,0 +1,137 @@
+{
+  "profile": "umb_tasklight_v2",
+  "tasks": {
+    "Information Extraction": {
+      "goal": "Extract only the exact fact requested by the question; the direct answer is primary.",
+      "instructions": [
+        "answer must contain only the core queried fact, not surrounding background or extra narrative.",
+        "evidence_snippets are auxiliary support; keep them short and directly relevant, and use an empty list if no concise snippet is available.",
+        "Do not add facts that are true in the dialogue but not needed to answer the question."
+      ],
+      "required_fields": [
+        "answer",
+        "evidence_snippets"
+      ],
+      "example_output": {
+        "answer": "Lisbon",
+        "evidence_snippets": [
+          "We spent two weeks in Lisbon."
+        ]
+      }
+    },
+    "Temporal Reasoning": {
+      "goal": "Return the exact day interval and the two endpoint dates for the queried events.",
+      "instructions": [
+        "Use the two dates that correspond exactly to the events asked in the query, not to a similar event pair elsewhere in the dialogue.",
+        "days must be an integer equal to end_date minus start_date.",
+        "start_date and end_date must be ISO format YYYY-MM-DD.",
+        "final_answer must repeat the same days, start_date, and end_date as the structured fields.",
+        "Before answering, verify that the day count and both dates are mutually consistent."
+      ],
+      "required_fields": [
+        "final_answer",
+        "days",
+        "start_date",
+        "end_date"
+      ],
+      "example_output": {
+        "final_answer": "120 days (from 2021-01-01 to 2021-05-01).",
+        "days": 120,
+        "start_date": "2021-01-01",
+        "end_date": "2021-05-01"
+      }
+    },
+    "Knowledge Updating": {
+      "goal": "Answer with the latest valid state; older states are only auxiliary context.",
+      "instructions": [
+        "latest_state is the primary answer and should express the newest valid truth that answers the query.",
+        "as_of_time should state when latest_state is valid if recoverable from the dialogue; otherwise use an empty string.",
+        "deprecated_state should contain only the superseded older state if it helps disambiguate; otherwise use an empty string.",
+        "Do not let outdated information dominate the answer when a newer state is available."
+      ],
+      "required_fields": [
+        "latest_state",
+        "as_of_time",
+        "deprecated_state"
+      ],
+      "example_output": {
+        "latest_state": "She is currently a product manager.",
+        "as_of_time": "2024-08-01",
+        "deprecated_state": "She used to be a sales assistant."
+      }
+    },
+    "Multi-session Reasoning": {
+      "goal": "Reconstruct the query-relevant causal chain across multiple sessions.",
+      "instructions": [
+        "event_chain should contain 3 to 6 chronological steps that directly advance the queried causal path.",
+        "Each step should name the event and explain why it led to the next step.",
+        "Preserve the identity of the key causal milestones relevant to the query.",
+        "You may compress nearby steps, but do not replace a core bridge event with a different event.",
+        "Omit true but irrelevant side events that do not help explain the asked outcome.",
+        "final_outcome should directly answer the endpoint asked in the query."
+      ],
+      "required_fields": [
+        "event_chain",
+        "final_outcome"
+      ],
+      "example_output": {
+        "event_chain": [
+          "2020-03: Professional validation increased her confidence.",
+          "2020-05: That confidence led to a team social event where she connected with a colleague.",
+          "2021-04 to 2021-11: That connection led to a deeper friendship and later a hobbies conversation.",
+          "2022-02: The hobbies conversation led her to sign up for a pottery class."
+        ],
+        "final_outcome": "A chain from professional confidence to social connection eventually led her to join pottery in February 2022."
+      }
+    },
+    "Event Summarization": {
+      "goal": "Summarize the major themes, turning points, and overall arc within the asked period.",
+      "instructions": [
+        "time_span must stay within the period asked by the query.",
+        "key_turning_points should list only high-impact developments inside that period.",
+        "Preserve the key turning points and factual anchors of the asked period.",
+        "summary should describe the main themes and overall trajectory, not just repeat the turning points.",
+        "Do not substitute a different hobby, milestone, or turning point just because it fits the same high-level theme.",
+        "Do not extend beyond the requested period unless the query explicitly asks for it."
+      ],
+      "required_fields": [
+        "time_span",
+        "key_turning_points",
+        "summary"
+      ],
+      "example_output": {
+        "time_span": "2020",
+        "key_turning_points": [
+          "Early 2020: She created order and stability in her home and work routines.",
+          "Spring 2020: Professional validation increased her confidence.",
+          "Late 2020: She felt secure enough to invest in comfort and routine."
+        ],
+        "summary": "Across 2020, she moved from defensive control toward cautious stability, with professional validation and small social steps gradually making the new city feel livable."
+      }
+    },
+    "Memory Arbitration": {
+      "goal": "Detect whether the query contains a false premise and answer using corrected facts when needed.",
+      "instructions": [
+        "premise_verdict must be either correct or incorrect.",
+        "If premise_verdict is incorrect, explain premise_error and provide corrected_facts.",
+        "If premise_verdict is correct, premise_error may be an empty string and corrected_facts may be an empty list.",
+        "final_answer should answer the user query after applying any necessary correction."
+      ],
+      "required_fields": [
+        "premise_verdict",
+        "premise_error",
+        "corrected_facts",
+        "final_answer"
+      ],
+      "example_output": {
+        "premise_verdict": "incorrect",
+        "premise_error": "The question assumes she resigned in 2023, but she resigned in 2025.",
+        "corrected_facts": [
+          "Resignation date: 2025-01-15",
+          "Role before resignation: finance analyst"
+        ],
+        "final_answer": "She resigned on 2025-01-15, not in 2023."
+      }
+    }
+  }
+}

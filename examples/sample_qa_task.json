@@ -1,0 +1,15 @@
+{
+  "character_name": "Jenna Villa",
+  "task": {
+    "task_type": "Information Extraction",
+    "source_event_ids": [
+      "2020_E1"
+    ],
+    "query": "What specific professional-grade equipment did Jenna purchase after her father's comment?",
+    "gold_answer": "Jenna purchased a professional-grade silicone molding kit and a high-end airbrush system.",
+    "answer_components": [
+      "Professional-grade silicone molding kit",
+      "High-end airbrush system"
+    ]
+  }
+}

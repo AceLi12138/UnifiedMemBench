@@ -1,0 +1,38 @@
+{
+  "character_name": "Julius Shaw",
+  "original_persona_keys": [
+    "current_mbti",
+    "current_profile",
+    "demographics",
+    "evolution_timeline",
+    "name"
+  ],
+  "chronology_preview": [
+    {
+      "year": 2020,
+      "narrative_summary": "2020 was the year of the great retreat and fortification for Julius. The pandemic lockdown provided an unexpected crucible for his ambition. He turned his small apartment into a training ground, using mannequin heads and online tutorials to obsessively hone his technical skills. This period of intense isolation wasn't lonely; it was a focused, almost monastic dedication to building a professional identity so strong it could withstand any future social insecurity.",
+      "events": [
+        {
+          "event_id": "2020_E1",
+          "time_of_year": "March (Spring)",
+          "category": "Career",
+          "description": "Upon the city-wide lockdown, Julius invests a significant portion of his meager savings into professional-grade tools: a set of Japanese shears, a high-end blow dryer, and a collection of mannequin heads. He sets up a rigid daily schedule of 8 hours of practice, treating his living room like a salon.",
+          "psychological_note": "This is an act of self-soothing through control. The world outside is chaotic and uncertain, but the geometry of a haircut is logical and precise. He is building his fortress of competence brick by brick.",
+          "caused_by_event_ids": [],
+          "timestamp": "2020-03-15"
+        },
+        {
+          "event_id": "2020_E2",
+          "time_of_year": "June (Summer)",
+          "category": "Personal",
+          "description": "Julius starts a private, password-protected Instagram account dedicated solely to macro shots of his practice haircuts. He focuses on documenting perfect lines, seamless layers, and color theory, using a sterile, academic aesthetic. He doesn't follow anyone back.",
+          "psychological_note": "This is the creation of a digital moat. It allows him to engage with his craft and a hypothetical audience without the vulnerability of real-time interaction or judgment. It's a gallery, not a conversation.",
+          "caused_by_event_ids": [
+            "2020_E1"
+          ],
+          "timestamp": "2020-06-20"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+model,display_label,contextual_overall,parametric_overall
+Qwen3.5-9B,Qwen3.5-9B,0.574283,0.162955
+GLM-4-9B-1M,GLM-4-9B-Chat-1M,0.430659,0.182831
+Qwen2.5-7B-1M,Qwen2.5-7B-Instruct-1M,0.279000,0.132602

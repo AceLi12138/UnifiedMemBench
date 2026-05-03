@@ -1,0 +1,7024 @@
+{
+  "dataset_path": "${UMB_ROOT}/dialogue_gen_api/output/final/clean_v8_budget_direct/UMB_dialogue_benchmark.json",
+  "num_dialogues": 1000,
+  "num_stages": 10,
+  "max_chunk_tokens": 4096,
+  "overlap_turns": 1,
+  "chunking_mode": "sliding_window",
+  "sliding_window_overlap_tokens": 1024,
+  "pt_header_style": "natural",
+  "pt_record_style": "alpaca",
+  "qa_sampling_mode": "role_balanced_upweight",
+  "qa_max_samples_per_character": 24,
+  "qa_task_weights": {
+    "Information Extraction": 1.0,
+    "Knowledge Updating": 1.25,
+    "Memory Arbitration": 1.25,
+    "Temporal Reasoning": 2.0,
+    "Multi-session Reasoning": 1.75,
+    "Event Summarization": 1.75
+  },
+  "seed": 42,
+  "assignments": [
+    {
+      "dialogue_id": "fe5e5815-6039-4578-845e-8ebe31d43dd6",
+      "character": "Elizabeth Perez",
+      "stage_id": 1,
+      "qa_count": 10,
+      "turn_count": 2078
+    },
+    {
+      "dialogue_id": "50aadb96-3b64-4734-84f9-4d0f4dea551b",
+      "character": "Charlie Stark",
+      "stage_id": 1,
+      "qa_count": 16,
+      "turn_count": 1926
+    },
+    {
+      "dialogue_id": "0c440d78-5b94-4771-9c9f-2daf07769d05",
+      "character": "Ada Cervantes",
+      "stage_id": 1,
+      "qa_count": 10,
+      "turn_count": 1965
+    },
+    {
+      "dialogue_id": "3f2a8a78-c19e-4d48-9cc3-0c74fec912b4",
+      "character": "Lillie Collier",
+      "stage_id": 1,
+      "qa_count": 11,
+      "turn_count": 2008
+    },
+    {
+      "dialogue_id": "d18c4916-d963-426c-80d6-ea5a645c4cd2",
+      "character": "Erin Larson",
+      "stage_id": 1,
+      "qa_count": 16,
+      "turn_count": 1914
+    },
+    {
+      "dialogue_id": "c65a846f-2b63-4936-afb9-eac80b9dfd44",
+      "character": "Timothy Roach",
+      "stage_id": 1,
+      "qa_count": 12,
+      "turn_count": 1895
+    },
+    {
+      "dialogue_id": "39bf3474-10e7-4011-87a5-6d6cac451361",
+      "character": "Franklin Odom",
+      "stage_id": 1,
+      "qa_count": 12,
+      "turn_count": 2044
+    },
+    {
+      "dialogue_id": "54278e4b-333b-4680-97c7-bb1d50fe70f7",
+      "character": "Hamish Pennington",
+      "stage_id": 1,
+      "qa_count": 11,
+      "turn_count": 1909
+    },
+    {
+      "dialogue_id": "dd1fc8f5-fde0-480b-88f1-7a2fb54841a9",
+      "character": "Conner Welch",
+      "stage_id": 1,
+      "qa_count": 14,
+      "turn_count": 2099
+    },
+    {
+      "dialogue_id": "cafe4999-0926-42ab-9836-68a2b23ce221",
+      "character": "Layton Young",
+      "stage_id": 1,
+      "qa_count": 10,
+      "turn_count": 2147
+    },
+    {
+      "dialogue_id": "dd712991-acff-44b6-9e3d-7c676ed42dda",
+      "character": "Keane Wilkins",
+      "stage_id": 1,
+      "qa_count": 12,
+      "turn_count": 1986
+    },
+    {
+      "dialogue_id": "a6bde50a-4e97-4ffc-a46a-ed9e9dad7644",
+      "character": "Lachlan Pittman",
+      "stage_id": 1,
+      "qa_count": 8,
+      "turn_count": 2099
+    },
+    {
+      "dialogue_id": "63539d7a-a9a3-4f9c-aa2c-074ad1c35faa",
+      "character": "Bethany Griffin",
+      "stage_id": 1,
+      "qa_count": 10,
+      "turn_count": 1973
+    },
+    {
+      "dialogue_id": "708aa911-11a9-4fb5-84ff-9f3b1f1c900d",
+      "character": "Sarah Terrell",
+      "stage_id": 1,
+      "qa_count": 11,
+      "turn_count": 1898
+    },
+    {
+      "dialogue_id": "4dac8d1f-5662-4fa8-9e45-1ef07f9fa97c",
+      "character": "Damon Moon",
+      "stage_id": 1,
+      "qa_count": 12,
+      "turn_count": 1995
+    },
+    {
+      "dialogue_id": "a78ba224-8270-4c33-be6c-cbcb1d15f591",
+      "character": "Cai Wang",
+      "stage_id": 1,
+      "qa_count": 11,
+      "turn_count": 2015
+    },
+    {
+      "dialogue_id": "16b2730a-8dba-4efc-93cd-925f767ac7ef",
+      "character": "Edna Crosby",
+      "stage_id": 1,
+      "qa_count": 16,
+      "turn_count": 1895
+    },
+    {
+      "dialogue_id": "de241ba2-a01a-473d-bb15-d7f18d579298",
+      "character": "Rehan Dillon",
+      "stage_id": 1,
+      "qa_count": 15,
+      "turn_count": 1926
+    },
+    {
+      "dialogue_id": "da0e8810-7004-4efd-a9a4-52685a87660d",
+      "character": "Hussein Mcclure",
+      "stage_id": 1,
+      "qa_count": 12,
+      "turn_count": 1996
+    },
+    {
+      "dialogue_id": "1aec24a0-10de-4f88-a79f-2f66cc48a2c9",
+      "character": "Gina Summers",
+      "stage_id": 1,
+      "qa_count": 9,
+      "turn_count": 2046
+    },
+    {
+      "dialogue_id": "cefecf80-542d-42e4-be52-ce32bab4adba",
+      "character": "Mahir Dixon",
+      "stage_id": 1,
+      "qa_count": 18,
+      "turn_count": 2091
+    },
+    {
+      "dialogue_id": "57bf49a6-daaa-4d57-bc04-ffee490f2857",
+      "character": "Eve Wright",
+      "stage_id": 1,
+      "qa_count": 9,
+      "turn_count": 1878
+    },
+    {
+      "dialogue_id": "a4213bb1-617b-4bd1-a987-94b709201abf",
+      "character": "Jackson Hogan",
+      "stage_id": 1,
+      "qa_count": 10,
+      "turn_count": 2012
+    },
+    {
+      "dialogue_id": "0a28837a-da96-408f-9e3e-da298aa804d0",
+      "character": "Keira Coleman",
+      "stage_id": 1,
+      "qa_count": 11,
+      "turn_count": 2105
+    },
+    {
+      "dialogue_id": "310c219c-1c77-443a-9892-34f273d01e0c",
+      "character": "Maisie Kaufman",
+      "stage_id": 1,
+      "qa_count": 12,
+      "turn_count": 1882
+    },
+    {
+      "dialogue_id": "66250d89-7a7c-4174-9cb8-c03a26995431",
+      "character": "Candice Bond",
+      "stage_id": 1,
+      "qa_count": 11,
+      "turn_count": 2059
+    },
+    {
+      "dialogue_id": "e6e5a052-28dd-4a48-8c0c-3d906f3f6a63",
+      "character": "Tristan Hansen",
+      "stage_id": 1,
+      "qa_count": 12,
+      "turn_count": 1958
+    },
+    {
+      "dialogue_id": "454629d9-613b-48c2-af50-341028ea44e3",
+      "character": "Vanessa Beard",
+      "stage_id": 1,
+      "qa_count": 11,
+      "turn_count": 2045
+    },
+    {
+      "dialogue_id": "82b9c525-fb04-4601-8d47-62207ec84506",
+      "character": "Honey Harper",
+      "stage_id": 1,
+      "qa_count": 10,
+      "turn_count": 1981
+    },
+    {
+      "dialogue_id": "01cd44da-383c-42e2-84aa-3602aec9dae5",
+      "character": "Kasey Carroll",
+      "stage_id": 1,
+      "qa_count": 10,
+      "turn_count": 1875
+    },
+    {
+      "dialogue_id": "d0304b87-770e-49cd-b214-468d5c0fadcd",
+      "character": "Lennon Shah",
+      "stage_id": 1,
+      "qa_count": 11,
+      "turn_count": 2020
+    },
+    {
+      "dialogue_id": "08a0174a-a479-4bc4-bdc8-93cf1fc0c881",
+      "character": "Henry Vega",
+      "stage_id": 1,
+      "qa_count": 15,
+      "turn_count": 1966
+    },
+    {
+      "dialogue_id": "13018faa-3ace-4059-ac94-125e3ef0853d",
+      "character": "Freddy Richards",
+      "stage_id": 1,
+      "qa_count": 16,
+      "turn_count": 1921
+    },
+    {
+      "dialogue_id": "db70313a-53ba-4f2e-a1c0-49d96d79a4c1",
+      "character": "Maryam Cervantes",
+      "stage_id": 1,
+      "qa_count": 10,
+      "turn_count": 2113
+    },
+    {
+      "dialogue_id": "e221e610-4180-4d3d-b4e7-9ba599033e08",
+      "character": "Austin Hodges",
+      "stage_id": 1,
+      "qa_count": 11,
+      "turn_count": 1977
+    },
+    {
+      "dialogue_id": "530509f1-e559-4184-b022-6ef71162806c",
+      "character": "Sabrina Fowler",
+      "stage_id": 1,
+      "qa_count": 12,
+      "turn_count": 1981
+    },
+    {
+      "dialogue_id": "9b27e9cd-b52b-4861-b848-c76b782c1f6e",
+      "character": "Kaan Hicks",
+      "stage_id": 1,
+      "qa_count": 9,
+      "turn_count": 2106
+    },
+    {
+      "dialogue_id": "e31e31bf-aa51-4e76-b2c2-1211b522d5f4",
+      "character": "Bruno Joyce",
+      "stage_id": 1,
+      "qa_count": 15,
+      "turn_count": 2006
+    },
+    {
+      "dialogue_id": "b3204bbf-1073-4e68-8d31-264e6046766a",
+      "character": "Mackenzie Mendez",
+      "stage_id": 1,
+      "qa_count": 11,
+      "turn_count": 1963
+    },
+    {
+      "dialogue_id": "d3d14e66-7852-4447-9d92-58a6fbeb01b6",
+      "character": "Cruz Roberts",
+      "stage_id": 1,
+      "qa_count": 11,
+      "turn_count": 1942
+    },
+    {
+      "dialogue_id": "79f15eb9-9131-4bf4-ba6d-7033be8f12f1",
+      "character": "Celia Marshall",
+      "stage_id": 1,
+      "qa_count": 12,
+      "turn_count": 1909
+    },
+    {
+      "dialogue_id": "c8c26e46-0afd-41e2-8356-0fed610ec692",
+      "character": "Wyatt Newton",
+      "stage_id": 1,
+      "qa_count": 10,
+      "turn_count": 2000
+    },
+    {
+      "dialogue_id": "0c2bd648-d73d-4b70-86b1-eb7073cce039",
+      "character": "Lia Steele",
+      "stage_id": 1,
+      "qa_count": 11,
+      "turn_count": 1996
+    },
+    {
+      "dialogue_id": "aed01f0f-019a-4eb8-8486-3f04ce1a960e",
+      "character": "Josh Lara",
+      "stage_id": 1,
+      "qa_count": 12,
+      "turn_count": 2157
+    },
+    {
+      "dialogue_id": "2842dac2-0231-41c2-a376-08541aeed4b1",
+      "character": "Ross Atkins",
+      "stage_id": 1,
+      "qa_count": 18,
+      "turn_count": 2016
+    },
+    {
+      "dialogue_id": "1f0ec796-fb75-41bb-a8ce-dbb479e32260",
+      "character": "Ajay Whitaker",
+      "stage_id": 1,
+      "qa_count": 12,
+      "turn_count": 2005
+    },
+    {
+      "dialogue_id": "b209e7bc-d763-4e0e-9de2-04a0487433a5",
+      "character": "Xavier Molina",
+      "stage_id": 1,
+      "qa_count": 10,
+      "turn_count": 2107
+    },
+    {
+      "dialogue_id": "17bf8684-d651-4cb4-8b0d-5f6856127af2",
+      "character": "Sulaiman Marks",
+      "stage_id": 1,
+      "qa_count": 11,
+      "turn_count": 2060
+    },
+    {
+      "dialogue_id": "8d7e0471-467c-4e79-854e-2de5d0a670c2",
+      "character": "Orla Lamb",
+      "stage_id": 1,
+      "qa_count": 10,
+      "turn_count": 1904
+    },
+    {
+      "dialogue_id": "1b193777-e1a1-4ad3-b8e3-8b9730936cf3",
+      "character": "Karol Cook",
+      "stage_id": 1,
+      "qa_count": 11,
+      "turn_count": 1859
+    },
+    {
+      "dialogue_id": "7db4c4d8-5309-4b10-b40d-a5c87cc7dcc9",
+      "character": "Seren Clay",
+      "stage_id": 1,
+      "qa_count": 12,
+      "turn_count": 2052
+    },
+    {
+      "dialogue_id": "c1d63774-986d-4a2c-90b0-295dd32302d2",
+      "character": "Conner McCoy",
+      "stage_id": 1,
+      "qa_count": 9,
+      "turn_count": 2040
+    },
+    {
+      "dialogue_id": "cea87475-14fb-42af-b16c-9ca8ef6af6b0",
+      "character": "Zayd Mason",
+      "stage_id": 1,
+      "qa_count": 12,
+      "turn_count": 2084
+    },
+    {
+      "dialogue_id": "a592f599-53d6-4b73-964b-2b8ec3bbbef3",
+      "character": "Sharon Mclaughlin",
+      "stage_id": 1,
+      "qa_count": 17,
+      "turn_count": 1954
+    },
+    {
+      "dialogue_id": "67b49043-5c46-4ac0-bf0b-c471717a0dc2",
+      "character": "Cassandra Estes",
+      "stage_id": 1,
+      "qa_count": 9,
+      "turn_count": 1849
+    },
+    {
+      "dialogue_id": "eaa5cbab-74e8-4660-8902-2de351d0c780",
+      "character": "Ellis Marsh",
+      "stage_id": 1,
+      "qa_count": 12,
+      "turn_count": 2061
+    },
+    {
+      "dialogue_id": "661a1eb2-0225-41b3-9c57-599d22cb608a",
+      "character": "Nabil Lester",
+      "stage_id": 1,
+      "qa_count": 12,
+      "turn_count": 2049
+    },
+    {
+      "dialogue_id": "8de0f7a5-1c5b-498e-b0a1-2b39ac8894d6",
+      "character": "Daisy Cunningham",
+      "stage_id": 1,
+      "qa_count": 11,
+      "turn_count": 1985
+    },
+    {
+      "dialogue_id": "548095ae-6670-4eba-bde6-3c0669664e21",
+      "character": "Hamish Gray",
+      "stage_id": 1,
+      "qa_count": 16,
+      "turn_count": 2010
+    },
+    {
+      "dialogue_id": "d924d1a0-4910-4f05-94ce-b546c266052c",
+      "character": "Isobella Shaw",
+      "stage_id": 1,
+      "qa_count": 17,
+      "turn_count": 1857
+    },
+    {
+      "dialogue_id": "2dbf2684-71c1-4c83-8a74-b01914f1b887",
+      "character": "Alana Odom",
+      "stage_id": 1,
+      "qa_count": 11,
+      "turn_count": 1936
+    },
+    {
+      "dialogue_id": "e327cc9b-dfa7-4264-bbb0-55e0942c293d",
+      "character": "Nikita Sears",
+      "stage_id": 1,
+      "qa_count": 14,
+      "turn_count": 2126
+    },
+    {
+      "dialogue_id": "1648cfc8-6ba7-40e5-8201-127904f153d8",
+      "character": "Darren Roth",
+      "stage_id": 1,
+      "qa_count": 17,
+      "turn_count": 1981
+    },
+    {
+      "dialogue_id": "767d0b5b-f38a-41c3-bd11-3743a58f90df",
+      "character": "Jodie Ayers",
+      "stage_id": 1,
+      "qa_count": 11,
+      "turn_count": 1844
+    },
+    {
+      "dialogue_id": "3767386d-ea4c-4124-9cea-c14bb8752e71",
+      "character": "Anthony Mcgowan",
+      "stage_id": 1,
+      "qa_count": 9,
+      "turn_count": 1945
+    },
+    {
+      "dialogue_id": "4dc09418-a8aa-4c80-9e7a-d87884a186b5",
+      "character": "India Clark",
+      "stage_id": 1,
+      "qa_count": 10,
+      "turn_count": 2061
+    },
+    {
+      "dialogue_id": "068a9f67-9b85-4920-863d-0f4007e67829",
+      "character": "Blake Doherty",
+      "stage_id": 1,
+      "qa_count": 12,
+      "turn_count": 2032
+    },
+    {
+      "dialogue_id": "dffc880e-7742-4a73-a4d0-2b13e68999ae",
+      "character": "Jenna Villa",
+      "stage_id": 1,
+      "qa_count": 11,
+      "turn_count": 2102
+    },
+    {
+      "dialogue_id": "351a7496-4aea-4591-8274-22123086cbfb",
+      "character": "Gabriel Maxwell",
+      "stage_id": 1,
+      "qa_count": 11,
+      "turn_count": 2111
+    },
+    {
+      "dialogue_id": "c8621897-1a3b-4491-bebc-f573928db6a0",
+      "character": "Brayden Brewer",
+      "stage_id": 1,
+      "qa_count": 10,
+      "turn_count": 1996
+    },
+    {
+      "dialogue_id": "a5c68de8-c249-40c9-aeab-baef30da3429",
+      "character": "Jude Holder",
+      "stage_id": 1,
+      "qa_count": 10,
+      "turn_count": 2052
+    },
+    {
+      "dialogue_id": "333dbc89-2778-41b4-a8c5-2a667d2716b5",
+      "character": "Adil Rodgers",
+      "stage_id": 1,
+      "qa_count": 11,
+      "turn_count": 2083
+    },
+    {
+      "dialogue_id": "a78294fb-5fea-4aae-ac67-d07f3d025b45",
+      "character": "Teresa Ballard",
+      "stage_id": 1,
+      "qa_count": 12,
+      "turn_count": 2032
+    },
+    {
+      "dialogue_id": "2b1686be-4d89-4b87-ace3-462eaec44aa7",
+      "character": "Zoya Francis",
+      "stage_id": 1,
+      "qa_count": 9,
+      "turn_count": 1891
+    },
+    {
+      "dialogue_id": "b3c07a9d-5be8-47ef-9df9-80774ea4e426",
+      "character": "Sana Noble",
+      "stage_id": 1,
+      "qa_count": 12,
+      "turn_count": 1941
+    },
+    {
+      "dialogue_id": "47d240f2-a861-4535-bf9a-578bfda0b730",
+      "character": "Bibi Hensley",
+      "stage_id": 1,
+      "qa_count": 12,
+      "turn_count": 1933
+    },
+    {
+      "dialogue_id": "167c0524-41f8-496f-818d-1152eff5780b",
+      "character": "Hattie Hewitt",
+      "stage_id": 1,
+      "qa_count": 10,
+      "turn_count": 1947
+    },
+    {
+      "dialogue_id": "74a8ecfe-e824-486d-b27d-d7cf900a02c9",
+      "character": "Bella Dunn",
+      "stage_id": 1,
+      "qa_count": 11,
+      "turn_count": 2133
+    },
+    {
+      "dialogue_id": "0a3e4ce4-d119-4b47-9e3b-c83b02cdad97",
+      "character": "Tillie Vaughn",
+      "stage_id": 1,
+      "qa_count": 11,
+      "turn_count": 2072
+    },
+    {
+      "dialogue_id": "b71e9d8e-cbcd-4299-8b42-3c69cfcf6325",
+      "character": "Ollie Kane",
+      "stage_id": 1,
+      "qa_count": 11,
+      "turn_count": 2055
+    },
+    {
+      "dialogue_id": "0096d209-461a-4a26-bd90-4cbea5966b49",
+      "character": "Aston Mora",
+      "stage_id": 1,
+      "qa_count": 10,
+      "turn_count": 2119
+    },
+    {
+      "dialogue_id": "1460fba3-2c31-41e2-b637-805a7b265180",
+      "character": "Joe Orozco",
+      "stage_id": 1,
+      "qa_count": 12,
+      "turn_count": 2058
+    },
+    {
+      "dialogue_id": "b2ea9221-0e4f-4be0-bf33-b026b665b89e",
+      "character": "Katerina Pham",
+      "stage_id": 1,
+      "qa_count": 16,
+      "turn_count": 1887
+    },
+    {
+      "dialogue_id": "81632b44-20fa-4984-a8a1-0c320b180560",
+      "character": "Tom Kennedy",
+      "stage_id": 1,
+      "qa_count": 16,
+      "turn_count": 2066
+    },
+    {
+      "dialogue_id": "ab894744-7562-4110-8bd2-203e328a3bf8",
+      "character": "Owais Cuevas",
+      "stage_id": 1,
+      "qa_count": 14,
+      "turn_count": 1910
+    },
+    {
+      "dialogue_id": "2bbdfc07-3a47-4534-81e5-224cdcd84d26",
+      "character": "Colin Bauer",
+      "stage_id": 1,
+      "qa_count": 9,
+      "turn_count": 2061
+    },
+    {
+      "dialogue_id": "03efb300-1cb4-4ac3-9ac5-244855e59620",
+      "character": "Beatrix Vang",
+      "stage_id": 1,
+      "qa_count": 11,
+      "turn_count": 2141
+    },
+    {
+      "dialogue_id": "3387583f-1d81-414c-bec9-73fe59eb1bdb",
+      "character": "Gabrielle Johnson",
+      "stage_id": 1,
+      "qa_count": 11,
+      "turn_count": 2032
+    },
+    {
+      "dialogue_id": "0f42c30f-85b1-44a0-aeb1-e1a095e9a17a",
+      "character": "Tasneem Hancock",
+      "stage_id": 1,
+      "qa_count": 9,
+      "turn_count": 1947
+    },
+    {
+      "dialogue_id": "515c8a23-7e4c-4988-bb52-6861a2090f55",
+      "character": "Colby Jacobs",
+      "stage_id": 1,
+      "qa_count": 13,
+      "turn_count": 1893
+    },
+    {
+      "dialogue_id": "ab182565-b7f1-427e-ac84-cb2b71fa257b",
+      "character": "Kaitlyn Lynch",
+      "stage_id": 1,
+      "qa_count": 12,
+      "turn_count": 1914
+    },
+    {
+      "dialogue_id": "93b8bdc1-2e9a-47b3-839b-452783459031",
+      "character": "Blanche McKay",
+      "stage_id": 1,
+      "qa_count": 11,
+      "turn_count": 1962
+    },
+    {
+      "dialogue_id": "ee487d3c-0681-42ce-8a0a-0c0888262982",
+      "character": "Lachlan Meza",
+      "stage_id": 1,
+      "qa_count": 11,
+      "turn_count": 1899
+    },
+    {
+      "dialogue_id": "89c64b1c-eb82-43e0-b9a9-fbc347c60387",
+      "character": "Dale Berry",
+      "stage_id": 1,
+      "qa_count": 11,
+      "turn_count": 2064
+    },
+    {
+      "dialogue_id": "87498f95-97cf-44d8-ae10-2c592a168e06",
+      "character": "Jermaine Stephenson",
+      "stage_id": 1,
+      "qa_count": 9,
+      "turn_count": 1978
+    },
+    {
+      "dialogue_id": "97ba574d-5d91-4c1e-970a-f81a24c77c4a",
+      "character": "Krish Greer",
+      "stage_id": 1,
+      "qa_count": 13,
+      "turn_count": 2083
+    },
+    {
+      "dialogue_id": "786e03b1-d41b-4f2b-8489-ec59db183409",
+      "character": "Ammar Small",
+      "stage_id": 1,
+      "qa_count": 12,
+      "turn_count": 1899
+    },
+    {
+      "dialogue_id": "8ef4c6c1-e541-47eb-b596-075f43c5983b",
+      "character": "Delilah Meza",
+      "stage_id": 1,
+      "qa_count": 9,
+      "turn_count": 2130
+    },
+    {
+      "dialogue_id": "e6b59883-4756-4abd-9686-9652973af5aa",
+      "character": "Adrian Rose",
+      "stage_id": 1,
+      "qa_count": 18,
+      "turn_count": 2104
+    },
+    {
+      "dialogue_id": "9fc71f57-cf77-4604-8e30-3160b4edaa33",
+      "character": "Kacie Boone",
+      "stage_id": 1,
+      "qa_count": 11,
+      "turn_count": 2079
+    },
+    {
+      "dialogue_id": "ee389a90-156b-432d-a301-9305e5ac24b3",
+      "character": "Mateo Mccormick",
+      "stage_id": 2,
+      "qa_count": 12,
+      "turn_count": 2075
+    },
+    {
+      "dialogue_id": "8aca562e-1f96-4eeb-ac01-b5b099051506",
+      "character": "Hallie Donnelly",
+      "stage_id": 2,
+      "qa_count": 12,
+      "turn_count": 1950
+    },
+    {
+      "dialogue_id": "7f9ea7a7-7666-47b5-9b59-1bdfd98cb0a6",
+      "character": "Eleri Wilkins",
+      "stage_id": 2,
+      "qa_count": 11,
+      "turn_count": 2064
+    },
+    {
+      "dialogue_id": "bc62152b-555e-4be5-bfd2-e22720594a48",
+      "character": "Barry Peterson",
+      "stage_id": 2,
+      "qa_count": 12,
+      "turn_count": 1907
+    },
+    {
+      "dialogue_id": "dffd1451-996e-476e-a7b5-78778a62e921",
+      "character": "Rafferty Burnett",
+      "stage_id": 2,
+      "qa_count": 12,
+      "turn_count": 2100
+    },
+    {
+      "dialogue_id": "436b0885-9327-4406-9264-0b625b48e333",
+      "character": "Ariana Ware",
+      "stage_id": 2,
+      "qa_count": 11,
+      "turn_count": 2079
+    },
+    {
+      "dialogue_id": "4ea83b64-6f0c-4bf1-a29e-1cace64c2974",
+      "character": "Henri Morris",
+      "stage_id": 2,
+      "qa_count": 17,
+      "turn_count": 1899
+    },
+    {
+      "dialogue_id": "2aadaa1e-d128-4186-bdde-32a7bacd2e36",
+      "character": "Gavin Roman",
+      "stage_id": 2,
+      "qa_count": 11,
+      "turn_count": 2000
+    },
+    {
+      "dialogue_id": "66fad678-43ec-4157-95c4-0ec1703e178a",
+      "character": "Brogan Maxwell",
+      "stage_id": 2,
+      "qa_count": 11,
+      "turn_count": 2038
+    },
+    {
+      "dialogue_id": "df0eab22-f41a-4e99-9faa-c4a71476b11f",
+      "character": "Kurtis Nash",
+      "stage_id": 2,
+      "qa_count": 10,
+      "turn_count": 1985
+    },
+    {
+      "dialogue_id": "4fe19b2d-5c36-44e8-bdd6-a351c23b15f2",
+      "character": "Aleksander Jacobson",
+      "stage_id": 2,
+      "qa_count": 10,
+      "turn_count": 2018
+    },
+    {
+      "dialogue_id": "b28ff895-14b3-44f6-a38d-7bba73841e15",
+      "character": "Karim Nunez",
+      "stage_id": 2,
+      "qa_count": 10,
+      "turn_count": 2227
+    },
+    {
+      "dialogue_id": "02daa34d-1fba-44ea-9bca-7d5f9618c0fe",
+      "character": "Aimee Santos",
+      "stage_id": 2,
+      "qa_count": 12,
+      "turn_count": 1973
+    },
+    {
+      "dialogue_id": "614fa267-d2f7-4fb7-86ce-82459773877b",
+      "character": "Kacie Livingston",
+      "stage_id": 2,
+      "qa_count": 11,
+      "turn_count": 2177
+    },
+    {
+      "dialogue_id": "eb616986-a650-44da-b9a9-788b2fc34c34",
+      "character": "Todd Shields",
+      "stage_id": 2,
+      "qa_count": 12,
+      "turn_count": 1974
+    },
+    {
+      "dialogue_id": "c1d449bc-ed40-4d3a-ba0c-b3b167af420f",
+      "character": "Alex Spencer",
+      "stage_id": 2,
+      "qa_count": 12,
+      "turn_count": 2058
+    },
+    {
+      "dialogue_id": "4f4c2fd8-66ae-4340-b0e0-d5c556f891a4",
+      "character": "Crystal Ayala",
+      "stage_id": 2,
+      "qa_count": 11,
+      "turn_count": 1819
+    },
+    {
+      "dialogue_id": "60893854-d87b-4404-b497-243431922475",
+      "character": "Brandon Cuevas",
+      "stage_id": 2,
+      "qa_count": 11,
+      "turn_count": 2121
+    },
+    {
+      "dialogue_id": "b0340ce7-aa8d-4611-9418-3ec93cfe539a",
+      "character": "Frances Wheeler",
+      "stage_id": 2,
+      "qa_count": 10,
+      "turn_count": 2105
+    },
+    {
+      "dialogue_id": "24f9bf85-9245-4bf4-bb46-264b8cbf251e",
+      "character": "Bertha May",
+      "stage_id": 2,
+      "qa_count": 12,
+      "turn_count": 2110
+    },
+    {
+      "dialogue_id": "e3e0a263-5100-4107-86b1-d14cdf8beb09",
+      "character": "Mollie Hancock",
+      "stage_id": 2,
+      "qa_count": 11,
+      "turn_count": 1939
+    },
+    {
+      "dialogue_id": "c9980f07-fbda-44cc-af5c-450c87b7ad8b",
+      "character": "Montgomery Dixon",
+      "stage_id": 2,
+      "qa_count": 12,
+      "turn_count": 1917
+    },
+    {
+      "dialogue_id": "6335493a-7189-47db-ae93-56848949daf8",
+      "character": "Zaynab Wu",
+      "stage_id": 2,
+      "qa_count": 12,
+      "turn_count": 1957
+    },
+    {
+      "dialogue_id": "fc4c0f7f-8b6b-4400-9603-8b0f67eceffc",
+      "character": "Sion Cameron",
+      "stage_id": 2,
+      "qa_count": 10,
+      "turn_count": 1917
+    },
+    {
+      "dialogue_id": "4d1855f4-40ed-4069-8be5-5795d7e0e2c2",
+      "character": "Mackenzie Cuevas",
+      "stage_id": 2,
+      "qa_count": 11,
+      "turn_count": 2091
+    },
+    {
+      "dialogue_id": "e2635cd9-6040-41b0-9997-f0c95e2883d2",
+      "character": "Chloe Barnes",
+      "stage_id": 2,
+      "qa_count": 12,
+      "turn_count": 1959
+    },
+    {
+      "dialogue_id": "fafff132-2217-4666-a38f-4c1daba98a02",
+      "character": "Betty Dejesus",
+      "stage_id": 2,
+      "qa_count": 12,
+      "turn_count": 1990
+    },
+    {
+      "dialogue_id": "b64a447d-9e68-4161-8f5a-f232d6d62692",
+      "character": "Jan Orozco",
+      "stage_id": 2,
+      "qa_count": 13,
+      "turn_count": 2033
+    },
+    {
+      "dialogue_id": "58d1b8e5-86db-4899-9eca-59cbb8206adc",
+      "character": "Jonas Parrish",
+      "stage_id": 2,
+      "qa_count": 12,
+      "turn_count": 2137
+    },
+    {
+      "dialogue_id": "aaa96a02-f363-4dd3-8d8a-f25e78fbf15a",
+      "character": "Nancy Meyers",
+      "stage_id": 2,
+      "qa_count": 10,
+      "turn_count": 1851
+    },
+    {
+      "dialogue_id": "a5ac5dba-7842-4346-b691-a7ec565b4a7c",
+      "character": "Andrew Kelly",
+      "stage_id": 2,
+      "qa_count": 11,
+      "turn_count": 1921
+    },
+    {
+      "dialogue_id": "325e662a-1465-4c9b-964f-c6fc7ccaac19",
+      "character": "Omer Copeland",
+      "stage_id": 2,
+      "qa_count": 10,
+      "turn_count": 2100
+    },
+    {
+      "dialogue_id": "6fd60a94-3085-4094-b6e8-1d15ad15f095",
+      "character": "Brooke Davila",
+      "stage_id": 2,
+      "qa_count": 11,
+      "turn_count": 2033
+    },
+    {
+      "dialogue_id": "285a17a7-7077-484a-9ba6-928957ce79cd",
+      "character": "Kristian Woodard",
+      "stage_id": 2,
+      "qa_count": 11,
+      "turn_count": 1843
+    },
+    {
+      "dialogue_id": "10c8999c-0919-4bd0-a7f6-755217463f0d",
+      "character": "Valerie Hoffman",
+      "stage_id": 2,
+      "qa_count": 11,
+      "turn_count": 2087
+    },
+    {
+      "dialogue_id": "d7e6b3af-0f80-4b30-8c77-160752ba421f",
+      "character": "Kitty O'Ryan",
+      "stage_id": 2,
+      "qa_count": 11,
+      "turn_count": 2165
+    },
+    {
+      "dialogue_id": "67a5a768-c38a-4b78-afe0-cf745bb5ca60",
+      "character": "Barry Thompson",
+      "stage_id": 2,
+      "qa_count": 8,
+      "turn_count": 1881
+    },
+    {
+      "dialogue_id": "183c6fb7-6126-4e70-a9e6-fb2fb1af6ebc",
+      "character": "Aneesa Walton",
+      "stage_id": 2,
+      "qa_count": 18,
+      "turn_count": 1878
+    },
+    {
+      "dialogue_id": "520a38b9-fac4-46e4-a317-e2365776914c",
+      "character": "Michael Delgado",
+      "stage_id": 2,
+      "qa_count": 11,
+      "turn_count": 2043
+    },
+    {
+      "dialogue_id": "192ffe6e-7ff6-4d67-9059-a76083d42768",
+      "character": "Tina Martin",
+      "stage_id": 2,
+      "qa_count": 12,
+      "turn_count": 1948
+    },
+    {
+      "dialogue_id": "45600b5d-148a-44df-aaed-d218dc37d9e5",
+      "character": "Ieuan Randolph",
+      "stage_id": 2,
+      "qa_count": 12,
+      "turn_count": 2120
+    },
+    {
+      "dialogue_id": "bde5fd67-7468-4cf7-a784-4f092f099cc1",
+      "character": "Raymond Hansen",
+      "stage_id": 2,
+      "qa_count": 12,
+      "turn_count": 2031
+    },
+    {
+      "dialogue_id": "28b6004f-fba8-4add-8904-50a8687a9ff5",
+      "character": "Tahlia Nunez",
+      "stage_id": 2,
+      "qa_count": 13,
+      "turn_count": 2020
+    },
+    {
+      "dialogue_id": "39a6e4e0-2363-4d53-b382-39a5dcdfee2d",
+      "character": "Seren Whitehead",
+      "stage_id": 2,
+      "qa_count": 12,
+      "turn_count": 2105
+    },
+    {
+      "dialogue_id": "8c51b17d-03ab-4921-b399-e8f3f08fb68b",
+      "character": "Earl Schaefer",
+      "stage_id": 2,
+      "qa_count": 11,
+      "turn_count": 2064
+    },
+    {
+      "dialogue_id": "64c44a88-7254-4504-b8f7-7598d5e4282e",
+      "character": "Anaya Merrill",
+      "stage_id": 2,
+      "qa_count": 13,
+      "turn_count": 1885
+    },
+    {
+      "dialogue_id": "202e66b4-3365-40d1-87df-4b7f2c09925e",
+      "character": "Hashim Small",
+      "stage_id": 2,
+      "qa_count": 16,
+      "turn_count": 2017
+    },
+    {
+      "dialogue_id": "8d546fac-f453-4d3c-b35b-e4889017726f",
+      "character": "Gordon English",
+      "stage_id": 2,
+      "qa_count": 11,
+      "turn_count": 2082
+    },
+    {
+      "dialogue_id": "dc73c60a-47ef-450d-a8cb-3e013cfa2039",
+      "character": "Chad Cross",
+      "stage_id": 2,
+      "qa_count": 11,
+      "turn_count": 2018
+    },
+    {
+      "dialogue_id": "4ec4f769-2f6d-46b9-b178-b1d7ed287f4e",
+      "character": "Tasneem Cole",
+      "stage_id": 2,
+      "qa_count": 11,
+      "turn_count": 1941
+    },
+    {
+      "dialogue_id": "f07d3f44-2dba-4c51-b6d9-e3c1262baab0",
+      "character": "Mary Duke",
+      "stage_id": 2,
+      "qa_count": 15,
+      "turn_count": 2031
+    },
+    {
+      "dialogue_id": "4a1eb7d1-1ba0-4830-b816-3d8d368357ae",
+      "character": "Hajra Hall",
+      "stage_id": 2,
+      "qa_count": 9,
+      "turn_count": 2022
+    },
+    {
+      "dialogue_id": "4783d57d-fd3d-4f97-95b8-1a227a7fad9f",
+      "character": "Alexandra Oconnell",
+      "stage_id": 2,
+      "qa_count": 11,
+      "turn_count": 1985
+    },
+    {
+      "dialogue_id": "b1d68edc-03a1-47eb-a4b7-96a541d99217",
+      "character": "Maisie Collins",
+      "stage_id": 2,
+      "qa_count": 12,
+      "turn_count": 1957
+    },
+    {
+      "dialogue_id": "0a11c5d5-8b9b-42a9-989b-4885c19eb63f",
+      "character": "Juanita Savage",
+      "stage_id": 2,
+      "qa_count": 9,
+      "turn_count": 1887
+    },
+    {
+      "dialogue_id": "63d6403c-fceb-4bf9-b49b-0134e0dfd8c4",
+      "character": "Harley Doyle",
+      "stage_id": 2,
+      "qa_count": 12,
+      "turn_count": 2158
+    },
+    {
+      "dialogue_id": "a39dffcf-0544-40a5-945b-211e5e535523",
+      "character": "Keziah Briggs",
+      "stage_id": 2,
+      "qa_count": 12,
+      "turn_count": 2138
+    },
+    {
+      "dialogue_id": "604a74ef-28ed-448b-bd2c-66057163502c",
+      "character": "Tia Randolph",
+      "stage_id": 2,
+      "qa_count": 12,
+      "turn_count": 2037
+    },
+    {
+      "dialogue_id": "a8ec20cd-68ea-4049-91b8-dcc436100705",
+      "character": "Kaden Roth",
+      "stage_id": 2,
+      "qa_count": 12,
+      "turn_count": 1997
+    },
+    {
+      "dialogue_id": "8683d6b5-038c-47b7-aafe-43841e1bf9dd",
+      "character": "Elena Ponce",
+      "stage_id": 2,
+      "qa_count": 11,
+      "turn_count": 1965
+    },
+    {
+      "dialogue_id": "d85eb614-015e-4bfe-9376-f60b41211e18",
+      "character": "Anika Christian",
+      "stage_id": 2,
+      "qa_count": 12,
+      "turn_count": 2093
+    },
+    {
+      "dialogue_id": "6abd7724-944f-454d-b33f-cde48b020c80",
+      "character": "Julia Hatfield",
+      "stage_id": 2,
+      "qa_count": 14,
+      "turn_count": 1921
+    },
+    {
+      "dialogue_id": "0d519ad8-3f55-47af-a28f-04e38a0726c4",
+      "character": "Samuel Holden",
+      "stage_id": 2,
+      "qa_count": 12,
+      "turn_count": 1907
+    },
+    {
+      "dialogue_id": "ea502f77-dc23-4fe0-8720-ffad974ebc3d",
+      "character": "Marion Knapp",
+      "stage_id": 2,
+      "qa_count": 15,
+      "turn_count": 2019
+    },
+    {
+      "dialogue_id": "0fc35ac2-a2a7-4dcc-9c20-715a1cc6364d",
+      "character": "Ishaq McDonald",
+      "stage_id": 2,
+      "qa_count": 10,
+      "turn_count": 2022
+    },
+    {
+      "dialogue_id": "2287d54e-4306-4301-89a9-a72289d86e7f",
+      "character": "Zackary Mathews",
+      "stage_id": 2,
+      "qa_count": 14,
+      "turn_count": 2033
+    },
+    {
+      "dialogue_id": "77ecfa4a-cdfa-4d74-89b1-b2fd396108fa",
+      "character": "Dawson Brock",
+      "stage_id": 2,
+      "qa_count": 14,
+      "turn_count": 2028
+    },
+    {
+      "dialogue_id": "fe47a6a1-ffbe-4f4d-82e4-7c01bb3a017f",
+      "character": "Rebecca Chandler",
+      "stage_id": 2,
+      "qa_count": 12,
+      "turn_count": 2057
+    },
+    {
+      "dialogue_id": "500a3628-dc6f-45eb-ae93-33dba5cd9ac4",
+      "character": "Alina Grimes",
+      "stage_id": 2,
+      "qa_count": 11,
+      "turn_count": 1906
+    },
+    {
+      "dialogue_id": "122f5961-5bd2-4053-b1b0-a9fbaf7a3525",
+      "character": "Miya Osborne",
+      "stage_id": 2,
+      "qa_count": 11,
+      "turn_count": 1906
+    },
+    {
+      "dialogue_id": "40ce268b-ceb8-44e3-9fcc-0370c17b373d",
+      "character": "Yasmine Coleman",
+      "stage_id": 2,
+      "qa_count": 16,
+      "turn_count": 1959
+    },
+    {
+      "dialogue_id": "d3815008-31c1-47c3-9456-96712553962e",
+      "character": "Kyron Odling",
+      "stage_id": 2,
+      "qa_count": 12,
+      "turn_count": 1995
+    },
+    {
+      "dialogue_id": "4fbeedc6-90be-4adc-8c22-f34c0cf781e9",
+      "character": "Myrtle McConnell",
+      "stage_id": 2,
+      "qa_count": 18,
+      "turn_count": 1844
+    },
+    {
+      "dialogue_id": "c7c65653-13b4-4115-8971-632f3fe7e0c0",
+      "character": "Lester Palmer",
+      "stage_id": 2,
+      "qa_count": 10,
+      "turn_count": 1958
+    },
+    {
+      "dialogue_id": "51dca61d-3b28-4461-8456-6af2d0e4af57",
+      "character": "Marnie Friedman",
+      "stage_id": 2,
+      "qa_count": 10,
+      "turn_count": 1981
+    },
+    {
+      "dialogue_id": "6d2dbaac-d01d-4a93-8083-bb6a2385c911",
+      "character": "Nicolas Williamson",
+      "stage_id": 2,
+      "qa_count": 11,
+      "turn_count": 2176
+    },
+    {
+      "dialogue_id": "261852f5-fab9-4d99-9b05-fd449a3c56c2",
+      "character": "Celine Nash",
+      "stage_id": 2,
+      "qa_count": 11,
+      "turn_count": 1981
+    },
+    {
+      "dialogue_id": "46f551a2-0c73-4cdf-a8b8-f0da2386dcab",
+      "character": "Troy Atkins",
+      "stage_id": 2,
+      "qa_count": 11,
+      "turn_count": 1959
+    },
+    {
+      "dialogue_id": "474e35ee-783a-4a65-8bea-2744e247bdc9",
+      "character": "Jana Ball",
+      "stage_id": 2,
+      "qa_count": 11,
+      "turn_count": 2086
+    },
+    {
+      "dialogue_id": "a4b1682f-4bac-41f1-8be9-63cff3c6c167",
+      "character": "Umar Fuentes",
+      "stage_id": 2,
+      "qa_count": 12,
+      "turn_count": 2003
+    },
+    {
+      "dialogue_id": "9515b1d4-a172-419e-8b7a-43655d678062",
+      "character": "Erica Mack",
+      "stage_id": 2,
+      "qa_count": 11,
+      "turn_count": 2049
+    },
+    {
+      "dialogue_id": "550569bd-90ae-408b-b671-9f53e0b91538",
+      "character": "Isabelle Becker",
+      "stage_id": 2,
+      "qa_count": 12,
+      "turn_count": 2026
+    },
+    {
+      "dialogue_id": "510983e2-2041-4353-a820-bebe39a7e4a4",
+      "character": "Sachin West",
+      "stage_id": 2,
+      "qa_count": 12,
+      "turn_count": 1975
+    },
+    {
+      "dialogue_id": "ad3b8606-cf6c-4a51-ab30-9eeaaabb7a58",
+      "character": "Sylvie Steele",
+      "stage_id": 2,
+      "qa_count": 10,
+      "turn_count": 2076
+    },
+    {
+      "dialogue_id": "f2a43f17-0e90-46f6-81d2-99b9130c91c2",
+      "character": "Alannah Sosa",
+      "stage_id": 2,
+      "qa_count": 12,
+      "turn_count": 1919
+    },
+    {
+      "dialogue_id": "5d8fa862-8632-4c8e-ae4a-e20028fa1070",
+      "character": "Jemma Hendrix",
+      "stage_id": 2,
+      "qa_count": 11,
+      "turn_count": 2075
+    },
+    {
+      "dialogue_id": "d11c6c0d-1cf9-4c8a-8c1b-51e7cc2dc29f",
+      "character": "Andy Powell",
+      "stage_id": 2,
+      "qa_count": 11,
+      "turn_count": 2000
+    },
+    {
+      "dialogue_id": "4971330a-51ca-4ecb-a584-6a9598ff4dbb",
+      "character": "Lucian Spencer",
+      "stage_id": 2,
+      "qa_count": 10,
+      "turn_count": 2127
+    },
+    {
+      "dialogue_id": "f841dc97-2718-4403-8957-fa1ba82bed72",
+      "character": "Yunus Vang",
+      "stage_id": 2,
+      "qa_count": 10,
+      "turn_count": 2005
+    },
+    {
+      "dialogue_id": "373fab88-f6a9-44e9-a788-01c9de141bbd",
+      "character": "Ann Brock",
+      "stage_id": 2,
+      "qa_count": 12,
+      "turn_count": 2037
+    },
+    {
+      "dialogue_id": "454e2a8e-20af-4eaf-87fc-bf12fd79a9a2",
+      "character": "Ayesha Chan",
+      "stage_id": 2,
+      "qa_count": 12,
+      "turn_count": 2127
+    },
+    {
+      "dialogue_id": "63314759-3696-43dc-a615-02f337e71e92",
+      "character": "Aleena Malone",
+      "stage_id": 2,
+      "qa_count": 17,
+      "turn_count": 1813
+    },
+    {
+      "dialogue_id": "28d2617c-6a76-4f2e-8bb0-9ffaa3a582ea",
+      "character": "Calum Parks",
+      "stage_id": 2,
+      "qa_count": 12,
+      "turn_count": 1954
+    },
+    {
+      "dialogue_id": "6af1c84d-5427-41c4-a035-edf43a3877ac",
+      "character": "Ralph Mendoza",
+      "stage_id": 2,
+      "qa_count": 12,
+      "turn_count": 2134
+    },
+    {
+      "dialogue_id": "ab23363f-2836-4a86-9d9d-0a623c22a91d",
+      "character": "Katherine Price",
+      "stage_id": 2,
+      "qa_count": 11,
+      "turn_count": 2129
+    },
+    {
+      "dialogue_id": "aedc7ff7-fc4d-4806-a418-e0129700abad",
+      "character": "Matilda Reilly",
+      "stage_id": 2,
+      "qa_count": 11,
+      "turn_count": 1990
+    },
+    {
+      "dialogue_id": "6b98f7dc-786e-4c1b-a4f5-e4bd260b8ba4",
+      "character": "Amir Beltran",
+      "stage_id": 2,
+      "qa_count": 11,
+      "turn_count": 2055
+    },
+    {
+      "dialogue_id": "b0d5d616-8e97-435e-85d7-8d226a54ef68",
+      "character": "Ines Small",
+      "stage_id": 2,
+      "qa_count": 10,
+      "turn_count": 1978
+    },
+    {
+      "dialogue_id": "52f36b14-9f3a-48da-97af-2c72e0f10ceb",
+      "character": "Seren Burgess",
+      "stage_id": 2,
+      "qa_count": 10,
+      "turn_count": 1999
+    },
+    {
+      "dialogue_id": "4d1ef74b-37dd-406e-bc46-84e9eb97aa79",
+      "character": "Lowri Harding",
+      "stage_id": 2,
+      "qa_count": 10,
+      "turn_count": 2166
+    },
+    {
+      "dialogue_id": "e4caffa4-496a-42d8-99dd-cde2997d5f42",
+      "character": "Ashwin Olson",
+      "stage_id": 3,
+      "qa_count": 11,
+      "turn_count": 2083
+    },
+    {
+      "dialogue_id": "66675fc0-e614-451e-b4ee-0f1eef9b69f8",
+      "character": "Sulayman Slater",
+      "stage_id": 3,
+      "qa_count": 11,
+      "turn_count": 2012
+    },
+    {
+      "dialogue_id": "89118c54-2529-42d5-a209-1ee8e775f51d",
+      "character": "Maya Anderson",
+      "stage_id": 3,
+      "qa_count": 14,
+      "turn_count": 1985
+    },
+    {
+      "dialogue_id": "1370f6cf-70c0-4d4d-89b8-a91e0af76645",
+      "character": "Marco Burch",
+      "stage_id": 3,
+      "qa_count": 12,
+      "turn_count": 1956
+    },
+    {
+      "dialogue_id": "3bf5411c-28c7-41d7-aada-3c70af83c095",
+      "character": "Blaine Garcia",
+      "stage_id": 3,
+      "qa_count": 11,
+      "turn_count": 1897
+    },
+    {
+      "dialogue_id": "1b77e098-8fb4-473e-a52b-ad2dc7598d61",
+      "character": "Fergus James",
+      "stage_id": 3,
+      "qa_count": 11,
+      "turn_count": 1973
+    },
+    {
+      "dialogue_id": "4c84a731-83c3-4fc1-af17-473d276aca0d",
+      "character": "Louise Hines",
+      "stage_id": 3,
+      "qa_count": 10,
+      "turn_count": 2070
+    },
+    {
+      "dialogue_id": "50a52d5c-3e21-4643-b0ee-eb4a8a74b747",
+      "character": "Eleri Kirk",
+      "stage_id": 3,
+      "qa_count": 11,
+      "turn_count": 2005
+    },
+    {
+      "dialogue_id": "cce03858-ffd5-43e1-af4b-2a114cded026",
+      "character": "Haaris Benton",
+      "stage_id": 3,
+      "qa_count": 15,
+      "turn_count": 2074
+    },
+    {
+      "dialogue_id": "c758d8c8-517a-4018-a0b7-1bdfb9c22908",
+      "character": "Elouise Kline",
+      "stage_id": 3,
+      "qa_count": 10,
+      "turn_count": 1935
+    },
+    {
+      "dialogue_id": "882fc7dc-18b9-4726-8a47-b43df1887a8b",
+      "character": "Dana Dixon",
+      "stage_id": 3,
+      "qa_count": 12,
+      "turn_count": 2198
+    },
+    {
+      "dialogue_id": "6589f52f-3ff5-49a6-8cbf-9d2b79b16bd2",
+      "character": "Deborah Rhodes",
+      "stage_id": 3,
+      "qa_count": 11,
+      "turn_count": 1983
+    },
+    {
+      "dialogue_id": "574ed800-7faf-48f1-8d0b-9c6dbc1ce61e",
+      "character": "Keanu Quinn",
+      "stage_id": 3,
+      "qa_count": 12,
+      "turn_count": 2066
+    },
+    {
+      "dialogue_id": "2f066361-ff32-47a4-b4b3-29d64f442667",
+      "character": "Yuvraj Bernard",
+      "stage_id": 3,
+      "qa_count": 9,
+      "turn_count": 2042
+    },
+    {
+      "dialogue_id": "3afcab38-8745-414f-a922-59e3a5cb026b",
+      "character": "Romeo Stark",
+      "stage_id": 3,
+      "qa_count": 17,
+      "turn_count": 2016
+    },
+    {
+      "dialogue_id": "ad9f9b2a-9baf-4350-9092-d0a4cab32b1d",
+      "character": "Hari Arnold",
+      "stage_id": 3,
+      "qa_count": 11,
+      "turn_count": 1932
+    },
+    {
+      "dialogue_id": "7f2b3ce4-763e-438c-94f7-32e1ada9e4cf",
+      "character": "Fabian Romero",
+      "stage_id": 3,
+      "qa_count": 10,
+      "turn_count": 1959
+    },
+    {
+      "dialogue_id": "1db31ef1-b99c-4484-af70-e5883e722825",
+      "character": "Christina Hoffman",
+      "stage_id": 3,
+      "qa_count": 12,
+      "turn_count": 2081
+    },
+    {
+      "dialogue_id": "c79e4dc3-db50-42e5-ba4c-2f739c1a3484",
+      "character": "Rhonda Clements",
+      "stage_id": 3,
+      "qa_count": 19,
+      "turn_count": 1978
+    },
+    {
+      "dialogue_id": "67c4697d-1edd-4bc6-982e-05f52256c102",
+      "character": "Vanessa Garner",
+      "stage_id": 3,
+      "qa_count": 11,
+      "turn_count": 2068
+    },
+    {
+      "dialogue_id": "fb796a68-e6cc-40b7-b0f1-7b287d4eacf2",
+      "character": "Bertha Carson",
+      "stage_id": 3,
+      "qa_count": 10,
+      "turn_count": 2120
+    },
+    {
+      "dialogue_id": "2a83a5a0-fab1-45c0-a623-1b5810c4b84b",
+      "character": "Raja Moody",
+      "stage_id": 3,
+      "qa_count": 12,
+      "turn_count": 2057
+    },
+    {
+      "dialogue_id": "0423b145-094f-4ac1-83a5-b390d0dda3c7",
+      "character": "Sufyan Webster",
+      "stage_id": 3,
+      "qa_count": 10,
+      "turn_count": 1928
+    },
+    {
+      "dialogue_id": "4825acb0-60b8-4352-9856-50ed58c32adc",
+      "character": "Amina Fulton",
+      "stage_id": 3,
+      "qa_count": 11,
+      "turn_count": 2023
+    },
+    {
+      "dialogue_id": "44ff7049-bb33-42eb-a57f-215c84ec0c8a",
+      "character": "Raphael Bryant",
+      "stage_id": 3,
+      "qa_count": 12,
+      "turn_count": 1946
+    },
+    {
+      "dialogue_id": "2fd1ae9c-c30a-4cb6-b6a0-de8948930880",
+      "character": "Spencer Gray",
+      "stage_id": 3,
+      "qa_count": 12,
+      "turn_count": 2013
+    },
+    {
+      "dialogue_id": "e37982b0-7b72-4ad8-8bea-493dced702a1",
+      "character": "Nettie Gomez",
+      "stage_id": 3,
+      "qa_count": 12,
+      "turn_count": 1889
+    },
+    {
+      "dialogue_id": "3b895baf-6d4b-4a44-9515-0ef8149477d8",
+      "character": "Eddie Mcgee",
+      "stage_id": 3,
+      "qa_count": 12,
+      "turn_count": 1901
+    },
+    {
+      "dialogue_id": "f8d6b669-8957-476b-8603-48bfba81b05b",
+      "character": "Lacie Wilkerson",
+      "stage_id": 3,
+      "qa_count": 11,
+      "turn_count": 2110
+    },
+    {
+      "dialogue_id": "229997b6-8916-4d54-9da8-157d88fc9712",
+      "character": "Dhruv Maldonado",
+      "stage_id": 3,
+      "qa_count": 12,
+      "turn_count": 1988
+    },
+    {
+      "dialogue_id": "674e4649-cc37-4bab-9a25-a42661136c6d",
+      "character": "Milan Rowe",
+      "stage_id": 3,
+      "qa_count": 11,
+      "turn_count": 2071
+    },
+    {
+      "dialogue_id": "d2e2cc87-563c-4b67-b8d2-16bfae7afc15",
+      "character": "Trey Salazar",
+      "stage_id": 3,
+      "qa_count": 14,
+      "turn_count": 1894
+    },
+    {
+      "dialogue_id": "3ce0b44f-4660-40e2-b99d-3d693feb7e11",
+      "character": "Josiah Riley",
+      "stage_id": 3,
+      "qa_count": 11,
+      "turn_count": 1877
+    },
+    {
+      "dialogue_id": "c47c866a-c829-44d7-a72f-5b4ee0d6050e",
+      "character": "Salman Brown",
+      "stage_id": 3,
+      "qa_count": 11,
+      "turn_count": 2156
+    },
+    {
+      "dialogue_id": "b1f8ae84-aadf-4eb4-802d-d4c79b9d2248",
+      "character": "Abdirahman Small",
+      "stage_id": 3,
+      "qa_count": 11,
+      "turn_count": 2018
+    },
+    {
+      "dialogue_id": "34432c35-00b1-4224-9886-ccc9e49a92bb",
+      "character": "Eliza Barker",
+      "stage_id": 3,
+      "qa_count": 10,
+      "turn_count": 1950
+    },
+    {
+      "dialogue_id": "ba9c2a7c-45dd-49cc-af62-766b2dfaea98",
+      "character": "Jonathan Riley",
+      "stage_id": 3,
+      "qa_count": 8,
+      "turn_count": 2052
+    },
+    {
+      "dialogue_id": "9316bdd2-22cd-4ce4-8760-4383685e77fc",
+      "character": "Omer Morton",
+      "stage_id": 3,
+      "qa_count": 12,
+      "turn_count": 2069
+    },
+    {
+      "dialogue_id": "4a680d92-06af-4f8b-9843-47c8bbbad265",
+      "character": "Sidney Rios",
+      "stage_id": 3,
+      "qa_count": 11,
+      "turn_count": 1908
+    },
+    {
+      "dialogue_id": "cc2e4a2a-284a-45dd-aac3-af10b1038329",
+      "character": "Anaya Cooke",
+      "stage_id": 3,
+      "qa_count": 16,
+      "turn_count": 2046
+    },
+    {
+      "dialogue_id": "861d80b0-34c2-4a08-90dd-8cb97298282e",
+      "character": "Adam Parsons",
+      "stage_id": 3,
+      "qa_count": 12,
+      "turn_count": 2086
+    },
+    {
+      "dialogue_id": "c158f645-01ad-41ab-8953-a631c7e666b1",
+      "character": "Liyana Robertson",
+      "stage_id": 3,
+      "qa_count": 9,
+      "turn_count": 1918
+    },
+    {
+      "dialogue_id": "54ae3594-f996-4681-b67f-f33ae6537a47",
+      "character": "Anish Duffy",
+      "stage_id": 3,
+      "qa_count": 10,
+      "turn_count": 2044
+    },
+    {
+      "dialogue_id": "12adc908-8c78-48b1-9150-243767a10377",
+      "character": "Beatrice Sloan",
+      "stage_id": 3,
+      "qa_count": 11,
+      "turn_count": 1957
+    },
+    {
+      "dialogue_id": "ab7f9219-ec87-4691-9b09-4a420a3e2af8",
+      "character": "Jude Ware",
+      "stage_id": 3,
+      "qa_count": 10,
+      "turn_count": 2124
+    },
+    {
+      "dialogue_id": "743ac9c1-67d0-4912-87d5-7ac509478c95",
+      "character": "Robyn Duncan",
+      "stage_id": 3,
+      "qa_count": 10,
+      "turn_count": 2085
+    },
+    {
+      "dialogue_id": "1044a871-a50f-465f-a2eb-4cfaa91c53ef",
+      "character": "Xanthe Carter",
+      "stage_id": 3,
+      "qa_count": 11,
+      "turn_count": 2016
+    },
+    {
+      "dialogue_id": "187ce2ce-db48-462f-b220-b99bf588df6d",
+      "character": "Violet Poole",
+      "stage_id": 3,
+      "qa_count": 9,
+      "turn_count": 2021
+    },
+    {
+      "dialogue_id": "9ec956c6-926a-45d5-8b58-8c36412d5396",
+      "character": "Arron Matthews",
+      "stage_id": 3,
+      "qa_count": 16,
+      "turn_count": 2071
+    },
+    {
+      "dialogue_id": "afbd4e35-6da6-4e07-83e3-c3060bc1ecd1",
+      "character": "Shauna Fuentes",
+      "stage_id": 3,
+      "qa_count": 10,
+      "turn_count": 1956
+    },
+    {
+      "dialogue_id": "7e2c5e4b-1623-4e87-8d57-c3a6592acad3",
+      "character": "Kathryn Wagner",
+      "stage_id": 3,
+      "qa_count": 11,
+      "turn_count": 1891
+    },
+    {
+      "dialogue_id": "96a570d6-216b-4eab-a5ab-f7e692cf03c8",
+      "character": "Olivier Dixon",
+      "stage_id": 3,
+      "qa_count": 11,
+      "turn_count": 2131
+    },
+    {
+      "dialogue_id": "1881ac52-e11a-4755-8410-82bda03a8f42",
+      "character": "Carol Roth",
+      "stage_id": 3,
+      "qa_count": 11,
+      "turn_count": 2084
+    },
+    {
+      "dialogue_id": "de649325-afbd-4ac8-82fe-865a2cf88ac6",
+      "character": "Myles Alexander",
+      "stage_id": 3,
+      "qa_count": 12,
+      "turn_count": 2102
+    },
+    {
+      "dialogue_id": "1b173d6f-4880-48de-8a5a-3822b275a07a",
+      "character": "Kallum Suarez",
+      "stage_id": 3,
+      "qa_count": 12,
+      "turn_count": 1885
+    },
+    {
+      "dialogue_id": "a16ab373-c481-494f-bf49-8cd9b4babf2a",
+      "character": "Adnan Washington",
+      "stage_id": 3,
+      "qa_count": 10,
+      "turn_count": 2014
+    },
+    {
+      "dialogue_id": "e9ba8ba8-01f8-400c-9ead-3e9bf0b3428c",
+      "character": "Rio Crosby",
+      "stage_id": 3,
+      "qa_count": 11,
+      "turn_count": 2058
+    },
+    {
+      "dialogue_id": "ee68fd89-2bfc-4037-a45a-40c45b01745f",
+      "character": "Kelvin Ford",
+      "stage_id": 3,
+      "qa_count": 13,
+      "turn_count": 2120
+    },
+    {
+      "dialogue_id": "b45cf52c-5c04-4f0d-972c-7679e369cc08",
+      "character": "Sonny Bryan",
+      "stage_id": 3,
+      "qa_count": 10,
+      "turn_count": 2141
+    },
+    {
+      "dialogue_id": "09c30d55-18d5-429a-8fce-52f2e646444b",
+      "character": "Ivan Ochoa",
+      "stage_id": 3,
+      "qa_count": 12,
+      "turn_count": 2121
+    },
+    {
+      "dialogue_id": "1e5c514f-b5c2-48d2-9a5c-785ddfb6578a",
+      "character": "Seamus Marks",
+      "stage_id": 3,
+      "qa_count": 18,
+      "turn_count": 2014
+    },
+    {
+      "dialogue_id": "7c1dce21-2a57-4821-8b48-91dbf977161e",
+      "character": "Douglas Rush",
+      "stage_id": 3,
+      "qa_count": 12,
+      "turn_count": 2047
+    },
+    {
+      "dialogue_id": "c58cc16d-b880-42d1-b380-37276b15035d",
+      "character": "Sameer Rivers",
+      "stage_id": 3,
+      "qa_count": 17,
+      "turn_count": 2065
+    },
+    {
+      "dialogue_id": "283b054d-6772-43c8-b188-7da9fa95668f",
+      "character": "Olivier Bush",
+      "stage_id": 3,
+      "qa_count": 11,
+      "turn_count": 2036
+    },
+    {
+      "dialogue_id": "5d46c64d-8361-4499-9f06-586c924c1518",
+      "character": "Alexandria Delgado",
+      "stage_id": 3,
+      "qa_count": 19,
+      "turn_count": 2061
+    },
+    {
+      "dialogue_id": "843c2bc0-01c2-4ffe-a511-0d4eea6eede9",
+      "character": "Owais May",
+      "stage_id": 3,
+      "qa_count": 12,
+      "turn_count": 2100
+    },
+    {
+      "dialogue_id": "b99d88ae-d009-47a8-b84f-6acc91e69db5",
+      "character": "Archie Sheppard",
+      "stage_id": 3,
+      "qa_count": 11,
+      "turn_count": 1978
+    },
+    {
+      "dialogue_id": "4ad54cdd-be33-4f6d-8bfa-6c3d330a02ae",
+      "character": "Aoife Lambert",
+      "stage_id": 3,
+      "qa_count": 10,
+      "turn_count": 1971
+    },
+    {
+      "dialogue_id": "1c53df20-48d4-4619-a696-88e12b06bb59",
+      "character": "Kenneth Guerrero",
+      "stage_id": 3,
+      "qa_count": 15,
+      "turn_count": 2216
+    },
+    {
+      "dialogue_id": "4999c9db-3372-44b3-a6de-bc84c80dfdc6",
+      "character": "Aoife Villa",
+      "stage_id": 3,
+      "qa_count": 11,
+      "turn_count": 2082
+    },
+    {
+      "dialogue_id": "6d55a01f-8d33-43ac-af3c-870c7730f84e",
+      "character": "Brianna Pearce",
+      "stage_id": 3,
+      "qa_count": 16,
+      "turn_count": 2031
+    },
+    {
+      "dialogue_id": "19af6c62-f62f-4770-969c-10aec4c242cd",
+      "character": "Neha Serrano",
+      "stage_id": 3,
+      "qa_count": 11,
+      "turn_count": 2035
+    },
+    {
+      "dialogue_id": "d07a67bc-df59-4092-9e3f-31dc054c81d2",
+      "character": "Ciaran Bryant",
+      "stage_id": 3,
+      "qa_count": 13,
+      "turn_count": 2075
+    },
+    {
+      "dialogue_id": "a00fe1f7-531c-4843-a075-07d2f7c6658f",
+      "character": "Penelope Lynn",
+      "stage_id": 3,
+      "qa_count": 11,
+      "turn_count": 1879
+    },
+    {
+      "dialogue_id": "904f44bd-3f0e-48dd-b56b-54a905a08add",
+      "character": "Stella Bryant",
+      "stage_id": 3,
+      "qa_count": 10,
+      "turn_count": 1934
+    },
+    {
+      "dialogue_id": "54ede89e-2b07-4b91-9504-ab5795481ee9",
+      "character": "Eden Adkins",
+      "stage_id": 3,
+      "qa_count": 10,
+      "turn_count": 1951
+    },
+    {
+      "dialogue_id": "3e83a9dc-178e-477b-bf60-5171efc625af",
+      "character": "Elsie Cox",
+      "stage_id": 3,
+      "qa_count": 10,
+      "turn_count": 2012
+    },
+    {
+      "dialogue_id": "00e43c7f-984a-40e2-95c5-6b134cc8b945",
+      "character": "Emilia Edwards",
+      "stage_id": 3,
+      "qa_count": 12,
+      "turn_count": 1939
+    },
+    {
+      "dialogue_id": "56c624c5-23d0-469d-a189-c0a2cd2cc0d9",
+      "character": "Macauley Cooper",
+      "stage_id": 3,
+      "qa_count": 10,
+      "turn_count": 2077
+    },
+    {
+      "dialogue_id": "6580a64c-db22-46b8-90dc-b377d8579244",
+      "character": "Claire Dejesus",
+      "stage_id": 3,
+      "qa_count": 11,
+      "turn_count": 2185
+    },
+    {
+      "dialogue_id": "5a23d5ba-b7f7-4cb6-850b-efc1b3ba91cd",
+      "character": "Adrian McCann",
+      "stage_id": 3,
+      "qa_count": 13,
+      "turn_count": 2155
+    },
+    {
+      "dialogue_id": "812e2402-8d2c-450d-a344-f4d98a31e3c4",
+      "character": "Jeremiah Fox",
+      "stage_id": 3,
+      "qa_count": 10,
+      "turn_count": 2072
+    },
+    {
+      "dialogue_id": "3999c527-e2ff-433e-bddd-0845a61be3b5",
+      "character": "Cade Abbott",
+      "stage_id": 3,
+      "qa_count": 11,
+      "turn_count": 1920
+    },
+    {
+      "dialogue_id": "1f2bf38e-79ac-4f11-95e2-773fad9c7a45",
+      "character": "Rose Webster",
+      "stage_id": 3,
+      "qa_count": 12,
+      "turn_count": 1973
+    },
+    {
+      "dialogue_id": "6d168b7e-367d-4c65-baa9-f73d640ce3d4",
+      "character": "Haroon Matthams",
+      "stage_id": 3,
+      "qa_count": 9,
+      "turn_count": 2130
+    },
+    {
+      "dialogue_id": "8b9714d4-99e5-480b-b33b-e692e93944d1",
+      "character": "Evangeline Joyce",
+      "stage_id": 3,
+      "qa_count": 12,
+      "turn_count": 1958
+    },
+    {
+      "dialogue_id": "a8a91a25-7929-4deb-a23f-0c00b273136f",
+      "character": "Jenny Savage",
+      "stage_id": 3,
+      "qa_count": 17,
+      "turn_count": 2065
+    },
+    {
+      "dialogue_id": "6dd10eee-fc2d-4d17-980f-0c64e94a951c",
+      "character": "Esme Donovan",
+      "stage_id": 3,
+      "qa_count": 12,
+      "turn_count": 1866
+    },
+    {
+      "dialogue_id": "5b18a563-6947-4410-82a0-3a80e485ee48",
+      "character": "Honey Vasquez",
+      "stage_id": 3,
+      "qa_count": 9,
+      "turn_count": 1934
+    },
+    {
+      "dialogue_id": "bcec1aac-54ff-4afa-86d8-9081742eaff1",
+      "character": "Edie Griffin",
+      "stage_id": 3,
+      "qa_count": 10,
+      "turn_count": 2047
+    },
+    {
+      "dialogue_id": "189437c8-bbf1-4884-a818-ef8976ff3b4b",
+      "character": "Helena Chavez",
+      "stage_id": 3,
+      "qa_count": 17,
+      "turn_count": 2070
+    },
+    {
+      "dialogue_id": "4dcad24c-ddb0-48b4-a65f-a68a95818fab",
+      "character": "Linda Henderson",
+      "stage_id": 3,
+      "qa_count": 11,
+      "turn_count": 2033
+    },
+    {
+      "dialogue_id": "0a408d6c-665c-4b9e-aa70-08300b304572",
+      "character": "Christian Miles",
+      "stage_id": 3,
+      "qa_count": 17,
+      "turn_count": 1984
+    },
+    {
+      "dialogue_id": "38405403-8b8a-4509-8efd-22082c06e521",
+      "character": "Maya Jackson",
+      "stage_id": 3,
+      "qa_count": 9,
+      "turn_count": 2054
+    },
+    {
+      "dialogue_id": "7fcd6df4-093b-4251-b022-b40756535c0a",
+      "character": "Wilson Logan",
+      "stage_id": 3,
+      "qa_count": 10,
+      "turn_count": 2071
+    },
+    {
+      "dialogue_id": "6026c1b7-bc9e-4fe5-8163-a04a8d0781b9",
+      "character": "Cain Ware",
+      "stage_id": 3,
+      "qa_count": 12,
+      "turn_count": 1940
+    },
+    {
+      "dialogue_id": "b395fdd5-b342-4225-99ca-620cbf85700c",
+      "character": "Haseeb Bright",
+      "stage_id": 3,
+      "qa_count": 11,
+      "turn_count": 1996
+    },
+    {
+      "dialogue_id": "d03ebc9b-0d0c-43a2-9ea9-9d6f371a09fd",
+      "character": "Dawid Vance",
+      "stage_id": 3,
+      "qa_count": 11,
+      "turn_count": 2051
+    },
+    {
+      "dialogue_id": "14cfeeef-310f-4d85-aa5c-e295d5c03dea",
+      "character": "Lina Church",
+      "stage_id": 3,
+      "qa_count": 15,
+      "turn_count": 2146
+    },
+    {
+      "dialogue_id": "34fd5f0c-63ce-4eb9-ba0d-2b0d3e051d12",
+      "character": "Magnus Gallagher",
+      "stage_id": 3,
+      "qa_count": 10,
+      "turn_count": 2043
+    },
+    {
+      "dialogue_id": "786299ed-999d-4e95-a02d-ce56be959eda",
+      "character": "Lola Byrd",
+      "stage_id": 4,
+      "qa_count": 10,
+      "turn_count": 1942
+    },
+    {
+      "dialogue_id": "1ad92501-f058-416d-9c61-c26bff30eb93",
+      "character": "Samara Clark",
+      "stage_id": 4,
+      "qa_count": 11,
+      "turn_count": 1964
+    },
+    {
+      "dialogue_id": "35be3189-a183-4afe-9d6a-4a2e103453e6",
+      "character": "Gregory Odom",
+      "stage_id": 4,
+      "qa_count": 11,
+      "turn_count": 1903
+    },
+    {
+      "dialogue_id": "4af27f27-0a53-41ea-bd51-55c18fda8e7c",
+      "character": "Tyrell Franco",
+      "stage_id": 4,
+      "qa_count": 10,
+      "turn_count": 1962
+    },
+    {
+      "dialogue_id": "ba86dd4f-ca57-4a30-8976-90a265574a83",
+      "character": "Jessie Davenport",
+      "stage_id": 4,
+      "qa_count": 12,
+      "turn_count": 2146
+    },
+    {
+      "dialogue_id": "e139c483-4bb5-47ca-8e4e-6252b71acc21",
+      "character": "Jenny Garner",
+      "stage_id": 4,
+      "qa_count": 13,
+      "turn_count": 1917
+    },
+    {
+      "dialogue_id": "49814cdc-b673-495e-9d61-842097f13e45",
+      "character": "Humaira Sherman",
+      "stage_id": 4,
+      "qa_count": 10,
+      "turn_count": 1992
+    },
+    {
+      "dialogue_id": "cae62bfb-855d-4fc8-bcbe-ffb926f667e4",
+      "character": "Bailey Valenzuela",
+      "stage_id": 4,
+      "qa_count": 11,
+      "turn_count": 2086
+    },
+    {
+      "dialogue_id": "808086ae-c7a6-4f94-8ff3-6eabb15d57a6",
+      "character": "Bernard Gilbert",
+      "stage_id": 4,
+      "qa_count": 16,
+      "turn_count": 1905
+    },
+    {
+      "dialogue_id": "b5b99022-3e24-44af-a432-2cdc5e30302e",
+      "character": "Norma Gibbons",
+      "stage_id": 4,
+      "qa_count": 12,
+      "turn_count": 2009
+    },
+    {
+      "dialogue_id": "dd543a05-e623-48f8-8147-6ba9f999fadc",
+      "character": "Maia Lloyd",
+      "stage_id": 4,
+      "qa_count": 9,
+      "turn_count": 1935
+    },
+    {
+      "dialogue_id": "8a6978e7-5a26-4f1c-bed1-a1d9f469d8b3",
+      "character": "Francesca Wilkins",
+      "stage_id": 4,
+      "qa_count": 10,
+      "turn_count": 2036
+    },
+    {
+      "dialogue_id": "919e4978-a0de-4de9-b554-92ea3529a0b4",
+      "character": "Andreas House",
+      "stage_id": 4,
+      "qa_count": 10,
+      "turn_count": 2099
+    },
+    {
+      "dialogue_id": "868e4fe9-6ccf-468e-a579-67eaa17b9d4b",
+      "character": "Maliha Chan",
+      "stage_id": 4,
+      "qa_count": 17,
+      "turn_count": 2073
+    },
+    {
+      "dialogue_id": "ade82157-f6d6-4dd8-a2c1-b3ddb1fe6003",
+      "character": "Stuart Obrien",
+      "stage_id": 4,
+      "qa_count": 11,
+      "turn_count": 2042
+    },
+    {
+      "dialogue_id": "d4c35f99-ec13-41cb-aff2-8645fe68c79f",
+      "character": "Gideon Vaughan",
+      "stage_id": 4,
+      "qa_count": 16,
+      "turn_count": 1974
+    },
+    {
+      "dialogue_id": "33fe038e-259a-4895-9fae-7727d40b31a3",
+      "character": "Abraham Dixon",
+      "stage_id": 4,
+      "qa_count": 12,
+      "turn_count": 1873
+    },
+    {
+      "dialogue_id": "f4c37c03-43e1-4646-a5d2-297160fb5e28",
+      "character": "Donovan Vang",
+      "stage_id": 4,
+      "qa_count": 10,
+      "turn_count": 2083
+    },
+    {
+      "dialogue_id": "04545c0f-992f-42e9-bb3a-6f4711d8dd4d",
+      "character": "Orla Valentine",
+      "stage_id": 4,
+      "qa_count": 15,
+      "turn_count": 1906
+    },
+    {
+      "dialogue_id": "8a724ae2-967c-4099-8e0e-078810096511",
+      "character": "Bryony Potts",
+      "stage_id": 4,
+      "qa_count": 9,
+      "turn_count": 1904
+    },
+    {
+      "dialogue_id": "ae276eb6-8210-4598-a6d3-247ef9b9c0eb",
+      "character": "Demi Gregory",
+      "stage_id": 4,
+      "qa_count": 10,
+      "turn_count": 2239
+    },
+    {
+      "dialogue_id": "592667f4-3d99-4c3e-8753-fae7957e49c4",
+      "character": "Nana Fields",
+      "stage_id": 4,
+      "qa_count": 11,
+      "turn_count": 1960
+    },
+    {
+      "dialogue_id": "c45822a1-adf5-4348-b059-69a4b57f3ead",
+      "character": "Harry Smith",
+      "stage_id": 4,
+      "qa_count": 12,
+      "turn_count": 1910
+    },
+    {
+      "dialogue_id": "bc3e8586-3cc9-420e-b97d-b565d66f12c4",
+      "character": "Ned Pollard",
+      "stage_id": 4,
+      "qa_count": 12,
+      "turn_count": 1918
+    },
+    {
+      "dialogue_id": "af19c583-5b3b-4071-9e40-e44e43670740",
+      "character": "Clarence Norman",
+      "stage_id": 4,
+      "qa_count": 11,
+      "turn_count": 2176
+    },
+    {
+      "dialogue_id": "157c030a-d4f3-4304-9073-db4474f9cd5f",
+      "character": "Darcey Hartley",
+      "stage_id": 4,
+      "qa_count": 16,
+      "turn_count": 2071
+    },
+    {
+      "dialogue_id": "b2d1362a-1080-4eaf-9231-08769c035474",
+      "character": "Mabel English",
+      "stage_id": 4,
+      "qa_count": 10,
+      "turn_count": 2030
+    },
+    {
+      "dialogue_id": "e2e1d7e4-00f6-40a0-9656-0def9557dd35",
+      "character": "Sian Wilson",
+      "stage_id": 4,
+      "qa_count": 11,
+      "turn_count": 1890
+    },
+    {
+      "dialogue_id": "6b8f5ad5-c38a-4b2b-b1b1-82ddca4e26fc",
+      "character": "Sian Meza",
+      "stage_id": 4,
+      "qa_count": 12,
+      "turn_count": 2155
+    },
+    {
+      "dialogue_id": "f930608d-35c3-4d44-8858-c9440b1f52ca",
+      "character": "Mollie Hill",
+      "stage_id": 4,
+      "qa_count": 10,
+      "turn_count": 1950
+    },
+    {
+      "dialogue_id": "5929a30a-2e6e-4d48-8529-acd11eff4dbd",
+      "character": "Jude Pham",
+      "stage_id": 4,
+      "qa_count": 11,
+      "turn_count": 1948
+    },
+    {
+      "dialogue_id": "8acb0ca9-0da4-4083-aa4d-7119ee9e93da",
+      "character": "Hugo Berger",
+      "stage_id": 4,
+      "qa_count": 14,
+      "turn_count": 2080
+    },
+    {
+      "dialogue_id": "1df968d0-cc98-4632-88e6-c1612111f722",
+      "character": "Hamza Hanson",
+      "stage_id": 4,
+      "qa_count": 10,
+      "turn_count": 2065
+    },
+    {
+      "dialogue_id": "1cb408bd-a588-4e7b-bd41-c281101b7512",
+      "character": "Sumaya Atkins",
+      "stage_id": 4,
+      "qa_count": 14,
+      "turn_count": 1811
+    },
+    {
+      "dialogue_id": "6610e3f9-8f1f-4393-ac25-829fbd87d951",
+      "character": "Lyndon Little",
+      "stage_id": 4,
+      "qa_count": 12,
+      "turn_count": 1941
+    },
+    {
+      "dialogue_id": "9de55abb-87d6-410b-a778-61110ae0ab52",
+      "character": "Morgan Hunt",
+      "stage_id": 4,
+      "qa_count": 19,
+      "turn_count": 2129
+    },
+    {
+      "dialogue_id": "6987a552-acf1-41fe-856b-9418c9ce4ac9",
+      "character": "Nelson Mayo",
+      "stage_id": 4,
+      "qa_count": 12,
+      "turn_count": 1915
+    },
+    {
+      "dialogue_id": "07563707-8737-4bb3-8d83-1ccc14c821ae",
+      "character": "Keisha Crawford",
+      "stage_id": 4,
+      "qa_count": 14,
+      "turn_count": 2033
+    },
+    {
+      "dialogue_id": "3ab8c308-ee62-448b-8bec-457b49bb4926",
+      "character": "Sadia Haas",
+      "stage_id": 4,
+      "qa_count": 11,
+      "turn_count": 2112
+    },
+    {
+      "dialogue_id": "b532111e-cb0a-4b1e-baf9-a8105ca505e2",
+      "character": "Charlotte Howe",
+      "stage_id": 4,
+      "qa_count": 11,
+      "turn_count": 2121
+    },
+    {
+      "dialogue_id": "1ec7d796-a202-4f82-addf-cb874bd57b51",
+      "character": "Ida Valdez",
+      "stage_id": 4,
+      "qa_count": 11,
+      "turn_count": 2030
+    },
+    {
+      "dialogue_id": "1cf71c68-2cef-4796-9a92-b3256289975c",
+      "character": "Maariyah Edwards",
+      "stage_id": 4,
+      "qa_count": 11,
+      "turn_count": 1992
+    },
+    {
+      "dialogue_id": "51a034d8-0351-4239-a41a-2462c394f33e",
+      "character": "Tia Lucas",
+      "stage_id": 4,
+      "qa_count": 11,
+      "turn_count": 1939
+    },
+    {
+      "dialogue_id": "13d9ec9e-8763-42f1-b6a1-7026fc349cf7",
+      "character": "Alma Estrada",
+      "stage_id": 4,
+      "qa_count": 16,
+      "turn_count": 2033
+    },
+    {
+      "dialogue_id": "f2ab35de-2145-4972-a832-25a121a94202",
+      "character": "Lilly Finley",
+      "stage_id": 4,
+      "qa_count": 11,
+      "turn_count": 2026
+    },
+    {
+      "dialogue_id": "11cbe241-6557-4cc6-930d-811a57e79797",
+      "character": "Filip Riddle",
+      "stage_id": 4,
+      "qa_count": 15,
+      "turn_count": 1930
+    },
+    {
+      "dialogue_id": "65279b55-84e5-4d60-98d4-67a2d8302f65",
+      "character": "Chanelle Solis",
+      "stage_id": 4,
+      "qa_count": 11,
+      "turn_count": 2063
+    },
+    {
+      "dialogue_id": "d9619a0e-6620-42ff-96e0-96681d9ca1b1",
+      "character": "Benedict Tate",
+      "stage_id": 4,
+      "qa_count": 9,
+      "turn_count": 2132
+    },
+    {
+      "dialogue_id": "a0234b99-709a-46d2-a87d-50db49a6749d",
+      "character": "Jerry O'Moore",
+      "stage_id": 4,
+      "qa_count": 10,
+      "turn_count": 1903
+    },
+    {
+      "dialogue_id": "c55fbc04-fc3d-41a2-8213-35d52ccb31e5",
+      "character": "Gail Mcguire",
+      "stage_id": 4,
+      "qa_count": 10,
+      "turn_count": 2036
+    },
+    {
+      "dialogue_id": "29b10b23-d797-43cf-bd1f-6cad70edb55d",
+      "character": "Herman Castaneda",
+      "stage_id": 4,
+      "qa_count": 12,
+      "turn_count": 1983
+    },
+    {
+      "dialogue_id": "4aaad19c-9620-48a2-827d-e9e1056ed008",
+      "character": "Leighton Wiggins",
+      "stage_id": 4,
+      "qa_count": 11,
+      "turn_count": 2070
+    },
+    {
+      "dialogue_id": "03f36bf0-acc3-4bc0-939c-2ee50d305f63",
+      "character": "Evan Coffey",
+      "stage_id": 4,
+      "qa_count": 11,
+      "turn_count": 2003
+    },
+    {
+      "dialogue_id": "4adb0c87-4f1f-45f1-aefe-c82e02af7a00",
+      "character": "Davina Barr",
+      "stage_id": 4,
+      "qa_count": 11,
+      "turn_count": 2019
+    },
+    {
+      "dialogue_id": "54a6606a-1ef4-4417-9492-ba9b6a073c4c",
+      "character": "Lenny Finch",
+      "stage_id": 4,
+      "qa_count": 12,
+      "turn_count": 1845
+    },
+    {
+      "dialogue_id": "adf34dad-676c-4784-a8bf-b952e88ba397",
+      "character": "Freyja Mayo",
+      "stage_id": 4,
+      "qa_count": 10,
+      "turn_count": 1940
+    },
+    {
+      "dialogue_id": "3ac61d36-65a5-480c-b076-c6a348be52ed",
+      "character": "Anya Gentry",
+      "stage_id": 4,
+      "qa_count": 12,
+      "turn_count": 2182
+    },
+    {
+      "dialogue_id": "4d29512f-714a-4628-908d-b595e7b42a57",
+      "character": "Maxwell Burch",
+      "stage_id": 4,
+      "qa_count": 12,
+      "turn_count": 2057
+    },
+    {
+      "dialogue_id": "2711d09c-36c9-4652-bcbb-fe55fc234145",
+      "character": "Georgia Villa",
+      "stage_id": 4,
+      "qa_count": 12,
+      "turn_count": 2072
+    },
+    {
+      "dialogue_id": "b46419dd-5235-414b-afd6-d823a0c1e650",
+      "character": "Devon Harmon",
+      "stage_id": 4,
+      "qa_count": 11,
+      "turn_count": 1898
+    },
+    {
+      "dialogue_id": "12a0e1e4-bb26-4121-bb84-b1e2b7f0c9bf",
+      "character": "Lacie Mahoney",
+      "stage_id": 4,
+      "qa_count": 15,
+      "turn_count": 2027
+    },
+    {
+      "dialogue_id": "8e4a3c19-5af1-405f-a04f-44df2dd8ddf1",
+      "character": "Kian Swanson",
+      "stage_id": 4,
+      "qa_count": 12,
+      "turn_count": 1908
+    },
+    {
+      "dialogue_id": "378603fa-0ba0-4a5e-b755-4b216cd733ee",
+      "character": "Camilla Navarro",
+      "stage_id": 4,
+      "qa_count": 10,
+      "turn_count": 2108
+    },
+    {
+      "dialogue_id": "98e4e78b-e2c0-4c19-9bb5-325b09d16d84",
+      "character": "Zane Pacheco",
+      "stage_id": 4,
+      "qa_count": 16,
+      "turn_count": 2106
+    },
+    {
+      "dialogue_id": "d213e90a-93d9-4ce6-8823-8cbc60ecfab0",
+      "character": "Keanu Rocha",
+      "stage_id": 4,
+      "qa_count": 11,
+      "turn_count": 1806
+    },
+    {
+      "dialogue_id": "64355da9-a0cf-43b5-932d-5eae8e2ff7fa",
+      "character": "Belle Cantu",
+      "stage_id": 4,
+      "qa_count": 10,
+      "turn_count": 2053
+    },
+    {
+      "dialogue_id": "d9f4c241-7fec-41f5-891c-878cf69392c0",
+      "character": "Isobelle Henderson",
+      "stage_id": 4,
+      "qa_count": 11,
+      "turn_count": 2181
+    },
+    {
+      "dialogue_id": "70a50023-9954-447a-b7b0-c1bebf929bfa",
+      "character": "Alistair O'Doherty",
+      "stage_id": 4,
+      "qa_count": 11,
+      "turn_count": 1900
+    },
+    {
+      "dialogue_id": "f14b4a48-cbaa-409e-9847-a82491f2e3a8",
+      "character": "Humza Dillon",
+      "stage_id": 4,
+      "qa_count": 12,
+      "turn_count": 2079
+    },
+    {
+      "dialogue_id": "d52976eb-6e5b-459e-a403-a37d644fe25e",
+      "character": "Krish Brock",
+      "stage_id": 4,
+      "qa_count": 10,
+      "turn_count": 2049
+    },
+    {
+      "dialogue_id": "1ec147e6-ac00-454a-961c-eeca906ba3b9",
+      "character": "Ciara Wade",
+      "stage_id": 4,
+      "qa_count": 12,
+      "turn_count": 1909
+    },
+    {
+      "dialogue_id": "d2f2d41e-a096-4b6a-9823-be8a6d7f1962",
+      "character": "Asiya Parsons",
+      "stage_id": 4,
+      "qa_count": 11,
+      "turn_count": 2061
+    },
+    {
+      "dialogue_id": "83926b21-9e4e-4e86-8bf8-9d98aeeb3efd",
+      "character": "Pamela Fisher",
+      "stage_id": 4,
+      "qa_count": 11,
+      "turn_count": 1895
+    },
+    {
+      "dialogue_id": "533b6115-1d05-49a0-bba3-0d8ab0f0a6d9",
+      "character": "Brendan Cantrell",
+      "stage_id": 4,
+      "qa_count": 10,
+      "turn_count": 2075
+    },
+    {
+      "dialogue_id": "debb80ad-d021-4a9c-b204-774a890aac70",
+      "character": "Mina Velez",
+      "stage_id": 4,
+      "qa_count": 11,
+      "turn_count": 2007
+    },
+    {
+      "dialogue_id": "7a2d579f-8501-41e4-abc0-1757cd213954",
+      "character": "Rohan Henry",
+      "stage_id": 4,
+      "qa_count": 12,
+      "turn_count": 1932
+    },
+    {
+      "dialogue_id": "97369700-cde8-4cb6-8319-ca0e6eecb404",
+      "character": "Md Harrell",
+      "stage_id": 4,
+      "qa_count": 11,
+      "turn_count": 1879
+    },
+    {
+      "dialogue_id": "77fa3471-3dcf-4259-a663-ec60ae435b60",
+      "character": "Frank Burns",
+      "stage_id": 4,
+      "qa_count": 12,
+      "turn_count": 1974
+    },
+    {
+      "dialogue_id": "1ca87512-0600-44e1-b669-2d85d67c3abf",
+      "character": "Tegan Schneider",
+      "stage_id": 4,
+      "qa_count": 16,
+      "turn_count": 1930
+    },
+    {
+      "dialogue_id": "fd13e941-2dda-4573-9ecf-5b9d36906e5f",
+      "character": "Inaya Melendez",
+      "stage_id": 4,
+      "qa_count": 12,
+      "turn_count": 2013
+    },
+    {
+      "dialogue_id": "77106a17-4b35-4c59-9207-49272b955a58",
+      "character": "Harold Blevins",
+      "stage_id": 4,
+      "qa_count": 11,
+      "turn_count": 1875
+    },
+    {
+      "dialogue_id": "e6655b78-2e48-4b32-8f94-52fd161e9c8f",
+      "character": "Olive Daniels",
+      "stage_id": 4,
+      "qa_count": 10,
+      "turn_count": 1936
+    },
+    {
+      "dialogue_id": "fee74323-e214-40ea-b9b6-21921b9a1527",
+      "character": "Philippa Keller",
+      "stage_id": 4,
+      "qa_count": 10,
+      "turn_count": 2103
+    },
+    {
+      "dialogue_id": "bc80e06a-bc20-47a9-9590-accace5f47a3",
+      "character": "Eryn Hartman",
+      "stage_id": 4,
+      "qa_count": 9,
+      "turn_count": 1987
+    },
+    {
+      "dialogue_id": "4145c2eb-f505-4221-81bb-2dd7a2f57a60",
+      "character": "Heather Wagner",
+      "stage_id": 4,
+      "qa_count": 10,
+      "turn_count": 2155
+    },
+    {
+      "dialogue_id": "ef45ce72-9501-4f94-a4b0-2579e0a356f3",
+      "character": "Larissa Riggs",
+      "stage_id": 4,
+      "qa_count": 12,
+      "turn_count": 2093
+    },
+    {
+      "dialogue_id": "22a5c5bd-5a5d-465d-836a-0b1fe38e78b4",
+      "character": "Chiara Barber",
+      "stage_id": 4,
+      "qa_count": 15,
+      "turn_count": 2147
+    },
+    {
+      "dialogue_id": "be6a70cf-afcb-46c0-83d9-ad1a7eee8805",
+      "character": "Cerys Knight",
+      "stage_id": 4,
+      "qa_count": 12,
+      "turn_count": 1884
+    },
+    {
+      "dialogue_id": "8e6079e1-ca74-419f-a0ff-bab8e5ddae62",
+      "character": "Ava-Rose Anderson",
+      "stage_id": 4,
+      "qa_count": 12,
+      "turn_count": 2131
+    },
+    {
+      "dialogue_id": "60873d77-1202-4cce-8606-b16340765a4c",
+      "character": "Adele Anderson",
+      "stage_id": 4,
+      "qa_count": 11,
+      "turn_count": 1996
+    },
+    {
+      "dialogue_id": "41460097-1529-47e9-9695-ad4ff3a28d5a",
+      "character": "Lilly Dominguez",
+      "stage_id": 4,
+      "qa_count": 13,
+      "turn_count": 2063
+    },
+    {
+      "dialogue_id": "e795e207-968a-4f6a-bf8c-5c52dfe52d1e",
+      "character": "Fletcher England",
+      "stage_id": 4,
+      "qa_count": 14,
+      "turn_count": 1984
+    },
+    {
+      "dialogue_id": "59f4456d-37f6-4cfb-9347-4cc42c5d9f54",
+      "character": "Haris Cordova",
+      "stage_id": 4,
+      "qa_count": 17,
+      "turn_count": 2052
+    },
+    {
+      "dialogue_id": "a8ec5300-e17c-4df9-8f71-0d703f7073eb",
+      "character": "Dana Mann",
+      "stage_id": 4,
+      "qa_count": 11,
+      "turn_count": 1991
+    },
+    {
+      "dialogue_id": "c67404ff-d531-470b-9a20-5f76767af638",
+      "character": "Beau Fischer",
+      "stage_id": 4,
+      "qa_count": 11,
+      "turn_count": 2086
+    },
+    {
+      "dialogue_id": "5925bdeb-c5bc-423f-b531-c122602b72a0",
+      "character": "Larry Short",
+      "stage_id": 4,
+      "qa_count": 11,
+      "turn_count": 2063
+    },
+    {
+      "dialogue_id": "380265ca-d2b8-46b9-9dd1-573a6739d1ee",
+      "character": "Samara Ford",
+      "stage_id": 4,
+      "qa_count": 18,
+      "turn_count": 1980
+    },
+    {
+      "dialogue_id": "fb542855-ec15-41c0-8671-f884435770a4",
+      "character": "Gabriel Norman",
+      "stage_id": 4,
+      "qa_count": 10,
+      "turn_count": 2000
+    },
+    {
+      "dialogue_id": "9be02e3a-de90-4b02-8adc-af4e16bb0f12",
+      "character": "Aryan Oconnor",
+      "stage_id": 4,
+      "qa_count": 16,
+      "turn_count": 2086
+    },
+    {
+      "dialogue_id": "a2f71319-448c-40ae-8493-0b475fb6cd3f",
+      "character": "Saira Aguilar",
+      "stage_id": 4,
+      "qa_count": 11,
+      "turn_count": 1969
+    },
+    {
+      "dialogue_id": "8093fa1f-894f-4188-804e-65d093c4dd0b",
+      "character": "Kasey Walter",
+      "stage_id": 5,
+      "qa_count": 10,
+      "turn_count": 1927
+    },
+    {
+      "dialogue_id": "ddce4114-2e96-41e1-ac45-daf63567df0a",
+      "character": "Kaitlin Butler",
+      "stage_id": 5,
+      "qa_count": 14,
+      "turn_count": 2008
+    },
+    {
+      "dialogue_id": "33a25cef-20e9-4d03-b664-a9279635c73c",
+      "character": "Judy Yates",
+      "stage_id": 5,
+      "qa_count": 11,
+      "turn_count": 2111
+    },
+    {
+      "dialogue_id": "89fdc17c-a612-4286-a24e-a754c36d0663",
+      "character": "Tyler Soto",
+      "stage_id": 5,
+      "qa_count": 11,
+      "turn_count": 2018
+    },
+    {
+      "dialogue_id": "954905f9-a375-4c91-9ecf-0ff4db5db275",
+      "character": "Aadam Moon",
+      "stage_id": 5,
+      "qa_count": 9,
+      "turn_count": 2101
+    },
+    {
+      "dialogue_id": "9f232c7a-33fb-4869-937e-c53c85fc70c9",
+      "character": "Esha Blanchard",
+      "stage_id": 5,
+      "qa_count": 11,
+      "turn_count": 2138
+    },
+    {
+      "dialogue_id": "90cfd5bc-1956-492e-9d18-0c03742aeca2",
+      "character": "Shania Odom",
+      "stage_id": 5,
+      "qa_count": 10,
+      "turn_count": 2069
+    },
+    {
+      "dialogue_id": "1f0f9740-41c6-4c27-ab7c-ef3cd33e464b",
+      "character": "Violet Roach",
+      "stage_id": 5,
+      "qa_count": 12,
+      "turn_count": 1961
+    },
+    {
+      "dialogue_id": "fb01c6cd-a03c-415f-8f7d-a091c21e95fe",
+      "character": "Huw Dalton",
+      "stage_id": 5,
+      "qa_count": 11,
+      "turn_count": 2097
+    },
+    {
+      "dialogue_id": "57d7e99f-f3b4-4a2e-8732-6938001431ef",
+      "character": "Maximillian Wise",
+      "stage_id": 5,
+      "qa_count": 11,
+      "turn_count": 2109
+    },
+    {
+      "dialogue_id": "76592903-8d03-4981-a92a-b753eeb3916b",
+      "character": "Madison Monroe",
+      "stage_id": 5,
+      "qa_count": 11,
+      "turn_count": 1937
+    },
+    {
+      "dialogue_id": "308b062d-872d-4c32-9d0d-adb542feb91f",
+      "character": "Theodore Collins",
+      "stage_id": 5,
+      "qa_count": 17,
+      "turn_count": 2113
+    },
+    {
+      "dialogue_id": "da58bd5f-ee8d-4874-8c00-815bc98627ce",
+      "character": "Alivia Warren",
+      "stage_id": 5,
+      "qa_count": 17,
+      "turn_count": 2125
+    },
+    {
+      "dialogue_id": "a2be868b-47bf-4c93-963d-f5a4f7d3708a",
+      "character": "Brooklyn Gilmore",
+      "stage_id": 5,
+      "qa_count": 10,
+      "turn_count": 2093
+    },
+    {
+      "dialogue_id": "3ddf7473-8eae-4a52-8d83-9a1911a05f88",
+      "character": "Terry Rodriguez",
+      "stage_id": 5,
+      "qa_count": 17,
+      "turn_count": 2097
+    },
+    {
+      "dialogue_id": "70172de9-7446-4686-8005-bf50531246b2",
+      "character": "Adnan Conley",
+      "stage_id": 5,
+      "qa_count": 11,
+      "turn_count": 1865
+    },
+    {
+      "dialogue_id": "9ba021b9-9eb3-48a9-bcf2-3696e6c44176",
+      "character": "Carly Tucker",
+      "stage_id": 5,
+      "qa_count": 19,
+      "turn_count": 2086
+    },
+    {
+      "dialogue_id": "dfb4e77f-8668-4ed8-b708-a69e963b4611",
+      "character": "Franciszek Morrow",
+      "stage_id": 5,
+      "qa_count": 9,
+      "turn_count": 2113
+    },
+    {
+      "dialogue_id": "e9ed66a1-ac1d-49d8-b2b6-619bb8bff0da",
+      "character": "Betty Kirk",
+      "stage_id": 5,
+      "qa_count": 11,
+      "turn_count": 2090
+    },
+    {
+      "dialogue_id": "7a78f54c-6e8d-4d75-af60-d12b96f587c3",
+      "character": "Melanie Burgess",
+      "stage_id": 5,
+      "qa_count": 11,
+      "turn_count": 2024
+    },
+    {
+      "dialogue_id": "a0d4daa2-a34c-4b7f-8514-2847f2fd6c8b",
+      "character": "Celine Mcleod",
+      "stage_id": 5,
+      "qa_count": 12,
+      "turn_count": 1871
+    },
+    {
+      "dialogue_id": "ec0018a5-fac1-43e2-addb-0581ea6f87cf",
+      "character": "Malaika Hunt",
+      "stage_id": 5,
+      "qa_count": 11,
+      "turn_count": 2169
+    },
+    {
+      "dialogue_id": "4409567a-b8f7-4d64-94cf-3d10ad811fda",
+      "character": "Xavier Serrano",
+      "stage_id": 5,
+      "qa_count": 16,
+      "turn_count": 1951
+    },
+    {
+      "dialogue_id": "f4a3abe8-fbee-4d7c-b13c-4bd2c5210ee8",
+      "character": "Spencer Guerra",
+      "stage_id": 5,
+      "qa_count": 12,
+      "turn_count": 1956
+    },
+    {
+      "dialogue_id": "fc6cad21-55c1-407d-8176-78085247de54",
+      "character": "Angelica Flynn",
+      "stage_id": 5,
+      "qa_count": 15,
+      "turn_count": 2073
+    },
+    {
+      "dialogue_id": "1be86185-424c-418f-9b1d-337bfe9be240",
+      "character": "Orla White",
+      "stage_id": 5,
+      "qa_count": 12,
+      "turn_count": 2065
+    },
+    {
+      "dialogue_id": "5f8e7f1d-b7aa-4cff-98f8-013eec2bee31",
+      "character": "Tamsin Long",
+      "stage_id": 5,
+      "qa_count": 10,
+      "turn_count": 1980
+    },
+    {
+      "dialogue_id": "f3ba723f-3a76-4482-b3aa-5de175574bf9",
+      "character": "Amir Graves",
+      "stage_id": 5,
+      "qa_count": 10,
+      "turn_count": 1932
+    },
+    {
+      "dialogue_id": "29818789-8908-49a0-8948-c9112f3da771",
+      "character": "Evangeline Jimenez",
+      "stage_id": 5,
+      "qa_count": 10,
+      "turn_count": 2093
+    },
+    {
+      "dialogue_id": "60397572-ca79-4e72-877d-b138ee4d647a",
+      "character": "Brandon McClure",
+      "stage_id": 5,
+      "qa_count": 11,
+      "turn_count": 2069
+    },
+    {
+      "dialogue_id": "8e26980f-c120-4434-b6c3-71e4d24548c8",
+      "character": "Hussain Park",
+      "stage_id": 5,
+      "qa_count": 9,
+      "turn_count": 1919
+    },
+    {
+      "dialogue_id": "7ad453f6-7608-4263-9267-748ce1f76cfb",
+      "character": "Mia Harvey",
+      "stage_id": 5,
+      "qa_count": 11,
+      "turn_count": 2093
+    },
+    {
+      "dialogue_id": "900f28ec-a812-4548-9df7-8eaa8bb87e53",
+      "character": "Abdulrahman Mccoy",
+      "stage_id": 5,
+      "qa_count": 10,
+      "turn_count": 2026
+    },
+    {
+      "dialogue_id": "dbb6ea9e-99fd-4c32-8055-7da0604156c0",
+      "character": "Minnie Short",
+      "stage_id": 5,
+      "qa_count": 10,
+      "turn_count": 1992
+    },
+    {
+      "dialogue_id": "a562cb82-fb9e-4b4f-9afd-abbb7215a6d9",
+      "character": "Daniella McCormick",
+      "stage_id": 5,
+      "qa_count": 12,
+      "turn_count": 1907
+    },
+    {
+      "dialogue_id": "45ab7d63-973e-4b1a-9343-87674a9b28bf",
+      "character": "Kacie Cole",
+      "stage_id": 5,
+      "qa_count": 10,
+      "turn_count": 1992
+    },
+    {
+      "dialogue_id": "890f929f-68bc-40fc-b9a6-a4595bd821bc",
+      "character": "Saad Blevins",
+      "stage_id": 5,
+      "qa_count": 11,
+      "turn_count": 1889
+    },
+    {
+      "dialogue_id": "fa83f3c5-f744-474f-bfe8-d5a7122cf618",
+      "character": "Scarlett Howe",
+      "stage_id": 5,
+      "qa_count": 12,
+      "turn_count": 1900
+    },
+    {
+      "dialogue_id": "8f25ff8f-3b2c-4ea5-a464-62ea0ae76c75",
+      "character": "Harriett Hubbard",
+      "stage_id": 5,
+      "qa_count": 11,
+      "turn_count": 2052
+    },
+    {
+      "dialogue_id": "2813abd4-7b4a-482d-8146-10645d44d8df",
+      "character": "Julius Shaw",
+      "stage_id": 5,
+      "qa_count": 10,
+      "turn_count": 1910
+    },
+    {
+      "dialogue_id": "e8d99e07-b714-4838-958c-2dfb0ea632cf",
+      "character": "Trystan Swanson",
+      "stage_id": 5,
+      "qa_count": 12,
+      "turn_count": 2039
+    },
+    {
+      "dialogue_id": "e9a9ac0a-4b93-4556-9860-2fe32cbb4427",
+      "character": "Luna Holmes",
+      "stage_id": 5,
+      "qa_count": 14,
+      "turn_count": 2035
+    },
+    {
+      "dialogue_id": "5be76579-a98f-41d4-bbbd-839831793105",
+      "character": "Sonia Pratt",
+      "stage_id": 5,
+      "qa_count": 11,
+      "turn_count": 1997
+    },
+    {
+      "dialogue_id": "c02872d9-9f37-49ab-b117-5756daa5c12d",
+      "character": "Bridget Beck",
+      "stage_id": 5,
+      "qa_count": 10,
+      "turn_count": 2049
+    },
+    {
+      "dialogue_id": "8a379d1d-a484-4c91-8fdd-dc3ed6b81b14",
+      "character": "Ellie Bradshaw",
+      "stage_id": 5,
+      "qa_count": 16,
+      "turn_count": 1957
+    },
+    {
+      "dialogue_id": "68718e8c-aa49-470b-9d16-c4e1051dde87",
+      "character": "Kaine French",
+      "stage_id": 5,
+      "qa_count": 14,
+      "turn_count": 1965
+    },
+    {
+      "dialogue_id": "2d17473c-d32e-4d7f-a631-bf6b988f8422",
+      "character": "Leanne Jarvis",
+      "stage_id": 5,
+      "qa_count": 12,
+      "turn_count": 2070
+    },
+    {
+      "dialogue_id": "007eaef0-c0a4-4609-a6d4-eb62fa7c07d2",
+      "character": "Evan Lewis",
+      "stage_id": 5,
+      "qa_count": 14,
+      "turn_count": 1933
+    },
+    {
+      "dialogue_id": "545fdf59-8b09-486a-93eb-79e88ac8d557",
+      "character": "Elle Garza",
+      "stage_id": 5,
+      "qa_count": 12,
+      "turn_count": 2002
+    },
+    {
+      "dialogue_id": "56a41db3-ae70-4c99-98ec-9c67804c22f0",
+      "character": "Maisy Wheeler",
+      "stage_id": 5,
+      "qa_count": 10,
+      "turn_count": 2125
+    },
+    {
+      "dialogue_id": "644db538-1739-4246-b088-87afa5f18861",
+      "character": "Anas Gallagher",
+      "stage_id": 5,
+      "qa_count": 11,
+      "turn_count": 2007
+    },
+    {
+      "dialogue_id": "df536849-30f9-44a1-adb3-d77cad090c3c",
+      "character": "Roman Chang",
+      "stage_id": 5,
+      "qa_count": 16,
+      "turn_count": 1919
+    },
+    {
+      "dialogue_id": "9010d7e5-2e3d-4e0a-9e36-2e177ec7e68a",
+      "character": "Kylie Patton",
+      "stage_id": 5,
+      "qa_count": 11,
+      "turn_count": 1936
+    },
+    {
+      "dialogue_id": "9d8ea921-6822-4d44-96a9-2de5777e8f47",
+      "character": "Casey Perry",
+      "stage_id": 5,
+      "qa_count": 16,
+      "turn_count": 2084
+    },
+    {
+      "dialogue_id": "dc9e2b88-a8aa-42aa-95e8-54087ca7790f",
+      "character": "Iqra Holman",
+      "stage_id": 5,
+      "qa_count": 10,
+      "turn_count": 2024
+    },
+    {
+      "dialogue_id": "06447e70-598a-4eb3-ba7a-27512e7ade17",
+      "character": "Annabel Snyder",
+      "stage_id": 5,
+      "qa_count": 9,
+      "turn_count": 1967
+    },
+    {
+      "dialogue_id": "d3f4e77b-d718-4b48-b73b-144f80e44902",
+      "character": "Justin Baird",
+      "stage_id": 5,
+      "qa_count": 11,
+      "turn_count": 2089
+    },
+    {
+      "dialogue_id": "8163c550-551c-4b62-9cea-4abb0340fdc7",
+      "character": "Aston Rollins",
+      "stage_id": 5,
+      "qa_count": 15,
+      "turn_count": 2107
+    },
+    {
+      "dialogue_id": "1dceda97-aff6-4d99-9123-1cf3911938fe",
+      "character": "Kristen Macias",
+      "stage_id": 5,
+      "qa_count": 16,
+      "turn_count": 1952
+    },
+    {
+      "dialogue_id": "4e1ed84b-af02-4c6d-b674-1ca8ac13d545",
+      "character": "Priya Gaines",
+      "stage_id": 5,
+      "qa_count": 11,
+      "turn_count": 1887
+    },
+    {
+      "dialogue_id": "ed54c279-8fb0-47b5-a9d0-378bf633e8d2",
+      "character": "Neo Miranda",
+      "stage_id": 5,
+      "qa_count": 12,
+      "turn_count": 2009
+    },
+    {
+      "dialogue_id": "2261d129-75db-4687-930a-09add9570d06",
+      "character": "Lillie Schultz",
+      "stage_id": 5,
+      "qa_count": 9,
+      "turn_count": 2082
+    },
+    {
+      "dialogue_id": "081ae146-47c3-421c-98e8-be6b21d7f46f",
+      "character": "Finnley Bauer",
+      "stage_id": 5,
+      "qa_count": 15,
+      "turn_count": 1882
+    },
+    {
+      "dialogue_id": "31a25291-8031-43af-a301-9c7920c725ad",
+      "character": "Maariyah Conley",
+      "stage_id": 5,
+      "qa_count": 14,
+      "turn_count": 2016
+    },
+    {
+      "dialogue_id": "8ec547df-d219-46dc-a509-a3dc91fb9375",
+      "character": "Faith Finch",
+      "stage_id": 5,
+      "qa_count": 11,
+      "turn_count": 2011
+    },
+    {
+      "dialogue_id": "b262a038-1885-4df5-9ed0-02f3612419d0",
+      "character": "Bruce Donnelly",
+      "stage_id": 5,
+      "qa_count": 11,
+      "turn_count": 2137
+    },
+    {
+      "dialogue_id": "2dcfcb4f-9080-4d98-aad9-e91a511946c0",
+      "character": "Curtis Gould",
+      "stage_id": 5,
+      "qa_count": 11,
+      "turn_count": 2065
+    },
+    {
+      "dialogue_id": "2f9c9688-eba4-4c9e-8a87-27c659fb0811",
+      "character": "Maryam Winters",
+      "stage_id": 5,
+      "qa_count": 9,
+      "turn_count": 1912
+    },
+    {
+      "dialogue_id": "636a4b42-092e-4ee0-a199-020b176f0c5e",
+      "character": "John Zuniga",
+      "stage_id": 5,
+      "qa_count": 11,
+      "turn_count": 1889
+    },
+    {
+      "dialogue_id": "cb223bf9-a7a5-47dc-a1ce-cc8327761591",
+      "character": "Kirsty Wall",
+      "stage_id": 5,
+      "qa_count": 11,
+      "turn_count": 1994
+    },
+    {
+      "dialogue_id": "8d0d13d8-6f77-4e37-9f93-95bdc2c08e51",
+      "character": "Tamsin Pace",
+      "stage_id": 5,
+      "qa_count": 17,
+      "turn_count": 2013
+    },
+    {
+      "dialogue_id": "712e6312-4b82-4512-9336-3fb2615c98dc",
+      "character": "Zoe Buchanan",
+      "stage_id": 5,
+      "qa_count": 14,
+      "turn_count": 2115
+    },
+    {
+      "dialogue_id": "ba2de697-456d-4932-b6af-95a1c3a7c6e9",
+      "character": "Marion Manning",
+      "stage_id": 5,
+      "qa_count": 10,
+      "turn_count": 1919
+    },
+    {
+      "dialogue_id": "4ec48c45-e47f-4fc8-8dee-fd972e8bfa5f",
+      "character": "Willow Mathis",
+      "stage_id": 5,
+      "qa_count": 12,
+      "turn_count": 1947
+    },
+    {
+      "dialogue_id": "b9853381-bbe0-452d-a7e5-7ca98e87fa38",
+      "character": "Montgomery Kline",
+      "stage_id": 5,
+      "qa_count": 12,
+      "turn_count": 1984
+    },
+    {
+      "dialogue_id": "afdbe680-0e21-47d0-9486-2849ac3d4736",
+      "character": "Victor Young",
+      "stage_id": 5,
+      "qa_count": 11,
+      "turn_count": 2096
+    },
+    {
+      "dialogue_id": "350a811e-4575-4f85-a1c8-8a27b9f9c02c",
+      "character": "Xander Ramirez",
+      "stage_id": 5,
+      "qa_count": 11,
+      "turn_count": 2067
+    },
+    {
+      "dialogue_id": "9f1ecfa9-75ef-4076-bb1b-8856013b4623",
+      "character": "Kaitlin Petersen",
+      "stage_id": 5,
+      "qa_count": 9,
+      "turn_count": 1934
+    },
+    {
+      "dialogue_id": "2fdfe243-f761-49da-84c2-abbef1e18651",
+      "character": "Joanne Gomez",
+      "stage_id": 5,
+      "qa_count": 10,
+      "turn_count": 2028
+    },
+    {
+      "dialogue_id": "bda650b3-068e-4732-9793-17ff350ec64e",
+      "character": "Anastasia Gonzalez",
+      "stage_id": 5,
+      "qa_count": 11,
+      "turn_count": 1992
+    },
+    {
+      "dialogue_id": "50cbaade-751d-4d60-b4d7-b88907a256ba",
+      "character": "Syeda Bryant",
+      "stage_id": 5,
+      "qa_count": 15,
+      "turn_count": 1924
+    },
+    {
+      "dialogue_id": "3921044d-82fe-4ca0-929f-07927b83a374",
+      "character": "Ricky Wise",
+      "stage_id": 5,
+      "qa_count": 11,
+      "turn_count": 2107
+    },
+    {
+      "dialogue_id": "184923a7-2268-48c3-9215-28e6ef097daf",
+      "character": "Fatimah Lewis",
+      "stage_id": 5,
+      "qa_count": 9,
+      "turn_count": 2070
+    },
+    {
+      "dialogue_id": "704cd140-ae86-4c2b-8d67-7a57d5b0b1ba",
+      "character": "Duncan Shepherd",
+      "stage_id": 5,
+      "qa_count": 12,
+      "turn_count": 2034
+    },
+    {
+      "dialogue_id": "face72f4-76a2-407d-9238-1f9d795237ff",
+      "character": "Alyssia Watts",
+      "stage_id": 5,
+      "qa_count": 12,
+      "turn_count": 2118
+    },
+    {
+      "dialogue_id": "d05612cc-c8c4-47de-bfdf-6bbaebfcc012",
+      "character": "Gabriela Pratt",
+      "stage_id": 5,
+      "qa_count": 15,
+      "turn_count": 2121
+    },
+    {
+      "dialogue_id": "38f10981-1325-468c-a877-ce4c97663ceb",
+      "character": "Cody Murphy",
+      "stage_id": 5,
+      "qa_count": 9,
+      "turn_count": 1969
+    },
+    {
+      "dialogue_id": "f9f1bdb0-2846-4e0d-a967-a866c87bc6a9",
+      "character": "Isaac Bates",
+      "stage_id": 5,
+      "qa_count": 11,
+      "turn_count": 2116
+    },
+    {
+      "dialogue_id": "c575317e-fdc3-4dc5-9b89-7e8eb54cc49f",
+      "character": "Penny Chambers",
+      "stage_id": 5,
+      "qa_count": 14,
+      "turn_count": 2050
+    },
+    {
+      "dialogue_id": "1ad4235d-04e8-47a4-b76c-3b2d10316ef2",
+      "character": "Simeon Schmidt",
+      "stage_id": 5,
+      "qa_count": 8,
+      "turn_count": 1964
+    },
+    {
+      "dialogue_id": "3af8bfa5-1d2a-4d26-80e0-5fabf6f32e16",
+      "character": "Katelyn Chaney",
+      "stage_id": 5,
+      "qa_count": 11,
+      "turn_count": 1950
+    },
+    {
+      "dialogue_id": "b5dd7972-c411-4828-8134-71eb88d32031",
+      "character": "Dalton Ford",
+      "stage_id": 5,
+      "qa_count": 11,
+      "turn_count": 1968
+    },
+    {
+      "dialogue_id": "ab6c99f7-d05e-42e1-9120-672f76d25fdf",
+      "character": "Alfie Olson",
+      "stage_id": 5,
+      "qa_count": 9,
+      "turn_count": 2012
+    },
+    {
+      "dialogue_id": "25922e07-8182-45de-9463-f4011cb9ffcd",
+      "character": "Denise Griffith",
+      "stage_id": 5,
+      "qa_count": 12,
+      "turn_count": 1987
+    },
+    {
+      "dialogue_id": "c58b97fc-bbfb-4317-a3b0-6f32d0ac2ff8",
+      "character": "Dana Cook",
+      "stage_id": 5,
+      "qa_count": 10,
+      "turn_count": 1994
+    },
+    {
+      "dialogue_id": "5303a302-8aac-44df-9795-c3c1eef2f406",
+      "character": "Eliana Ashley",
+      "stage_id": 5,
+      "qa_count": 11,
+      "turn_count": 1858
+    },
+    {
+      "dialogue_id": "2a0e412a-48d7-42b6-a4f4-a1d314def409",
+      "character": "Rico McDowell",
+      "stage_id": 5,
+      "qa_count": 10,
+      "turn_count": 1987
+    },
+    {
+      "dialogue_id": "04159e92-0b50-4ffb-9046-6ffea50fadbe",
+      "character": "Zayd Shaw",
+      "stage_id": 5,
+      "qa_count": 11,
+      "turn_count": 1964
+    },
+    {
+      "dialogue_id": "634e6037-bcfe-4e1c-98e3-13816f2cdc31",
+      "character": "Bobby Bradford",
+      "stage_id": 5,
+      "qa_count": 11,
+      "turn_count": 1934
+    },
+    {
+      "dialogue_id": "fc8fd0d7-3bcf-4e9c-a8e9-7360ea39be86",
+      "character": "Connor Allison",
+      "stage_id": 5,
+      "qa_count": 16,
+      "turn_count": 2017
+    },
+    {
+      "dialogue_id": "b20515b6-c933-4c67-9765-1df3a1e1a413",
+      "character": "Elliot Richards",
+      "stage_id": 6,
+      "qa_count": 12,
+      "turn_count": 1968
+    },
+    {
+      "dialogue_id": "ad487e6d-4b97-4f86-a955-9277e1e00f0c",
+      "character": "Jesse Stanton",
+      "stage_id": 6,
+      "qa_count": 8,
+      "turn_count": 1980
+    },
+    {
+      "dialogue_id": "13cb3d12-5cc1-48ba-8118-57e4c81f14ea",
+      "character": "Celia Raymond",
+      "stage_id": 6,
+      "qa_count": 9,
+      "turn_count": 1946
+    },
+    {
+      "dialogue_id": "8fb08cca-8036-4bd0-8765-8bc1b4d9923e",
+      "character": "Jonah Cherry",
+      "stage_id": 6,
+      "qa_count": 10,
+      "turn_count": 2027
+    },
+    {
+      "dialogue_id": "62cfb1c7-cc2a-4056-8783-e3452ce5dd2b",
+      "character": "Lennox Allison",
+      "stage_id": 6,
+      "qa_count": 15,
+      "turn_count": 1891
+    },
+    {
+      "dialogue_id": "c5bd09de-549b-470a-a33e-a83726affee3",
+      "character": "Jermaine Huber",
+      "stage_id": 6,
+      "qa_count": 10,
+      "turn_count": 2144
+    },
+    {
+      "dialogue_id": "7fd5e613-e3f0-461c-b1b3-5f449570e9bc",
+      "character": "Cecilia Peters",
+      "stage_id": 6,
+      "qa_count": 11,
+      "turn_count": 1977
+    },
+    {
+      "dialogue_id": "0006f931-436c-49bd-97e8-2666e934195e",
+      "character": "Shane Padilla",
+      "stage_id": 6,
+      "qa_count": 11,
+      "turn_count": 1982
+    },
+    {
+      "dialogue_id": "a991ed34-fba3-4ffc-9d3f-70b66a218d59",
+      "character": "Kelsie Schwartz",
+      "stage_id": 6,
+      "qa_count": 12,
+      "turn_count": 1836
+    },
+    {
+      "dialogue_id": "ff7c5dc0-5061-4fa2-9163-2ad0f21c8599",
+      "character": "Roy Abbott",
+      "stage_id": 6,
+      "qa_count": 12,
+      "turn_count": 2040
+    },
+    {
+      "dialogue_id": "8b0c8732-9108-46db-a925-0c792044a040",
+      "character": "Wilson Reeves",
+      "stage_id": 6,
+      "qa_count": 11,
+      "turn_count": 2056
+    },
+    {
+      "dialogue_id": "6acc580a-52fa-4984-8505-d9b9d85d2ffc",
+      "character": "Dorothy Chambers",
+      "stage_id": 6,
+      "qa_count": 11,
+      "turn_count": 1923
+    },
+    {
+      "dialogue_id": "3264cd4f-a0c3-4b9b-a724-05a9234ad8be",
+      "character": "Marissa Lewis",
+      "stage_id": 6,
+      "qa_count": 11,
+      "turn_count": 1905
+    },
+    {
+      "dialogue_id": "c9047fdf-7c75-4dd4-a66d-6f01717f602c",
+      "character": "Olive Bennett",
+      "stage_id": 6,
+      "qa_count": 11,
+      "turn_count": 2083
+    },
+    {
+      "dialogue_id": "211d83d2-068a-4886-931c-7b803da12f3b",
+      "character": "Farhan Mann",
+      "stage_id": 6,
+      "qa_count": 10,
+      "turn_count": 1901
+    },
+    {
+      "dialogue_id": "9f476682-25ca-40e5-acc1-ba28cbeb1011",
+      "character": "Caitlin Martinez",
+      "stage_id": 6,
+      "qa_count": 11,
+      "turn_count": 2175
+    },
+    {
+      "dialogue_id": "4d11dc6e-ada7-4846-9cfb-d3edb573650d",
+      "character": "Krishan Davis",
+      "stage_id": 6,
+      "qa_count": 9,
+      "turn_count": 2079
+    },
+    {
+      "dialogue_id": "aafcc1c5-7a5a-418c-9de8-8491dadf9dab",
+      "character": "Barney Rodgers",
+      "stage_id": 6,
+      "qa_count": 12,
+      "turn_count": 2089
+    },
+    {
+      "dialogue_id": "cfa50b25-82cf-4d9e-9a66-92e02e25a9b9",
+      "character": "Nadia Fernandez",
+      "stage_id": 6,
+      "qa_count": 11,
+      "turn_count": 1994
+    },
+    {
+      "dialogue_id": "5dfdf1d1-ff67-453e-801f-f6deae9d83e6",
+      "character": "Harmony Orr",
+      "stage_id": 6,
+      "qa_count": 10,
+      "turn_count": 1860
+    },
+    {
+      "dialogue_id": "8138bc62-5d74-495b-9443-54ed241a7fe9",
+      "character": "Hafsa Brady",
+      "stage_id": 6,
+      "qa_count": 11,
+      "turn_count": 1997
+    },
+    {
+      "dialogue_id": "8ccc7fec-adea-458d-ba2c-6112b215ec07",
+      "character": "Aurora Jensen",
+      "stage_id": 6,
+      "qa_count": 10,
+      "turn_count": 2006
+    },
+    {
+      "dialogue_id": "e4734400-61e7-4a89-b2cd-3fc27f45f2b3",
+      "character": "Zaina Franklin",
+      "stage_id": 6,
+      "qa_count": 9,
+      "turn_count": 2059
+    },
+    {
+      "dialogue_id": "833e50ac-1ca7-4430-a529-27f2e2d18be0",
+      "character": "Ada Hahn",
+      "stage_id": 6,
+      "qa_count": 10,
+      "turn_count": 2028
+    },
+    {
+      "dialogue_id": "c6d6f258-c8af-4ca3-b7ae-dd43d03f6644",
+      "character": "Karina Macias",
+      "stage_id": 6,
+      "qa_count": 11,
+      "turn_count": 2076
+    },
+    {
+      "dialogue_id": "b7900caf-2b24-45b5-95a6-53fd2ccf35b3",
+      "character": "Lenny McLaughlin",
+      "stage_id": 6,
+      "qa_count": 10,
+      "turn_count": 1950
+    },
+    {
+      "dialogue_id": "7d906126-63da-4e65-8c03-2b573b213d36",
+      "character": "Vivian Hobbs",
+      "stage_id": 6,
+      "qa_count": 16,
+      "turn_count": 2059
+    },
+    {
+      "dialogue_id": "72337e11-7055-4220-9c6d-a2505edfc1ed",
+      "character": "Sebastian Hubbard",
+      "stage_id": 6,
+      "qa_count": 10,
+      "turn_count": 2047
+    },
+    {
+      "dialogue_id": "45626382-2819-41f1-ac51-8816c8c2c04d",
+      "character": "Bailey Fowler",
+      "stage_id": 6,
+      "qa_count": 15,
+      "turn_count": 1989
+    },
+    {
+      "dialogue_id": "161e65a6-3178-4897-95ec-5aad1506a771",
+      "character": "Julius Mooney",
+      "stage_id": 6,
+      "qa_count": 11,
+      "turn_count": 2080
+    },
+    {
+      "dialogue_id": "5915b265-72db-4415-97a6-66678b201025",
+      "character": "Poppy Joyce",
+      "stage_id": 6,
+      "qa_count": 11,
+      "turn_count": 1987
+    },
+    {
+      "dialogue_id": "1ab76ddb-c2a7-4ad5-abe9-b8841069f5fa",
+      "character": "Md Anthony",
+      "stage_id": 6,
+      "qa_count": 11,
+      "turn_count": 2025
+    },
+    {
+      "dialogue_id": "1be6beb1-cfd3-4b23-9bb9-c89deb280850",
+      "character": "Sumaya White",
+      "stage_id": 6,
+      "qa_count": 9,
+      "turn_count": 2043
+    },
+    {
+      "dialogue_id": "b87c22b9-7eee-4d05-a56b-7e785c41b8a5",
+      "character": "Heath Gomez",
+      "stage_id": 6,
+      "qa_count": 9,
+      "turn_count": 1926
+    },
+    {
+      "dialogue_id": "b3842669-4c2e-445f-a949-11e03aef7e48",
+      "character": "Veronica Rosario",
+      "stage_id": 6,
+      "qa_count": 20,
+      "turn_count": 2009
+    },
+    {
+      "dialogue_id": "1e60d66e-5cc0-4b25-8fe6-1a236368a0e6",
+      "character": "Jana Holder",
+      "stage_id": 6,
+      "qa_count": 10,
+      "turn_count": 2072
+    },
+    {
+      "dialogue_id": "eaf96cdb-37b5-4244-aeb4-79d59b251fcc",
+      "character": "Rita Clay",
+      "stage_id": 6,
+      "qa_count": 16,
+      "turn_count": 1941
+    },
+    {
+      "dialogue_id": "3e31b3d2-0d3b-401a-a6af-f120dc0821c5",
+      "character": "Kaan Duke",
+      "stage_id": 6,
+      "qa_count": 12,
+      "turn_count": 2132
+    },
+    {
+      "dialogue_id": "3c3d7503-a669-41ae-8fac-d470e2885008",
+      "character": "Gavin Gibbs",
+      "stage_id": 6,
+      "qa_count": 14,
+      "turn_count": 2177
+    },
+    {
+      "dialogue_id": "762e8812-9a73-4a6c-9b99-f7779f65c206",
+      "character": "Georgina Williams",
+      "stage_id": 6,
+      "qa_count": 14,
+      "turn_count": 2074
+    },
+    {
+      "dialogue_id": "30f41526-6f65-4276-8125-3fa00e4ee31e",
+      "character": "Fiona Blaese",
+      "stage_id": 6,
+      "qa_count": 11,
+      "turn_count": 2213
+    },
+    {
+      "dialogue_id": "89a9a2ea-36cc-460e-921c-789f1979514a",
+      "character": "Veronica Howard",
+      "stage_id": 6,
+      "qa_count": 15,
+      "turn_count": 2240
+    },
+    {
+      "dialogue_id": "4f97d94c-42b3-4a14-adae-7227674194bf",
+      "character": "Sabrina Phillips",
+      "stage_id": 6,
+      "qa_count": 11,
+      "turn_count": 1907
+    },
+    {
+      "dialogue_id": "3c85f4de-f866-4fe1-beb9-3fad970fab05",
+      "character": "Riley Hunter",
+      "stage_id": 6,
+      "qa_count": 15,
+      "turn_count": 2088
+    },
+    {
+      "dialogue_id": "dd7cefa9-4ca6-42aa-9f4d-8ac3c697f478",
+      "character": "Wilbur Robbins",
+      "stage_id": 6,
+      "qa_count": 15,
+      "turn_count": 2135
+    },
+    {
+      "dialogue_id": "058d4171-9c31-4e56-b9eb-e60cd1775780",
+      "character": "Ahmed Dickson",
+      "stage_id": 6,
+      "qa_count": 10,
+      "turn_count": 2136
+    },
+    {
+      "dialogue_id": "1c7193a6-adf0-4863-993d-32a611764a1b",
+      "character": "Rahul Santana",
+      "stage_id": 6,
+      "qa_count": 10,
+      "turn_count": 2024
+    },
+    {
+      "dialogue_id": "847b0251-2b2f-4d0a-98a7-42685c0508da",
+      "character": "Loui Levine",
+      "stage_id": 6,
+      "qa_count": 9,
+      "turn_count": 1837
+    },
+    {
+      "dialogue_id": "f5ab9374-6752-4ef6-9216-2d7648278943",
+      "character": "Remi Patrick",
+      "stage_id": 6,
+      "qa_count": 10,
+      "turn_count": 1941
+    },
+    {
+      "dialogue_id": "1904ae50-1f21-45c8-898d-2912605f3c07",
+      "character": "Eleni Duran",
+      "stage_id": 6,
+      "qa_count": 12,
+      "turn_count": 2041
+    },
+    {
+      "dialogue_id": "bc68ddfd-f852-4600-89b1-8cec5a06e415",
+      "character": "Ayden Barnett",
+      "stage_id": 6,
+      "qa_count": 12,
+      "turn_count": 2022
+    },
+    {
+      "dialogue_id": "9f299897-3893-4716-ab15-e014b83ee729",
+      "character": "Paula Burns",
+      "stage_id": 6,
+      "qa_count": 11,
+      "turn_count": 2032
+    },
+    {
+      "dialogue_id": "fd503dc0-9746-4ad4-aefe-422075ee0d76",
+      "character": "Jacques Shepard",
+      "stage_id": 6,
+      "qa_count": 10,
+      "turn_count": 1906
+    },
+    {
+      "dialogue_id": "67f84b8f-5980-4080-9aea-0194b99566ee",
+      "character": "Aqsa Lucero",
+      "stage_id": 6,
+      "qa_count": 11,
+      "turn_count": 1984
+    },
+    {
+      "dialogue_id": "2ee99953-fed2-4368-9566-6a43a47b37e0",
+      "character": "Albie Fitzgerald",
+      "stage_id": 6,
+      "qa_count": 17,
+      "turn_count": 1914
+    },
+    {
+      "dialogue_id": "03d90024-77e4-49e1-a9c2-bf517d1deda2",
+      "character": "Rowan Fleming",
+      "stage_id": 6,
+      "qa_count": 9,
+      "turn_count": 2134
+    },
+    {
+      "dialogue_id": "678edb11-ad4f-44bd-a673-53b43685595a",
+      "character": "Fred Watts",
+      "stage_id": 6,
+      "qa_count": 11,
+      "turn_count": 2078
+    },
+    {
+      "dialogue_id": "2c1d9061-6995-45f1-b5a5-20187bc07086",
+      "character": "Halle Oconnell",
+      "stage_id": 6,
+      "qa_count": 11,
+      "turn_count": 1863
+    },
+    {
+      "dialogue_id": "a818a4ac-82cd-435d-b1d3-52a552b6ef11",
+      "character": "Phoenix Gallagher",
+      "stage_id": 6,
+      "qa_count": 9,
+      "turn_count": 2066
+    },
+    {
+      "dialogue_id": "6be2f4a4-c6ee-4456-9b6b-374faff4b900",
+      "character": "Neve Prince",
+      "stage_id": 6,
+      "qa_count": 10,
+      "turn_count": 1914
+    },
+    {
+      "dialogue_id": "a3366182-0ff2-4a2e-93eb-0a26a57b02c0",
+      "character": "Norma Phillips",
+      "stage_id": 6,
+      "qa_count": 12,
+      "turn_count": 1987
+    },
+    {
+      "dialogue_id": "44aae1c2-4944-4973-9cb1-0ca4157b4f98",
+      "character": "Omari Richard",
+      "stage_id": 6,
+      "qa_count": 10,
+      "turn_count": 1854
+    },
+    {
+      "dialogue_id": "336bc69b-3dff-4b15-bb2b-0a099881702e",
+      "character": "Tyrone Mcgowan",
+      "stage_id": 6,
+      "qa_count": 14,
+      "turn_count": 1881
+    },
+    {
+      "dialogue_id": "67e7009a-c5cb-4d95-802d-3c6d7672195e",
+      "character": "Serena Perkins",
+      "stage_id": 6,
+      "qa_count": 10,
+      "turn_count": 2156
+    },
+    {
+      "dialogue_id": "469cdd01-0a3e-4bb3-95be-b7ad2d8b4cea",
+      "character": "Freyja Shelton",
+      "stage_id": 6,
+      "qa_count": 17,
+      "turn_count": 2001
+    },
+    {
+      "dialogue_id": "07d4a14d-db43-4090-8082-73d834b671aa",
+      "character": "Rhys Jensen",
+      "stage_id": 6,
+      "qa_count": 11,
+      "turn_count": 1869
+    },
+    {
+      "dialogue_id": "0fe6dbab-602a-4916-ade1-1cba0efb8ce8",
+      "character": "Damian Lam",
+      "stage_id": 6,
+      "qa_count": 19,
+      "turn_count": 2082
+    },
+    {
+      "dialogue_id": "0805e9d7-2159-4f3e-82e4-7a4b085bc3f8",
+      "character": "Mitchell Hill",
+      "stage_id": 6,
+      "qa_count": 17,
+      "turn_count": 1938
+    },
+    {
+      "dialogue_id": "177ac9b8-467e-4b19-8c92-fd02c6da329c",
+      "character": "Shirley Proctor",
+      "stage_id": 6,
+      "qa_count": 10,
+      "turn_count": 2139
+    },
+    {
+      "dialogue_id": "2d57e7e7-598a-4425-9a5a-e4ef5977c211",
+      "character": "Jose Sanchez",
+      "stage_id": 6,
+      "qa_count": 10,
+      "turn_count": 2051
+    },
+    {
+      "dialogue_id": "3566f2a8-103d-4034-b387-51f2cb7b917e",
+      "character": "Robbie Mcneil",
+      "stage_id": 6,
+      "qa_count": 10,
+      "turn_count": 2043
+    },
+    {
+      "dialogue_id": "64a5da9e-9dcc-41e7-ae46-6f6a0727eaa6",
+      "character": "Leonie Donaldson",
+      "stage_id": 6,
+      "qa_count": 12,
+      "turn_count": 1997
+    },
+    {
+      "dialogue_id": "33999484-7010-4f1a-9d49-e3406ed2997e",
+      "character": "Junaid Mcpherson",
+      "stage_id": 6,
+      "qa_count": 11,
+      "turn_count": 2072
+    },
+    {
+      "dialogue_id": "7e1693e1-df38-48b5-9d42-88edf5fd71ee",
+      "character": "Brooke Harrell",
+      "stage_id": 6,
+      "qa_count": 13,
+      "turn_count": 2105
+    },
+    {
+      "dialogue_id": "d2fd640b-e88a-42e8-b872-f82b4ba4c7f0",
+      "character": "Harris Vega",
+      "stage_id": 6,
+      "qa_count": 16,
+      "turn_count": 1989
+    },
+    {
+      "dialogue_id": "56e3390d-2a9f-4189-963c-2561b651f242",
+      "character": "Jaydon Oneill",
+      "stage_id": 6,
+      "qa_count": 11,
+      "turn_count": 2097
+    },
+    {
+      "dialogue_id": "014da36f-7efa-42e0-a6cc-b79bff3a78f8",
+      "character": "Natasha McCall",
+      "stage_id": 6,
+      "qa_count": 10,
+      "turn_count": 2053
+    },
+    {
+      "dialogue_id": "c53941af-ef0b-477b-8542-141d612e6a84",
+      "character": "Christopher Haynes",
+      "stage_id": 6,
+      "qa_count": 11,
+      "turn_count": 2118
+    },
+    {
+      "dialogue_id": "b55e09f1-09a5-4314-bf0e-4986a92db6d2",
+      "character": "Rachael Gamble",
+      "stage_id": 6,
+      "qa_count": 17,
+      "turn_count": 1897
+    },
+    {
+      "dialogue_id": "e3a44711-e5e8-4452-8220-93636eeea15c",
+      "character": "Elise Douglas",
+      "stage_id": 6,
+      "qa_count": 10,
+      "turn_count": 1902
+    },
+    {
+      "dialogue_id": "1fd229b2-60d4-4811-a0b6-827ce37d7f95",
+      "character": "Roger Mendoza",
+      "stage_id": 6,
+      "qa_count": 9,
+      "turn_count": 2198
+    },
+    {
+      "dialogue_id": "8da1a462-7b94-47cd-b40c-09eff253138e",
+      "character": "Wilfred Wong",
+      "stage_id": 6,
+      "qa_count": 16,
+      "turn_count": 1852
+    },
+    {
+      "dialogue_id": "802183cc-9ea8-498f-84d5-06027f43112c",
+      "character": "Stevie Barker",
+      "stage_id": 6,
+      "qa_count": 10,
+      "turn_count": 1993
+    },
+    {
+      "dialogue_id": "7169bd25-b3b8-4173-8822-a3a897ea0cca",
+      "character": "Kyron Hatfield",
+      "stage_id": 6,
+      "qa_count": 10,
+      "turn_count": 1914
+    },
+    {
+      "dialogue_id": "7d1ead53-9556-4d39-8e9c-c64aac1bfd3e",
+      "character": "Fatma Walls",
+      "stage_id": 6,
+      "qa_count": 10,
+      "turn_count": 2027
+    },
+    {
+      "dialogue_id": "4920c6e2-b9bf-4eba-bc1d-c7244b048113",
+      "character": "Taylor McCarthy",
+      "stage_id": 6,
+      "qa_count": 12,
+      "turn_count": 2080
+    },
+    {
+      "dialogue_id": "17a97eeb-3dd9-4683-a4fb-189527838f68",
+      "character": "Amelia Fowler",
+      "stage_id": 6,
+      "qa_count": 11,
+      "turn_count": 2017
+    },
+    {
+      "dialogue_id": "7dc6e1c8-e884-4423-8dae-12a0e915ba9f",
+      "character": "Maggie Ball",
+      "stage_id": 6,
+      "qa_count": 13,
+      "turn_count": 2099
+    },
+    {
+      "dialogue_id": "4983030e-37a3-458e-8841-a6b1532f3c8b",
+      "character": "Hazel Harrison",
+      "stage_id": 6,
+      "qa_count": 16,
+      "turn_count": 1907
+    },
+    {
+      "dialogue_id": "2defbdcd-e3df-4071-9b55-ab09988dc443",
+      "character": "Ian Keith",
+      "stage_id": 6,
+      "qa_count": 18,
+      "turn_count": 2088
+    },
+    {
+      "dialogue_id": "b7a09acc-8aee-4dc7-841b-0e3cd3b19876",
+      "character": "Rhiannon Byrd",
+      "stage_id": 6,
+      "qa_count": 11,
+      "turn_count": 2107
+    },
+    {
+      "dialogue_id": "77c22445-e272-47bf-91e5-78bf812fdb91",
+      "character": "Sid Jacobson",
+      "stage_id": 6,
+      "qa_count": 12,
+      "turn_count": 2044
+    },
+    {
+      "dialogue_id": "ac2200cf-69d8-44a5-be8a-87857176a1a7",
+      "character": "Mollie Palmer",
+      "stage_id": 6,
+      "qa_count": 12,
+      "turn_count": 1984
+    },
+    {
+      "dialogue_id": "82d6cdcb-0895-4863-bce5-1b70b9e60a17",
+      "character": "Chanel Dennis",
+      "stage_id": 6,
+      "qa_count": 11,
+      "turn_count": 1990
+    },
+    {
+      "dialogue_id": "4bbe5dd8-c2da-4369-a260-cca87607abd6",
+      "character": "Marnie Hodge",
+      "stage_id": 6,
+      "qa_count": 10,
+      "turn_count": 1925
+    },
+    {
+      "dialogue_id": "cf2778bf-ccaf-4b30-9e22-ea746fc8af18",
+      "character": "Poppie Shepard",
+      "stage_id": 6,
+      "qa_count": 12,
+      "turn_count": 2051
+    },
+    {
+      "dialogue_id": "89e2a827-b54a-4f7d-8508-09f86e9f07e6",
+      "character": "Kaya Chang",
+      "stage_id": 6,
+      "qa_count": 17,
+      "turn_count": 1948
+    },
+    {
+      "dialogue_id": "7a535e65-38e3-4085-8897-9d217cafe336",
+      "character": "Clyde Vang",
+      "stage_id": 6,
+      "qa_count": 11,
+      "turn_count": 1873
+    },
+    {
+      "dialogue_id": "0e8d03f1-64fb-4123-aff8-09a6e46e3580",
+      "character": "Halima Trevino",
+      "stage_id": 6,
+      "qa_count": 10,
+      "turn_count": 2016
+    },
+    {
+      "dialogue_id": "eeb5052e-951f-4697-80e5-ed07c56b527d",
+      "character": "Oisin Villanueva",
+      "stage_id": 6,
+      "qa_count": 10,
+      "turn_count": 2068
+    },
+    {
+      "dialogue_id": "d6330bdd-0b15-4636-b4e1-1213eeb0844e",
+      "character": "Jasper Meza",
+      "stage_id": 7,
+      "qa_count": 16,
+      "turn_count": 2026
+    },
+    {
+      "dialogue_id": "a3dee745-fa1e-4903-b623-122ea3cf61d0",
+      "character": "Ariana Hubbard",
+      "stage_id": 7,
+      "qa_count": 10,
+      "turn_count": 2006
+    },
+    {
+      "dialogue_id": "e2ea14fc-6b8c-4f51-a180-1abefefe897e",
+      "character": "Kimberley Hawkins",
+      "stage_id": 7,
+      "qa_count": 11,
+      "turn_count": 2047
+    },
+    {
+      "dialogue_id": "868ecbf5-3aaf-4eb7-b172-c389607a5aaa",
+      "character": "Rosie Foster",
+      "stage_id": 7,
+      "qa_count": 13,
+      "turn_count": 1933
+    },
+    {
+      "dialogue_id": "4fd6d77d-14e5-4967-adc7-700b8cab3831",
+      "character": "Sofia Edwards",
+      "stage_id": 7,
+      "qa_count": 11,
+      "turn_count": 2089
+    },
+    {
+      "dialogue_id": "0f9b5524-a6c2-4b33-8455-60e1cfc0e5a1",
+      "character": "Velma Garrison",
+      "stage_id": 7,
+      "qa_count": 11,
+      "turn_count": 1937
+    },
+    {
+      "dialogue_id": "9adcdde9-609d-47a5-9582-9ce8be4334dc",
+      "character": "Kayla Mora",
+      "stage_id": 7,
+      "qa_count": 13,
+      "turn_count": 2052
+    },
+    {
+      "dialogue_id": "05533cfa-8cd3-4b05-8b0a-39abae16d43e",
+      "character": "Annabella Pace",
+      "stage_id": 7,
+      "qa_count": 17,
+      "turn_count": 1940
+    },
+    {
+      "dialogue_id": "9af21c65-cc4d-42eb-a9ee-9a3feca803f0",
+      "character": "Aiden Schneider",
+      "stage_id": 7,
+      "qa_count": 10,
+      "turn_count": 1864
+    },
+    {
+      "dialogue_id": "a4edbf11-98b3-4505-95cb-5af2ac1b7f3d",
+      "character": "Arnold Thomson",
+      "stage_id": 7,
+      "qa_count": 9,
+      "turn_count": 2073
+    },
+    {
+      "dialogue_id": "ef9b34d0-5015-481d-82fc-c8195cea2c69",
+      "character": "Faith Gallegos",
+      "stage_id": 7,
+      "qa_count": 15,
+      "turn_count": 1976
+    },
+    {
+      "dialogue_id": "2b901846-d0ff-4816-8516-c5e9b1fe2139",
+      "character": "Nadine Wolf",
+      "stage_id": 7,
+      "qa_count": 10,
+      "turn_count": 1923
+    },
+    {
+      "dialogue_id": "ae1426d6-462f-4c88-b8d9-41a38315f3d4",
+      "character": "Melisa Solis",
+      "stage_id": 7,
+      "qa_count": 8,
+      "turn_count": 1896
+    },
+    {
+      "dialogue_id": "f29292aa-5e3f-45d0-95ed-8aaf9f8c31fe",
+      "character": "Irene Dyer",
+      "stage_id": 7,
+      "qa_count": 12,
+      "turn_count": 1910
+    },
+    {
+      "dialogue_id": "fdc0fbd6-18c6-4f93-9c5d-7e97bfa30e93",
+      "character": "Nadia Garrison",
+      "stage_id": 7,
+      "qa_count": 11,
+      "turn_count": 1974
+    },
+    {
+      "dialogue_id": "e394a178-a82b-4527-a2f4-664c24bf446e",
+      "character": "Emmy Maldonado",
+      "stage_id": 7,
+      "qa_count": 11,
+      "turn_count": 1901
+    },
+    {
+      "dialogue_id": "9842cdad-7ff4-4ee6-b48b-11bbc8338cd0",
+      "character": "Nikolas Doyle",
+      "stage_id": 7,
+      "qa_count": 11,
+      "turn_count": 1932
+    },
+    {
+      "dialogue_id": "030c3e3d-5bcd-412e-bbd8-26c8eb3ac59a",
+      "character": "Eliza Mclean",
+      "stage_id": 7,
+      "qa_count": 17,
+      "turn_count": 1994
+    },
+    {
+      "dialogue_id": "4cea4ceb-7633-4a6e-a197-fc4862e54b70",
+      "character": "Rosie Robbins",
+      "stage_id": 7,
+      "qa_count": 12,
+      "turn_count": 2074
+    },
+    {
+      "dialogue_id": "002cfa70-7b2f-4105-92e8-3ae0dab60dd3",
+      "character": "Helen Norton",
+      "stage_id": 7,
+      "qa_count": 16,
+      "turn_count": 1905
+    },
+    {
+      "dialogue_id": "bee718a4-4dbb-4344-b365-b14f56b842df",
+      "character": "Jakub Wilkinson",
+      "stage_id": 7,
+      "qa_count": 10,
+      "turn_count": 2115
+    },
+    {
+      "dialogue_id": "9268fb52-5cea-48ad-be46-a40448e28fac",
+      "character": "Aneesa Hughes",
+      "stage_id": 7,
+      "qa_count": 14,
+      "turn_count": 1908
+    },
+    {
+      "dialogue_id": "5ef98408-8adc-4bf2-b578-cb073ac7945b",
+      "character": "Nora Warner",
+      "stage_id": 7,
+      "qa_count": 12,
+      "turn_count": 2081
+    },
+    {
+      "dialogue_id": "7623f7ea-6e23-42f9-8d8c-1a9dca69b3ac",
+      "character": "Aditya Adkins",
+      "stage_id": 7,
+      "qa_count": 16,
+      "turn_count": 2040
+    },
+    {
+      "dialogue_id": "d5f38cc3-6e71-4dad-95eb-795143c167df",
+      "character": "Eesa Rivera",
+      "stage_id": 7,
+      "qa_count": 15,
+      "turn_count": 1961
+    },
+    {
+      "dialogue_id": "0426fbb2-871e-4917-9c50-0159cfee7ef3",
+      "character": "Qasim Douglas",
+      "stage_id": 7,
+      "qa_count": 9,
+      "turn_count": 2121
+    },
+    {
+      "dialogue_id": "5f02c887-2d20-4e48-b602-ccc4cbcd19fa",
+      "character": "Betty Harvey",
+      "stage_id": 7,
+      "qa_count": 14,
+      "turn_count": 2010
+    },
+    {
+      "dialogue_id": "9aedac33-e061-43f8-bc97-d80e05fdaa5f",
+      "character": "Keelan Hawkins",
+      "stage_id": 7,
+      "qa_count": 17,
+      "turn_count": 1985
+    },
+    {
+      "dialogue_id": "ad7759a0-f522-423c-aec3-9fdb41c3e9bb",
+      "character": "Aarav Burgess",
+      "stage_id": 7,
+      "qa_count": 7,
+      "turn_count": 2041
+    },
+    {
+      "dialogue_id": "a3014f5c-4e72-4bab-b906-209fba2d8a22",
+      "character": "Alia Bolton",
+      "stage_id": 7,
+      "qa_count": 16,
+      "turn_count": 2111
+    },
+    {
+      "dialogue_id": "af706d19-4d13-4620-88a6-432679002ca6",
+      "character": "Md Whitaker",
+      "stage_id": 7,
+      "qa_count": 11,
+      "turn_count": 1888
+    },
+    {
+      "dialogue_id": "3d61cc74-bf6f-40bc-a1f0-6b9471a77e6b",
+      "character": "Safiyyah Vaughan",
+      "stage_id": 7,
+      "qa_count": 15,
+      "turn_count": 1893
+    },
+    {
+      "dialogue_id": "f50f30b5-0883-420f-9d5c-f1ae182738f5",
+      "character": "Harris Fitzgerald",
+      "stage_id": 7,
+      "qa_count": 10,
+      "turn_count": 1943
+    },
+    {
+      "dialogue_id": "ba547eac-84d2-4bef-ba2b-bcaf70e545d2",
+      "character": "Ezekiel McKay",
+      "stage_id": 7,
+      "qa_count": 11,
+      "turn_count": 2089
+    },
+    {
+      "dialogue_id": "68069be0-0ae4-4673-afbb-aba4ce1873a7",
+      "character": "Silas Mclaughlin",
+      "stage_id": 7,
+      "qa_count": 10,
+      "turn_count": 1942
+    },
+    {
+      "dialogue_id": "4cbe7ae4-a51f-4c62-bdb5-0b175e2d2148",
+      "character": "Aleeza Cortez",
+      "stage_id": 7,
+      "qa_count": 9,
+      "turn_count": 2065
+    },
+    {
+      "dialogue_id": "40e95384-2e3a-4692-b21c-d3e3b19974ec",
+      "character": "Lennox Anderson",
+      "stage_id": 7,
+      "qa_count": 12,
+      "turn_count": 2057
+    },
+    {
+      "dialogue_id": "3ce45595-cec4-42cb-80cd-def012e98d67",
+      "character": "Victor Dunlap",
+      "stage_id": 7,
+      "qa_count": 16,
+      "turn_count": 2077
+    },
+    {
+      "dialogue_id": "519add3b-c198-40b6-b143-ec87ff2ed33b",
+      "character": "Joyce Moody",
+      "stage_id": 7,
+      "qa_count": 16,
+      "turn_count": 2069
+    },
+    {
+      "dialogue_id": "ec933bb5-1406-45d5-b74d-d40f687bfc20",
+      "character": "Jude Roberson",
+      "stage_id": 7,
+      "qa_count": 14,
+      "turn_count": 2169
+    },
+    {
+      "dialogue_id": "78b40e94-7ae0-448e-8697-bad9808817df",
+      "character": "Amaan Bartlett",
+      "stage_id": 7,
+      "qa_count": 9,
+      "turn_count": 1988
+    },
+    {
+      "dialogue_id": "9c4677a1-a88b-48a0-ba53-065d32484f49",
+      "character": "Kiran Smith",
+      "stage_id": 7,
+      "qa_count": 11,
+      "turn_count": 1977
+    },
+    {
+      "dialogue_id": "8ab4ae9b-11e7-4a2f-8229-39d773bfefb0",
+      "character": "Sabrina Chen",
+      "stage_id": 7,
+      "qa_count": 11,
+      "turn_count": 2099
+    },
+    {
+      "dialogue_id": "8b6551ad-e2be-45cf-a03f-e1b86b0de3ba",
+      "character": "Sumaiya George",
+      "stage_id": 7,
+      "qa_count": 11,
+      "turn_count": 1939
+    },
+    {
+      "dialogue_id": "2cd0fd6c-29ff-479c-aa22-07bef642d858",
+      "character": "Bonnie O'Quinn",
+      "stage_id": 7,
+      "qa_count": 12,
+      "turn_count": 1948
+    },
+    {
+      "dialogue_id": "30dd6727-74cc-429f-89e6-bfc8f283a6f3",
+      "character": "Sophie Berry",
+      "stage_id": 7,
+      "qa_count": 10,
+      "turn_count": 2005
+    },
+    {
+      "dialogue_id": "ee5dc226-4deb-431f-83fd-aee16c4cdfe7",
+      "character": "Kirsty Christian",
+      "stage_id": 7,
+      "qa_count": 10,
+      "turn_count": 1922
+    },
+    {
+      "dialogue_id": "6e9dcd3d-779c-44ad-899b-4f26221d0ebc",
+      "character": "Alys Shepard",
+      "stage_id": 7,
+      "qa_count": 10,
+      "turn_count": 2007
+    },
+    {
+      "dialogue_id": "27e240a6-9b70-4b6a-9260-480ed8e825fc",
+      "character": "Doris Lowe",
+      "stage_id": 7,
+      "qa_count": 15,
+      "turn_count": 2001
+    },
+    {
+      "dialogue_id": "e592441c-85b3-4338-995a-47bda0a97d0a",
+      "character": "Abdullahi Holland",
+      "stage_id": 7,
+      "qa_count": 12,
+      "turn_count": 1927
+    },
+    {
+      "dialogue_id": "fa4deebb-e499-4fcd-8884-a75ad3f7231f",
+      "character": "Robin Rich",
+      "stage_id": 7,
+      "qa_count": 10,
+      "turn_count": 1943
+    },
+    {
+      "dialogue_id": "e4b80e05-74bd-4f0e-b5d5-a5bbfa7204c6",
+      "character": "Jakob White",
+      "stage_id": 7,
+      "qa_count": 11,
+      "turn_count": 2025
+    },
+    {
+      "dialogue_id": "e69da200-4f9b-4558-9fb8-cf4918bee0dc",
+      "character": "Cleo McMahon",
+      "stage_id": 7,
+      "qa_count": 10,
+      "turn_count": 1829
+    },
+    {
+      "dialogue_id": "7d0807d6-bb98-45b4-b60a-c78b93c321df",
+      "character": "Amelie Oneal",
+      "stage_id": 7,
+      "qa_count": 18,
+      "turn_count": 2024
+    },
+    {
+      "dialogue_id": "fa6c1590-0c1a-4f06-8acd-e00ac7db0ea7",
+      "character": "Mina Leblanc",
+      "stage_id": 7,
+      "qa_count": 12,
+      "turn_count": 2091
+    },
+    {
+      "dialogue_id": "4c0c5403-5527-4c61-a907-c9904e8d028c",
+      "character": "Vincent Adams",
+      "stage_id": 7,
+      "qa_count": 12,
+      "turn_count": 2001
+    },
+    {
+      "dialogue_id": "3ba42b6b-7416-4cab-bc5f-0c2f906f9c04",
+      "character": "Joan Krueger",
+      "stage_id": 7,
+      "qa_count": 11,
+      "turn_count": 1981
+    },
+    {
+      "dialogue_id": "c9a5ae7a-64ce-4769-90d7-d44cef2c3050",
+      "character": "Alan Benson",
+      "stage_id": 7,
+      "qa_count": 12,
+      "turn_count": 1966
+    },
+    {
+      "dialogue_id": "4f94deb3-8d6d-4b38-8e96-6dc93c4bc4cc",
+      "character": "Bessie Matthams",
+      "stage_id": 7,
+      "qa_count": 10,
+      "turn_count": 2127
+    },
+    {
+      "dialogue_id": "3c289c27-b2d0-45c0-82d7-fb76fe51ed14",
+      "character": "Charley West",
+      "stage_id": 7,
+      "qa_count": 11,
+      "turn_count": 1937
+    },
+    {
+      "dialogue_id": "db19c728-d40a-4a7a-95c8-eb6aaa3ff5ca",
+      "character": "Nathan Graves",
+      "stage_id": 7,
+      "qa_count": 18,
+      "turn_count": 2068
+    },
+    {
+      "dialogue_id": "302b7ad3-4025-48e0-aaff-35aa8e826bed",
+      "character": "Pauline Sutton",
+      "stage_id": 7,
+      "qa_count": 11,
+      "turn_count": 2082
+    },
+    {
+      "dialogue_id": "dda9b66b-a9e3-4f5c-ba7f-923ce287559a",
+      "character": "Hannah Pena",
+      "stage_id": 7,
+      "qa_count": 11,
+      "turn_count": 1952
+    },
+    {
+      "dialogue_id": "b8769e65-754f-4275-b456-d320b3b8b28f",
+      "character": "Mohammed Bloggs",
+      "stage_id": 7,
+      "qa_count": 11,
+      "turn_count": 2003
+    },
+    {
+      "dialogue_id": "17334546-e763-4594-8aab-e764043b3543",
+      "character": "Estelle Mullins",
+      "stage_id": 7,
+      "qa_count": 17,
+      "turn_count": 1881
+    },
+    {
+      "dialogue_id": "c1a6e9aa-f419-4379-891a-efa6fce5234e",
+      "character": "Christian Hartman",
+      "stage_id": 7,
+      "qa_count": 10,
+      "turn_count": 2023
+    },
+    {
+      "dialogue_id": "64ff86f3-e5aa-4e32-908d-38638baa0be5",
+      "character": "Aaliyah Eaton",
+      "stage_id": 7,
+      "qa_count": 12,
+      "turn_count": 1846
+    },
+    {
+      "dialogue_id": "b948bd4d-6215-4a8e-99bd-9c598853d8f9",
+      "character": "Rohan King",
+      "stage_id": 7,
+      "qa_count": 12,
+      "turn_count": 2129
+    },
+    {
+      "dialogue_id": "d72c02af-6d8b-4d59-a1f9-cdd6e330de85",
+      "character": "Abel Duran",
+      "stage_id": 7,
+      "qa_count": 10,
+      "turn_count": 2069
+    },
+    {
+      "dialogue_id": "2d815908-3314-4cb2-9fee-44f1fa639563",
+      "character": "Mariyah O'Brien",
+      "stage_id": 7,
+      "qa_count": 10,
+      "turn_count": 2024
+    },
+    {
+      "dialogue_id": "6b55acfb-4986-4a37-8b3a-4797f01bc94e",
+      "character": "Crystal Mcdowell",
+      "stage_id": 7,
+      "qa_count": 12,
+      "turn_count": 2012
+    },
+    {
+      "dialogue_id": "ba1ba0b5-b36d-4b9c-b582-22b402d947e6",
+      "character": "Kayne Valencia",
+      "stage_id": 7,
+      "qa_count": 12,
+      "turn_count": 2023
+    },
+    {
+      "dialogue_id": "305fd36f-4b55-4c44-ba1a-562c7b21c5d1",
+      "character": "Tommy Lloyd",
+      "stage_id": 7,
+      "qa_count": 12,
+      "turn_count": 2052
+    },
+    {
+      "dialogue_id": "da561ec7-d644-47ab-a7c0-e3bed74ffa41",
+      "character": "Alyssa Obrien",
+      "stage_id": 7,
+      "qa_count": 18,
+      "turn_count": 2108
+    },
+    {
+      "dialogue_id": "a4021e18-47cc-4789-9964-7b0f40006f58",
+      "character": "Luna Tyler",
+      "stage_id": 7,
+      "qa_count": 11,
+      "turn_count": 1978
+    },
+    {
+      "dialogue_id": "48bd7b35-d6fe-492f-a601-41f883e0eb09",
+      "character": "Robbie Rich",
+      "stage_id": 7,
+      "qa_count": 11,
+      "turn_count": 2062
+    },
+    {
+      "dialogue_id": "f314942e-534f-49de-a90b-bb4e7ea27440",
+      "character": "Connie Downs",
+      "stage_id": 7,
+      "qa_count": 12,
+      "turn_count": 2082
+    },
+    {
+      "dialogue_id": "6e5cc64a-fbc7-4f53-9057-4d8dccb1726a",
+      "character": "Raihan Jefferson",
+      "stage_id": 7,
+      "qa_count": 11,
+      "turn_count": 1965
+    },
+    {
+      "dialogue_id": "f61f7803-f867-4cb5-9d47-3a2409c676c0",
+      "character": "Michelle Velasquez",
+      "stage_id": 7,
+      "qa_count": 11,
+      "turn_count": 2031
+    },
+    {
+      "dialogue_id": "b91334d6-2731-49ed-8227-78da5ffd36bc",
+      "character": "Lulu Case",
+      "stage_id": 7,
+      "qa_count": 16,
+      "turn_count": 1965
+    },
+    {
+      "dialogue_id": "1c7b739f-61d4-4942-88e1-d94d69f2882b",
+      "character": "Maia Sherman",
+      "stage_id": 7,
+      "qa_count": 12,
+      "turn_count": 1917
+    },
+    {
+      "dialogue_id": "443b66d4-bbeb-4998-8670-ce310fe5de4c",
+      "character": "Benjamin Connor",
+      "stage_id": 7,
+      "qa_count": 12,
+      "turn_count": 2097
+    },
+    {
+      "dialogue_id": "1651b0f6-49a7-4503-8538-4cdb7679a8bb",
+      "character": "Danny Espinoza",
+      "stage_id": 7,
+      "qa_count": 11,
+      "turn_count": 1995
+    },
+    {
+      "dialogue_id": "e35d1d83-0dac-4600-bdb9-dd3a46b77efc",
+      "character": "Louie Kline",
+      "stage_id": 7,
+      "qa_count": 10,
+      "turn_count": 2093
+    },
+    {
+      "dialogue_id": "9f4f7650-d6ba-4d8b-bed4-88cbb8ff034f",
+      "character": "Gail Miles",
+      "stage_id": 7,
+      "qa_count": 9,
+      "turn_count": 2136
+    },
+    {
+      "dialogue_id": "f71c0b4e-6afc-413b-a218-88356bcf314c",
+      "character": "Ruairi Everett",
+      "stage_id": 7,
+      "qa_count": 14,
+      "turn_count": 2042
+    },
+    {
+      "dialogue_id": "a7f6dae1-e2c3-4062-a9b1-d0d3f2d1acb9",
+      "character": "Kiera Long",
+      "stage_id": 7,
+      "qa_count": 12,
+      "turn_count": 2073
+    },
+    {
+      "dialogue_id": "1039ad8a-9e66-4efe-8308-1e5497babfbd",
+      "character": "Arman Quinn",
+      "stage_id": 7,
+      "qa_count": 11,
+      "turn_count": 2031
+    },
+    {
+      "dialogue_id": "d730c482-4b63-4206-9d4e-44f0443faaed",
+      "character": "Yasmin Miranda",
+      "stage_id": 7,
+      "qa_count": 14,
+      "turn_count": 1931
+    },
+    {
+      "dialogue_id": "3a14b63e-2946-4a50-b75e-008791e31674",
+      "character": "Angela Blake",
+      "stage_id": 7,
+      "qa_count": 14,
+      "turn_count": 2047
+    },
+    {
+      "dialogue_id": "e102f674-6eab-4d14-b751-fb41c16707ab",
+      "character": "Carmen Shah",
+      "stage_id": 7,
+      "qa_count": 11,
+      "turn_count": 1937
+    },
+    {
+      "dialogue_id": "3c4cf49f-9fa8-4a98-919a-6ba7d59f7d0a",
+      "character": "Scott Obrien",
+      "stage_id": 7,
+      "qa_count": 16,
+      "turn_count": 2044
+    },
+    {
+      "dialogue_id": "1f7ae5a4-04bf-4da0-a022-25b80c638c3d",
+      "character": "Anjali McCormick",
+      "stage_id": 7,
+      "qa_count": 12,
+      "turn_count": 2071
+    },
+    {
+      "dialogue_id": "39c860bb-e245-4742-8d71-793399a57eee",
+      "character": "Ashleigh Daugherty",
+      "stage_id": 7,
+      "qa_count": 11,
+      "turn_count": 1861
+    },
+    {
+      "dialogue_id": "8a4a782f-6d65-4ccb-aa98-b5d4ae417493",
+      "character": "Woody Juarez",
+      "stage_id": 7,
+      "qa_count": 12,
+      "turn_count": 2145
+    },
+    {
+      "dialogue_id": "bdf92443-c14b-4e81-9f25-52fbf5aa2c64",
+      "character": "Miles Bernard",
+      "stage_id": 7,
+      "qa_count": 10,
+      "turn_count": 2120
+    },
+    {
+      "dialogue_id": "065a9571-9147-45a7-811f-dd32d9be0812",
+      "character": "Aminah Blackburn",
+      "stage_id": 7,
+      "qa_count": 10,
+      "turn_count": 2044
+    },
+    {
+      "dialogue_id": "cf63f046-73ae-411f-a7fa-190d131fea9f",
+      "character": "Andy Mayer",
+      "stage_id": 7,
+      "qa_count": 9,
+      "turn_count": 1922
+    },
+    {
+      "dialogue_id": "f7318cf3-4e81-4c1c-8773-68477348997f",
+      "character": "Ashley Coleman",
+      "stage_id": 7,
+      "qa_count": 14,
+      "turn_count": 2033
+    },
+    {
+      "dialogue_id": "44ac6f98-b18a-43f9-b337-f9bf7979cf33",
+      "character": "Seth Pope",
+      "stage_id": 7,
+      "qa_count": 10,
+      "turn_count": 2160
+    },
+    {
+      "dialogue_id": "37cccad4-c1d1-447a-9e4f-55637a115611",
+      "character": "Macauley Obrien",
+      "stage_id": 8,
+      "qa_count": 11,
+      "turn_count": 1893
+    },
+    {
+      "dialogue_id": "a9a54340-43e4-408d-81b6-35f0ab268fb4",
+      "character": "Emilie Davila",
+      "stage_id": 8,
+      "qa_count": 15,
+      "turn_count": 2013
+    },
+    {
+      "dialogue_id": "78df381e-7731-4d0e-b10c-2523c1dcc18e",
+      "character": "Alvin Crosby",
+      "stage_id": 8,
+      "qa_count": 10,
+      "turn_count": 1970
+    },
+    {
+      "dialogue_id": "c7ddb950-3da3-4571-98f7-60e0eaa699b4",
+      "character": "Erin Fitzpatrick",
+      "stage_id": 8,
+      "qa_count": 10,
+      "turn_count": 2125
+    },
+    {
+      "dialogue_id": "d6afc4d0-7130-4e79-9fe5-11a29f1f9c08",
+      "character": "Betty Clements",
+      "stage_id": 8,
+      "qa_count": 10,
+      "turn_count": 1962
+    },
+    {
+      "dialogue_id": "59037b8b-710a-458f-b900-5287ad9e14c9",
+      "character": "Izabella Ashley",
+      "stage_id": 8,
+      "qa_count": 12,
+      "turn_count": 2014
+    },
+    {
+      "dialogue_id": "b054aebf-f6fe-4e78-abef-21eb7fad8025",
+      "character": "Natalia Turner",
+      "stage_id": 8,
+      "qa_count": 11,
+      "turn_count": 1888
+    },
+    {
+      "dialogue_id": "646fd548-9329-484e-b475-6161af015472",
+      "character": "Blanche Owen",
+      "stage_id": 8,
+      "qa_count": 13,
+      "turn_count": 2106
+    },
+    {
+      "dialogue_id": "f4016bf8-204d-4dbb-852f-3b56abe6f3fa",
+      "character": "Sabrina Fernandez",
+      "stage_id": 8,
+      "qa_count": 10,
+      "turn_count": 2038
+    },
+    {
+      "dialogue_id": "4e9b0cb0-7e76-4d89-a590-d9773d5c42a1",
+      "character": "Tatiana Hooper",
+      "stage_id": 8,
+      "qa_count": 12,
+      "turn_count": 1921
+    },
+    {
+      "dialogue_id": "d96fd363-2c1d-486e-9690-be81f1ae67f2",
+      "character": "Leonie Schultz",
+      "stage_id": 8,
+      "qa_count": 18,
+      "turn_count": 2122
+    },
+    {
+      "dialogue_id": "9812a685-02f9-49ec-9593-526b16af7b8a",
+      "character": "Zaara Durham",
+      "stage_id": 8,
+      "qa_count": 16,
+      "turn_count": 2158
+    },
+    {
+      "dialogue_id": "9b60a53c-812a-4f39-af35-27d84f36bfc8",
+      "character": "Jaden Dorsey",
+      "stage_id": 8,
+      "qa_count": 11,
+      "turn_count": 2021
+    },
+    {
+      "dialogue_id": "37958077-ad57-438d-b26a-773d1fb02922",
+      "character": "Luis Sweeney",
+      "stage_id": 8,
+      "qa_count": 10,
+      "turn_count": 1970
+    },
+    {
+      "dialogue_id": "f8e36a3d-04ff-48e9-965b-d6b1491758bd",
+      "character": "Lorenzo Collins",
+      "stage_id": 8,
+      "qa_count": 9,
+      "turn_count": 1893
+    },
+    {
+      "dialogue_id": "a7885702-f3be-4275-988b-f3cb7d7bf043",
+      "character": "Lilly-Rose Roman",
+      "stage_id": 8,
+      "qa_count": 15,
+      "turn_count": 1977
+    },
+    {
+      "dialogue_id": "fdd81fd1-3a32-458b-a4f4-28563466bf0b",
+      "character": "Ida England",
+      "stage_id": 8,
+      "qa_count": 10,
+      "turn_count": 1987
+    },
+    {
+      "dialogue_id": "f44612a5-ce38-463d-b74a-72730ebec795",
+      "character": "Kenny Davila",
+      "stage_id": 8,
+      "qa_count": 11,
+      "turn_count": 2162
+    },
+    {
+      "dialogue_id": "fefdd102-8632-4935-8f5c-9679f9d43fa5",
+      "character": "Brogan Mora",
+      "stage_id": 8,
+      "qa_count": 11,
+      "turn_count": 2111
+    },
+    {
+      "dialogue_id": "4001fb64-8f11-4e2c-b354-d6333420fb64",
+      "character": "Amin Velasquez",
+      "stage_id": 8,
+      "qa_count": 11,
+      "turn_count": 2038
+    },
+    {
+      "dialogue_id": "4a02d978-9505-44aa-a214-52f220183474",
+      "character": "Mildred Howe",
+      "stage_id": 8,
+      "qa_count": 10,
+      "turn_count": 2009
+    },
+    {
+      "dialogue_id": "22977b68-3606-4c63-8147-c7ea1f76563b",
+      "character": "Joanne Hogan",
+      "stage_id": 8,
+      "qa_count": 13,
+      "turn_count": 2105
+    },
+    {
+      "dialogue_id": "7a144ec0-5a8b-44ff-937e-7443b4c0836d",
+      "character": "Abdirahman Nichols",
+      "stage_id": 8,
+      "qa_count": 12,
+      "turn_count": 1965
+    },
+    {
+      "dialogue_id": "a67eac2e-d0a4-4e1d-8744-745078551640",
+      "character": "Walter Ramos",
+      "stage_id": 8,
+      "qa_count": 13,
+      "turn_count": 1942
+    },
+    {
+      "dialogue_id": "349ba10e-3114-4c5f-a5c3-bbcfcdcb3b4c",
+      "character": "Ben Doherty",
+      "stage_id": 8,
+      "qa_count": 11,
+      "turn_count": 1996
+    },
+    {
+      "dialogue_id": "ab5474a1-9cd0-492e-9621-1a956eb99c9b",
+      "character": "Amaya Arnold",
+      "stage_id": 8,
+      "qa_count": 9,
+      "turn_count": 1886
+    },
+    {
+      "dialogue_id": "053ffd83-a495-4c3d-8206-9abff3ed3e8d",
+      "character": "Everly Mcclain",
+      "stage_id": 8,
+      "qa_count": 14,
+      "turn_count": 2110
+    },
+    {
+      "dialogue_id": "cbb01571-b5c3-457e-bab4-e488e091c6f9",
+      "character": "Miguel Bradshaw",
+      "stage_id": 8,
+      "qa_count": 11,
+      "turn_count": 2043
+    },
+    {
+      "dialogue_id": "48a913ff-ab6a-44c2-a5ba-14832e4e6bf6",
+      "character": "Kiera Cross",
+      "stage_id": 8,
+      "qa_count": 11,
+      "turn_count": 2067
+    },
+    {
+      "dialogue_id": "59439a8c-fca9-458c-beb1-78b9537eab44",
+      "character": "Lloyd Norris",
+      "stage_id": 8,
+      "qa_count": 14,
+      "turn_count": 1994
+    },
+    {
+      "dialogue_id": "456e0e65-9b62-45c5-9604-3c8606db4a4b",
+      "character": "Lexi Jarvis",
+      "stage_id": 8,
+      "qa_count": 11,
+      "turn_count": 2063
+    },
+    {
+      "dialogue_id": "2da2e1d9-1544-40af-a66e-c43d3161c22f",
+      "character": "Frances Villanueva",
+      "stage_id": 8,
+      "qa_count": 11,
+      "turn_count": 2014
+    },
+    {
+      "dialogue_id": "dbca960e-4a08-4643-a8f9-e2702ff16968",
+      "character": "Inaya Armstrong",
+      "stage_id": 8,
+      "qa_count": 12,
+      "turn_count": 1961
+    },
+    {
+      "dialogue_id": "4bf21530-d053-4d10-b807-205aa5abe806",
+      "character": "Marjorie Bartlett",
+      "stage_id": 8,
+      "qa_count": 11,
+      "turn_count": 1959
+    },
+    {
+      "dialogue_id": "880dc87e-0fe3-493f-9f45-5845e8fee768",
+      "character": "Saffron Krueger",
+      "stage_id": 8,
+      "qa_count": 10,
+      "turn_count": 2006
+    },
+    {
+      "dialogue_id": "1b1f4bb0-c225-4562-a493-a45fce7af467",
+      "character": "Ray Everett",
+      "stage_id": 8,
+      "qa_count": 11,
+      "turn_count": 2072
+    },
+    {
+      "dialogue_id": "0b1eb27a-d57e-4802-8eeb-baa10bf04d43",
+      "character": "Franklin Middleton",
+      "stage_id": 8,
+      "qa_count": 12,
+      "turn_count": 2140
+    },
+    {
+      "dialogue_id": "d7b6b792-3d8d-4e34-a6f1-0532c4c9b90a",
+      "character": "Phoenix Nelson",
+      "stage_id": 8,
+      "qa_count": 10,
+      "turn_count": 2079
+    },
+    {
+      "dialogue_id": "d2dc8a37-d03f-4718-a0b8-4b0dd7470ad3",
+      "character": "Rehan Merrill",
+      "stage_id": 8,
+      "qa_count": 13,
+      "turn_count": 1963
+    },
+    {
+      "dialogue_id": "70af5802-07ea-4cd8-89d5-393f77540738",
+      "character": "Tallulah Cameron",
+      "stage_id": 8,
+      "qa_count": 11,
+      "turn_count": 1810
+    },
+    {
+      "dialogue_id": "f9f25332-8bbd-4ef1-b9ca-41c590885c3c",
+      "character": "Willie Aguilar",
+      "stage_id": 8,
+      "qa_count": 11,
+      "turn_count": 2031
+    },
+    {
+      "dialogue_id": "af843e80-48b8-4367-96a6-2711d1519cbc",
+      "character": "Jeffrey Kirby",
+      "stage_id": 8,
+      "qa_count": 11,
+      "turn_count": 2138
+    },
+    {
+      "dialogue_id": "c9a0fbdc-db0f-41ac-895a-ebb316e47019",
+      "character": "Savanna Mack",
+      "stage_id": 8,
+      "qa_count": 11,
+      "turn_count": 2174
+    },
+    {
+      "dialogue_id": "2658e720-e0cc-4dcf-9b1c-dc5b1816c24f",
+      "character": "Elaine Connor",
+      "stage_id": 8,
+      "qa_count": 12,
+      "turn_count": 2117
+    },
+    {
+      "dialogue_id": "ec80cc2e-f165-442a-9984-b543ad383ab7",
+      "character": "Gloria Arnold",
+      "stage_id": 8,
+      "qa_count": 10,
+      "turn_count": 2053
+    },
+    {
+      "dialogue_id": "dfd07c4f-3f50-446a-a5f0-9b96bc47d8b5",
+      "character": "Belle Baldwin",
+      "stage_id": 8,
+      "qa_count": 15,
+      "turn_count": 2039
+    },
+    {
+      "dialogue_id": "89ed3f7e-f388-41f0-87ce-3321e86134fb",
+      "character": "Alexandre Cohen",
+      "stage_id": 8,
+      "qa_count": 10,
+      "turn_count": 2100
+    },
+    {
+      "dialogue_id": "f6edff1b-da99-4035-969a-3fc012a7dc79",
+      "character": "Flora Fleming",
+      "stage_id": 8,
+      "qa_count": 12,
+      "turn_count": 2060
+    },
+    {
+      "dialogue_id": "1964e1ad-2e71-4e94-bc71-883d43dccd49",
+      "character": "Cian Kerr",
+      "stage_id": 8,
+      "qa_count": 10,
+      "turn_count": 1816
+    },
+    {
+      "dialogue_id": "9cbd461a-1285-4071-b7e7-5875a46f7550",
+      "character": "Liberty Bowman",
+      "stage_id": 8,
+      "qa_count": 12,
+      "turn_count": 1941
+    },
+    {
+      "dialogue_id": "ab459ebc-ccfd-4ef6-a106-e3a0d9e66552",
+      "character": "Kyran Hall",
+      "stage_id": 8,
+      "qa_count": 11,
+      "turn_count": 2062
+    },
+    {
+      "dialogue_id": "0e7dbc5d-dbdf-4deb-ab79-40f106d4a3ee",
+      "character": "Mehmet Lucero",
+      "stage_id": 8,
+      "qa_count": 12,
+      "turn_count": 1902
+    },
+    {
+      "dialogue_id": "011ce3d0-7fed-4ec4-bfee-76d2d85cf62b",
+      "character": "Larissa Wells",
+      "stage_id": 8,
+      "qa_count": 11,
+      "turn_count": 1851
+    },
+    {
+      "dialogue_id": "b1e2779e-225a-4907-b8fd-8b95b3c123fe",
+      "character": "Jasper Abbott",
+      "stage_id": 8,
+      "qa_count": 11,
+      "turn_count": 2001
+    },
+    {
+      "dialogue_id": "c56fce3d-bb92-4eeb-872a-9f824c1da7f8",
+      "character": "Elliot Hoover",
+      "stage_id": 8,
+      "qa_count": 11,
+      "turn_count": 2193
+    },
+    {
+      "dialogue_id": "33e43152-fafb-4f74-b219-85ef37a6310d",
+      "character": "Blaine Galvan",
+      "stage_id": 8,
+      "qa_count": 10,
+      "turn_count": 2013
+    },
+    {
+      "dialogue_id": "e2537096-a3a2-40c5-8187-042b5114d95e",
+      "character": "Joel Bird",
+      "stage_id": 8,
+      "qa_count": 11,
+      "turn_count": 2102
+    },
+    {
+      "dialogue_id": "adc0cf26-fcb2-48c4-9cde-f3cdc701ab0b",
+      "character": "Malik Kidd",
+      "stage_id": 8,
+      "qa_count": 11,
+      "turn_count": 2126
+    },
+    {
+      "dialogue_id": "8befa85c-2de9-455b-9cb1-fbed0759779a",
+      "character": "Mariam Maldonado",
+      "stage_id": 8,
+      "qa_count": 11,
+      "turn_count": 1976
+    },
+    {
+      "dialogue_id": "f245c619-2540-401a-9dfb-a3f10a20ab1c",
+      "character": "Dewi Randolph",
+      "stage_id": 8,
+      "qa_count": 11,
+      "turn_count": 2015
+    },
+    {
+      "dialogue_id": "54323d37-d27a-43d2-9b96-3a145c988f50",
+      "character": "Ameera Hansen",
+      "stage_id": 8,
+      "qa_count": 11,
+      "turn_count": 1992
+    },
+    {
+      "dialogue_id": "cad4010c-c66a-410f-88ef-97c0d72a48d3",
+      "character": "Flynn Gross",
+      "stage_id": 8,
+      "qa_count": 16,
+      "turn_count": 1927
+    },
+    {
+      "dialogue_id": "54690500-7458-4a97-b8d8-dc6266d0119e",
+      "character": "Vinny Brandt",
+      "stage_id": 8,
+      "qa_count": 10,
+      "turn_count": 2075
+    },
+    {
+      "dialogue_id": "44edb88a-c274-4d8c-82e8-923532c8030b",
+      "character": "Robyn McClure",
+      "stage_id": 8,
+      "qa_count": 10,
+      "turn_count": 2131
+    },
+    {
+      "dialogue_id": "3a9d624b-76d3-4506-8f19-dbef2c3c147c",
+      "character": "Alma Taylor",
+      "stage_id": 8,
+      "qa_count": 10,
+      "turn_count": 1899
+    },
+    {
+      "dialogue_id": "69689e97-1ec0-4c87-8930-f6ab1b431c15",
+      "character": "Sanaa Keith",
+      "stage_id": 8,
+      "qa_count": 11,
+      "turn_count": 2044
+    },
+    {
+      "dialogue_id": "731bbc05-71af-423a-81f9-00183431f15d",
+      "character": "Dora Fitzgerald",
+      "stage_id": 8,
+      "qa_count": 9,
+      "turn_count": 1922
+    },
+    {
+      "dialogue_id": "c9545015-9981-4127-8eab-a1ce3efa5790",
+      "character": "Zahra Livingston",
+      "stage_id": 8,
+      "qa_count": 15,
+      "turn_count": 2180
+    },
+    {
+      "dialogue_id": "fe1eb3e2-3385-4196-8f13-17a559868306",
+      "character": "Sydney Jordan",
+      "stage_id": 8,
+      "qa_count": 11,
+      "turn_count": 1966
+    },
+    {
+      "dialogue_id": "7e23d1a3-d713-481b-8e41-cf9888d586f9",
+      "character": "Willard Elliott",
+      "stage_id": 8,
+      "qa_count": 15,
+      "turn_count": 1972
+    },
+    {
+      "dialogue_id": "cf9fd9f2-a211-4eb0-8e4b-d32603fb1b78",
+      "character": "Liyana Graham",
+      "stage_id": 8,
+      "qa_count": 12,
+      "turn_count": 1993
+    },
+    {
+      "dialogue_id": "b43ffebe-8fb0-43a7-a0e3-fa334a824e1a",
+      "character": "Steven Flores",
+      "stage_id": 8,
+      "qa_count": 16,
+      "turn_count": 1973
+    },
+    {
+      "dialogue_id": "dc5700e8-0e46-4b8d-8c60-dcee26b19134",
+      "character": "Walter Bauer",
+      "stage_id": 8,
+      "qa_count": 12,
+      "turn_count": 2051
+    },
+    {
+      "dialogue_id": "b464e0ed-0b4f-4d7e-996a-b993c76fabbc",
+      "character": "Kaya Mathis",
+      "stage_id": 8,
+      "qa_count": 11,
+      "turn_count": 1885
+    },
+    {
+      "dialogue_id": "6e876425-8007-4902-b269-4fdbfde9d5bd",
+      "character": "Milan Blake",
+      "stage_id": 8,
+      "qa_count": 12,
+      "turn_count": 2064
+    },
+    {
+      "dialogue_id": "79cc1921-2cc4-4008-993b-8ab12a0ebad6",
+      "character": "Bilal Strong",
+      "stage_id": 8,
+      "qa_count": 16,
+      "turn_count": 1916
+    },
+    {
+      "dialogue_id": "853f9204-98cb-40ef-9a24-3a0d657f80a0",
+      "character": "Saba Skinner",
+      "stage_id": 8,
+      "qa_count": 11,
+      "turn_count": 1968
+    },
+    {
+      "dialogue_id": "d01d0ffe-06f5-4fb0-8be9-b6f1bc21ab48",
+      "character": "Corey Harvey",
+      "stage_id": 8,
+      "qa_count": 11,
+      "turn_count": 2186
+    },
+    {
+      "dialogue_id": "8ec2289c-91ce-4c68-99f9-7b580ef94868",
+      "character": "Caroline Bond",
+      "stage_id": 8,
+      "qa_count": 10,
+      "turn_count": 1999
+    },
+    {
+      "dialogue_id": "ae0f57db-cd81-431a-9e30-e7f5f6448f66",
+      "character": "Anthony Fitzgerald",
+      "stage_id": 8,
+      "qa_count": 10,
+      "turn_count": 2197
+    },
+    {
+      "dialogue_id": "75af9f7e-1eb1-4811-ab86-c0972601bcb6",
+      "character": "Saskia Conway",
+      "stage_id": 8,
+      "qa_count": 12,
+      "turn_count": 2105
+    },
+    {
+      "dialogue_id": "30874df0-61af-42ec-a995-571c3c0b9a2b",
+      "character": "Maisy Sims",
+      "stage_id": 8,
+      "qa_count": 10,
+      "turn_count": 1885
+    },
+    {
+      "dialogue_id": "dc48aaae-4030-4b1a-a1e8-ff0158a5f483",
+      "character": "Kristen Buckley",
+      "stage_id": 8,
+      "qa_count": 9,
+      "turn_count": 2020
+    },
+    {
+      "dialogue_id": "25c1c728-700a-4376-9657-34e2dd21ea01",
+      "character": "Elsie Bruce",
+      "stage_id": 8,
+      "qa_count": 10,
+      "turn_count": 1932
+    },
+    {
+      "dialogue_id": "34a7bf00-3634-452b-85ad-8cb34ffcf8f5",
+      "character": "Kobi Hewitt",
+      "stage_id": 8,
+      "qa_count": 15,
+      "turn_count": 2064
+    },
+    {
+      "dialogue_id": "90cf284f-d13f-4fd0-94e6-9af43d7a5e53",
+      "character": "Clifford Massey",
+      "stage_id": 8,
+      "qa_count": 12,
+      "turn_count": 2103
+    },
+    {
+      "dialogue_id": "4cc65102-f9ba-43fb-8598-0c7a865ba406",
+      "character": "Drew Orr",
+      "stage_id": 8,
+      "qa_count": 11,
+      "turn_count": 2118
+    },
+    {
+      "dialogue_id": "f5e404df-8b54-4453-a74e-d36bd4b9e05c",
+      "character": "Mohamad Sherman",
+      "stage_id": 8,
+      "qa_count": 12,
+      "turn_count": 2028
+    },
+    {
+      "dialogue_id": "079c5450-44fc-4546-ad7b-92219f62dba8",
+      "character": "Rosemary Huber",
+      "stage_id": 8,
+      "qa_count": 11,
+      "turn_count": 2044
+    },
+    {
+      "dialogue_id": "69ad2769-df71-462b-8bf6-f471b4ca4f22",
+      "character": "Marianne Riddle",
+      "stage_id": 8,
+      "qa_count": 15,
+      "turn_count": 2100
+    },
+    {
+      "dialogue_id": "3b912289-7ec5-4dfd-8175-bb60db6395ab",
+      "character": "Asa Salazar",
+      "stage_id": 8,
+      "qa_count": 10,
+      "turn_count": 2023
+    },
+    {
+      "dialogue_id": "2a6b6a5e-61f1-40ff-b5ff-a3097b447dc5",
+      "character": "John Henderson",
+      "stage_id": 8,
+      "qa_count": 12,
+      "turn_count": 2083
+    },
+    {
+      "dialogue_id": "596c36d9-a721-47b2-b98c-c96ff04c3dd0",
+      "character": "Ned Marshall",
+      "stage_id": 8,
+      "qa_count": 13,
+      "turn_count": 2079
+    },
+    {
+      "dialogue_id": "bcdc0316-fccb-4dd1-bedf-05089b51f6fb",
+      "character": "Ellen Cooper",
+      "stage_id": 8,
+      "qa_count": 11,
+      "turn_count": 1792
+    },
+    {
+      "dialogue_id": "d8848061-67d6-4097-b37f-d11f03d795dd",
+      "character": "Theo Golden",
+      "stage_id": 8,
+      "qa_count": 12,
+      "turn_count": 2034
+    },
+    {
+      "dialogue_id": "5ff5b7c3-0ea7-48f5-a0c4-70ad3972c019",
+      "character": "Eoin Gonzales",
+      "stage_id": 8,
+      "qa_count": 11,
+      "turn_count": 1914
+    },
+    {
+      "dialogue_id": "36b6f13f-728d-4195-b44e-6bb7ba317e77",
+      "character": "Francesca Steele",
+      "stage_id": 8,
+      "qa_count": 11,
+      "turn_count": 2160
+    },
+    {
+      "dialogue_id": "3a6fc79c-7b41-4ff6-97e1-4869fd95a4f7",
+      "character": "Isabelle Montoya",
+      "stage_id": 8,
+      "qa_count": 18,
+      "turn_count": 2068
+    },
+    {
+      "dialogue_id": "9933ea4b-ea54-4147-b74e-c0a8a8080cbc",
+      "character": "Lyndon Hamilton",
+      "stage_id": 8,
+      "qa_count": 9,
+      "turn_count": 1972
+    },
+    {
+      "dialogue_id": "0750bc1b-bfe1-4355-b795-c1817bd389c4",
+      "character": "Shelby England",
+      "stage_id": 8,
+      "qa_count": 10,
+      "turn_count": 1884
+    },
+    {
+      "dialogue_id": "acff95c1-3e1f-470a-9016-9bed26c26308",
+      "character": "Ada Barber",
+      "stage_id": 9,
+      "qa_count": 18,
+      "turn_count": 2145
+    },
+    {
+      "dialogue_id": "b090339a-c3d6-40d0-996e-b356d61c44b6",
+      "character": "Doris Nolan",
+      "stage_id": 9,
+      "qa_count": 11,
+      "turn_count": 1941
+    },
+    {
+      "dialogue_id": "f0687da7-8539-4860-a91c-bcecc4fa1a76",
+      "character": "Brian Carson",
+      "stage_id": 9,
+      "qa_count": 10,
+      "turn_count": 1938
+    },
+    {
+      "dialogue_id": "2b37d793-d668-4a15-96ff-f83fb25c0316",
+      "character": "Kelsey Norman",
+      "stage_id": 9,
+      "qa_count": 11,
+      "turn_count": 1901
+    },
+    {
+      "dialogue_id": "1355944f-9334-4016-a406-60bbbe8fc4be",
+      "character": "Rosemary Fitzgerald",
+      "stage_id": 9,
+      "qa_count": 8,
+      "turn_count": 1946
+    },
+    {
+      "dialogue_id": "3ecdbd24-ca3e-4d3d-9e9e-d7b7260380e8",
+      "character": "Ria Blanchard",
+      "stage_id": 9,
+      "qa_count": 11,
+      "turn_count": 2075
+    },
+    {
+      "dialogue_id": "cba3c474-c6ba-41d8-a8a7-eb2331cde111",
+      "character": "Elisa Carter",
+      "stage_id": 9,
+      "qa_count": 16,
+      "turn_count": 2051
+    },
+    {
+      "dialogue_id": "5a2617a9-5f04-470f-8c6a-df3568e425cb",
+      "character": "Jeffrey Thomson",
+      "stage_id": 9,
+      "qa_count": 11,
+      "turn_count": 1938
+    },
+    {
+      "dialogue_id": "2305db88-58c7-4e9a-a729-f084624935be",
+      "character": "Faiza Burke",
+      "stage_id": 9,
+      "qa_count": 15,
+      "turn_count": 1985
+    },
+    {
+      "dialogue_id": "77ad73d2-fcc0-4010-a8ff-59c1c7c2ab62",
+      "character": "Abi Briggs",
+      "stage_id": 9,
+      "qa_count": 10,
+      "turn_count": 2119
+    },
+    {
+      "dialogue_id": "3dd1cc98-e2f5-4eff-81c8-b14657f92056",
+      "character": "Alannah Jackson",
+      "stage_id": 9,
+      "qa_count": 9,
+      "turn_count": 2196
+    },
+    {
+      "dialogue_id": "bb33388d-86d3-48fa-b29d-f1ed6c8e16ec",
+      "character": "Zara Barry",
+      "stage_id": 9,
+      "qa_count": 11,
+      "turn_count": 1906
+    },
+    {
+      "dialogue_id": "43210011-23fb-4d3d-9883-30471f4acc3a",
+      "character": "Georgiana Wright",
+      "stage_id": 9,
+      "qa_count": 12,
+      "turn_count": 2094
+    },
+    {
+      "dialogue_id": "3701ae1e-1875-4bc8-88d8-ab63e371fb36",
+      "character": "Tiana Horne",
+      "stage_id": 9,
+      "qa_count": 14,
+      "turn_count": 2045
+    },
+    {
+      "dialogue_id": "43136758-1428-4175-a7bf-a37794962c32",
+      "character": "Zakir Gilbert",
+      "stage_id": 9,
+      "qa_count": 10,
+      "turn_count": 2092
+    },
+    {
+      "dialogue_id": "871172b5-2917-46e7-9ecb-3ab44fc798c4",
+      "character": "Antonio Proctor",
+      "stage_id": 9,
+      "qa_count": 11,
+      "turn_count": 1912
+    },
+    {
+      "dialogue_id": "43ab2056-464e-445f-aa4e-1d1d316fcce1",
+      "character": "Lola Murray",
+      "stage_id": 9,
+      "qa_count": 18,
+      "turn_count": 2065
+    },
+    {
+      "dialogue_id": "2499cce7-9de4-4ace-ac39-a616d5d3447d",
+      "character": "Rosie Trujillo",
+      "stage_id": 9,
+      "qa_count": 12,
+      "turn_count": 2035
+    },
+    {
+      "dialogue_id": "a7b0f2d4-6f98-4f0b-84a2-5bbf557c5e8f",
+      "character": "Aisha Miles",
+      "stage_id": 9,
+      "qa_count": 12,
+      "turn_count": 1867
+    },
+    {
+      "dialogue_id": "4695e828-6284-4ce2-863f-38482a5177c1",
+      "character": "Mahnoor Moyer",
+      "stage_id": 9,
+      "qa_count": 18,
+      "turn_count": 1969
+    },
+    {
+      "dialogue_id": "7592466a-0c47-412f-b3cb-55bad854ca73",
+      "character": "Harri Bruce",
+      "stage_id": 9,
+      "qa_count": 11,
+      "turn_count": 2001
+    },
+    {
+      "dialogue_id": "07183acd-d552-4085-a191-e2ad305f7d73",
+      "character": "Harriet Sutton",
+      "stage_id": 9,
+      "qa_count": 10,
+      "turn_count": 2090
+    },
+    {
+      "dialogue_id": "a3252ccc-5e41-46db-9187-6df6fe873e6d",
+      "character": "Gerald Chavez",
+      "stage_id": 9,
+      "qa_count": 10,
+      "turn_count": 1924
+    },
+    {
+      "dialogue_id": "b8926718-731f-40f1-a54e-fd442d6cd7f8",
+      "character": "Katrina Holder",
+      "stage_id": 9,
+      "qa_count": 11,
+      "turn_count": 2037
+    },
+    {
+      "dialogue_id": "d96bb91e-abe7-42f9-b37b-42592e8a56dc",
+      "character": "Sulayman Serrano",
+      "stage_id": 9,
+      "qa_count": 12,
+      "turn_count": 2087
+    },
+    {
+      "dialogue_id": "ea692f9c-6295-4f7e-a1aa-b4f4289ad4ea",
+      "character": "Jan Bryan",
+      "stage_id": 9,
+      "qa_count": 10,
+      "turn_count": 1910
+    },
+    {
+      "dialogue_id": "1ad90bb0-15aa-44e8-878f-7c24490f3d5e",
+      "character": "Macy Fernandez",
+      "stage_id": 9,
+      "qa_count": 8,
+      "turn_count": 1844
+    },
+    {
+      "dialogue_id": "e5e96819-9abe-4912-a759-1ea23a621578",
+      "character": "Tessa Hodge",
+      "stage_id": 9,
+      "qa_count": 12,
+      "turn_count": 2116
+    },
+    {
+      "dialogue_id": "26a7dd1d-2e8b-4372-9acc-c4f13b264535",
+      "character": "Oakley Irwin",
+      "stage_id": 9,
+      "qa_count": 11,
+      "turn_count": 2141
+    },
+    {
+      "dialogue_id": "be29b540-ee85-4188-9159-c6ec152396a0",
+      "character": "Kane Hendricks",
+      "stage_id": 9,
+      "qa_count": 10,
+      "turn_count": 2113
+    },
+    {
+      "dialogue_id": "14740326-6ed7-4be5-8fdd-5ef0ac37a3da",
+      "character": "Paul Fisher",
+      "stage_id": 9,
+      "qa_count": 11,
+      "turn_count": 2010
+    },
+    {
+      "dialogue_id": "637760d3-cb4f-4c9a-8f98-e67ac8bea077",
+      "character": "Reuben Aguilar",
+      "stage_id": 9,
+      "qa_count": 12,
+      "turn_count": 2070
+    },
+    {
+      "dialogue_id": "4e033706-c0ae-4e75-b9b0-7e77c60d93b1",
+      "character": "Georgie Jensen",
+      "stage_id": 9,
+      "qa_count": 10,
+      "turn_count": 1988
+    },
+    {
+      "dialogue_id": "6505df84-b6e1-482a-bed2-da06ee420376",
+      "character": "Lennox Leach",
+      "stage_id": 9,
+      "qa_count": 9,
+      "turn_count": 2156
+    },
+    {
+      "dialogue_id": "6f1e3acc-901d-49a2-9eaa-faa741f28798",
+      "character": "Krystal Fields",
+      "stage_id": 9,
+      "qa_count": 12,
+      "turn_count": 1965
+    },
+    {
+      "dialogue_id": "b50fe471-7e9d-4eea-91e5-f58cdcc78aee",
+      "character": "Trey Case",
+      "stage_id": 9,
+      "qa_count": 12,
+      "turn_count": 1989
+    },
+    {
+      "dialogue_id": "127e329d-81db-4b84-9c45-5cbc232dcae2",
+      "character": "Kacie Terry",
+      "stage_id": 9,
+      "qa_count": 12,
+      "turn_count": 2032
+    },
+    {
+      "dialogue_id": "9ecaf307-b564-4264-9851-6f91110e02d4",
+      "character": "Claude Bryan",
+      "stage_id": 9,
+      "qa_count": 11,
+      "turn_count": 2126
+    },
+    {
+      "dialogue_id": "811801ce-3559-4dd2-8454-f8c800d92edf",
+      "character": "Arnold Klein",
+      "stage_id": 9,
+      "qa_count": 15,
+      "turn_count": 1917
+    },
+    {
+      "dialogue_id": "6cfdddfb-c72b-4ff7-a6e7-281a7e343139",
+      "character": "Faizan Brock",
+      "stage_id": 9,
+      "qa_count": 11,
+      "turn_count": 1924
+    },
+    {
+      "dialogue_id": "98fed437-8345-458f-8127-ef12205ec8cf",
+      "character": "Eva Wong",
+      "stage_id": 9,
+      "qa_count": 12,
+      "turn_count": 1879
+    },
+    {
+      "dialogue_id": "1167749d-315f-4bd3-bb6e-11eb954df904",
+      "character": "Kezia Hewitt",
+      "stage_id": 9,
+      "qa_count": 11,
+      "turn_count": 1928
+    },
+    {
+      "dialogue_id": "239ad5d2-d3f2-4639-aa48-cb45ed2ec1c5",
+      "character": "Mackenzie Matthews",
+      "stage_id": 9,
+      "qa_count": 14,
+      "turn_count": 2119
+    },
+    {
+      "dialogue_id": "fe27632c-8e8e-4d54-9eb6-3f2662a25fbd",
+      "character": "Wade Mcneil",
+      "stage_id": 9,
+      "qa_count": 11,
+      "turn_count": 2009
+    },
+    {
+      "dialogue_id": "b5d6dcba-f549-428e-8c46-9e9a27bf86ec",
+      "character": "Julian Silva",
+      "stage_id": 9,
+      "qa_count": 17,
+      "turn_count": 1864
+    },
+    {
+      "dialogue_id": "a0055fc5-249f-4943-9b00-b54d9f58d307",
+      "character": "Junaid Pena",
+      "stage_id": 9,
+      "qa_count": 10,
+      "turn_count": 1896
+    },
+    {
+      "dialogue_id": "1f5b4b67-8a3a-4b9d-9bf0-504dc8ed02c5",
+      "character": "Riley Osborne",
+      "stage_id": 9,
+      "qa_count": 15,
+      "turn_count": 2005
+    },
+    {
+      "dialogue_id": "d296151e-252a-4e85-b404-1f33dade8406",
+      "character": "Francesco Fulton",
+      "stage_id": 9,
+      "qa_count": 12,
+      "turn_count": 2124
+    },
+    {
+      "dialogue_id": "8a921ff2-9a7f-40bf-91ea-528fee04b5ac",
+      "character": "Bryony Boyer",
+      "stage_id": 9,
+      "qa_count": 17,
+      "turn_count": 2116
+    },
+    {
+      "dialogue_id": "2f560d2f-c377-4e6e-b676-7e388da99dc1",
+      "character": "Yusra Baldwin",
+      "stage_id": 9,
+      "qa_count": 11,
+      "turn_count": 2028
+    },
+    {
+      "dialogue_id": "66aa436a-77ca-407e-8e51-7a47d7e5dd65",
+      "character": "Flynn Salinas",
+      "stage_id": 9,
+      "qa_count": 10,
+      "turn_count": 2068
+    },
+    {
+      "dialogue_id": "08cdb6a6-6a56-483d-b486-48ce4af0593d",
+      "character": "Rosalie Wall",
+      "stage_id": 9,
+      "qa_count": 10,
+      "turn_count": 1908
+    },
+    {
+      "dialogue_id": "94512d2d-5027-4ec9-9c44-3ee17732911e",
+      "character": "Mohamed Phillips",
+      "stage_id": 9,
+      "qa_count": 13,
+      "turn_count": 2152
+    },
+    {
+      "dialogue_id": "8a5df8d8-fa74-4abb-b520-1d4ea559afa1",
+      "character": "Stanley Nichols",
+      "stage_id": 9,
+      "qa_count": 11,
+      "turn_count": 2081
+    },
+    {
+      "dialogue_id": "8f6954b9-860d-4a54-aeff-09db35b8f3ec",
+      "character": "Yahya Fry",
+      "stage_id": 9,
+      "qa_count": 10,
+      "turn_count": 2002
+    },
+    {
+      "dialogue_id": "863db906-4269-4cde-bfad-99e6d5e80e43",
+      "character": "Ibraheem Russell",
+      "stage_id": 9,
+      "qa_count": 10,
+      "turn_count": 1976
+    },
+    {
+      "dialogue_id": "b7f6a658-ede6-433b-af27-95b051c6de40",
+      "character": "Ayesha Frank",
+      "stage_id": 9,
+      "qa_count": 11,
+      "turn_count": 1922
+    },
+    {
+      "dialogue_id": "1e6593aa-bc5b-446a-8027-da0bd028969c",
+      "character": "Trinity Sharpe",
+      "stage_id": 9,
+      "qa_count": 14,
+      "turn_count": 2047
+    },
+    {
+      "dialogue_id": "8c1e9a47-cc43-474f-bba4-e49cc978b0a2",
+      "character": "Edwin Cox",
+      "stage_id": 9,
+      "qa_count": 14,
+      "turn_count": 2042
+    },
+    {
+      "dialogue_id": "4e671f0b-c377-4aac-a349-20c8516156f6",
+      "character": "Lexie Day",
+      "stage_id": 9,
+      "qa_count": 12,
+      "turn_count": 1863
+    },
+    {
+      "dialogue_id": "286c700a-3c8c-4887-b3f0-33c07f2b386b",
+      "character": "Hashim Reid",
+      "stage_id": 9,
+      "qa_count": 14,
+      "turn_count": 2099
+    },
+    {
+      "dialogue_id": "7fce724f-d527-4be6-9ae7-6b29722f1591",
+      "character": "Charlie Robinson",
+      "stage_id": 9,
+      "qa_count": 12,
+      "turn_count": 2123
+    },
+    {
+      "dialogue_id": "5db2523c-44b7-4514-99df-4e83fe735094",
+      "character": "Aqsa Jimenez",
+      "stage_id": 9,
+      "qa_count": 8,
+      "turn_count": 2062
+    },
+    {
+      "dialogue_id": "e8f96ad4-9782-42f0-91d0-6ba13dca3445",
+      "character": "Sophia Carson",
+      "stage_id": 9,
+      "qa_count": 11,
+      "turn_count": 1883
+    },
+    {
+      "dialogue_id": "c632beb5-11ae-457f-9630-d90f2a43248b",
+      "character": "Kaleb Rubio",
+      "stage_id": 9,
+      "qa_count": 11,
+      "turn_count": 2062
+    },
+    {
+      "dialogue_id": "c217ae07-d2b4-4a14-8104-71994fa9fed3",
+      "character": "Idris Slater",
+      "stage_id": 9,
+      "qa_count": 11,
+      "turn_count": 1999
+    },
+    {
+      "dialogue_id": "7d706c24-904f-4460-bbfa-b3c844af42aa",
+      "character": "Brenda Zuniga",
+      "stage_id": 9,
+      "qa_count": 10,
+      "turn_count": 1989
+    },
+    {
+      "dialogue_id": "e8b2f160-e415-4518-ab43-bfa0bcf06520",
+      "character": "Ella Kelly",
+      "stage_id": 9,
+      "qa_count": 15,
+      "turn_count": 2057
+    },
+    {
+      "dialogue_id": "4c718536-fdbe-4c48-8958-66aa5527ab0a",
+      "character": "Salman Moon",
+      "stage_id": 9,
+      "qa_count": 11,
+      "turn_count": 1962
+    },
+    {
+      "dialogue_id": "4ed98247-c147-4da6-aaed-ec7c2a5b4f4a",
+      "character": "Belle Walter",
+      "stage_id": 9,
+      "qa_count": 11,
+      "turn_count": 2077
+    },
+    {
+      "dialogue_id": "6d9f2761-6cdf-4711-a60b-9c6d87ffcb35",
+      "character": "Danny Moss",
+      "stage_id": 9,
+      "qa_count": 10,
+      "turn_count": 2133
+    },
+    {
+      "dialogue_id": "e5da35a6-a693-4df5-a85c-f832032930a6",
+      "character": "Kirsty Raymond",
+      "stage_id": 9,
+      "qa_count": 12,
+      "turn_count": 1973
+    },
+    {
+      "dialogue_id": "013d4ca1-9b9c-409a-8e21-b6693f7a1d87",
+      "character": "Charis Ponce",
+      "stage_id": 9,
+      "qa_count": 12,
+      "turn_count": 2059
+    },
+    {
+      "dialogue_id": "b9c840ba-bf92-46ee-b0c4-ef9b4a58c0a6",
+      "character": "Anya Carver",
+      "stage_id": 9,
+      "qa_count": 10,
+      "turn_count": 1987
+    },
+    {
+      "dialogue_id": "c9000c66-5163-443c-9329-0a90b806dfae",
+      "character": "Aoife Foster",
+      "stage_id": 9,
+      "qa_count": 10,
+      "turn_count": 1844
+    },
+    {
+      "dialogue_id": "789c579b-1d90-423e-a25a-e99ed8eea0da",
+      "character": "Louisa Blaese",
+      "stage_id": 9,
+      "qa_count": 12,
+      "turn_count": 1994
+    },
+    {
+      "dialogue_id": "ce3f8133-28a2-4e51-b32c-ce8b9df36ebc",
+      "character": "Pamela Kelly",
+      "stage_id": 9,
+      "qa_count": 11,
+      "turn_count": 1903
+    },
+    {
+      "dialogue_id": "f552517e-a580-42d6-80e8-bb0e882d4f7c",
+      "character": "Jazmin Hoover",
+      "stage_id": 9,
+      "qa_count": 11,
+      "turn_count": 2005
+    },
+    {
+      "dialogue_id": "187083b8-6f27-4a88-b2cb-ee20342055c1",
+      "character": "Demi-Leigh Hudson",
+      "stage_id": 9,
+      "qa_count": 11,
+      "turn_count": 2029
+    },
+    {
+      "dialogue_id": "6b33dcc0-a06c-487c-91b8-179c96fce33f",
+      "character": "Aryan Randall",
+      "stage_id": 9,
+      "qa_count": 12,
+      "turn_count": 2020
+    },
+    {
+      "dialogue_id": "ab571ac3-1bfa-45ca-87ae-5b721f14c41a",
+      "character": "Cruz Melendez",
+      "stage_id": 9,
+      "qa_count": 11,
+      "turn_count": 2108
+    },
+    {
+      "dialogue_id": "501fcfab-481c-4c36-966e-603914067759",
+      "character": "Lee Johnston",
+      "stage_id": 9,
+      "qa_count": 10,
+      "turn_count": 1987
+    },
+    {
+      "dialogue_id": "c4ee6f4c-f568-4354-bcc9-4826ee69fe88",
+      "character": "Claire Molina",
+      "stage_id": 9,
+      "qa_count": 11,
+      "turn_count": 2044
+    },
+    {
+      "dialogue_id": "9364d3bb-8e18-41d5-9e85-9a17584341c5",
+      "character": "Cecily Peck",
+      "stage_id": 9,
+      "qa_count": 11,
+      "turn_count": 2050
+    },
+    {
+      "dialogue_id": "fe303b8c-4f4d-4427-9aef-5a701206f9a0",
+      "character": "Halle Todd",
+      "stage_id": 9,
+      "qa_count": 12,
+      "turn_count": 2051
+    },
+    {
+      "dialogue_id": "69f4d9d7-c9c0-4a01-9f60-3cbb16ca232b",
+      "character": "Ellie-Mae Silva",
+      "stage_id": 9,
+      "qa_count": 10,
+      "turn_count": 1863
+    },
+    {
+      "dialogue_id": "2ec032d0-55b5-4730-a755-a019de36992b",
+      "character": "Ollie Conner",
+      "stage_id": 9,
+      "qa_count": 10,
+      "turn_count": 1990
+    },
+    {
+      "dialogue_id": "1c31353a-fe1a-408f-9ce2-7dc700d53626",
+      "character": "Kirsten Manning",
+      "stage_id": 9,
+      "qa_count": 11,
+      "turn_count": 1952
+    },
+    {
+      "dialogue_id": "b98b9a66-7b25-4f19-83e7-8ec49e595c97",
+      "character": "Lloyd Kennedy",
+      "stage_id": 9,
+      "qa_count": 12,
+      "turn_count": 1904
+    },
+    {
+      "dialogue_id": "df29f8eb-ccc2-4f7e-a41f-56c184236269",
+      "character": "Nadine Vega",
+      "stage_id": 9,
+      "qa_count": 11,
+      "turn_count": 2043
+    },
+    {
+      "dialogue_id": "efdc24a4-db5c-41c8-810a-dc26898610bd",
+      "character": "Lawson Bonilla",
+      "stage_id": 9,
+      "qa_count": 15,
+      "turn_count": 2007
+    },
+    {
+      "dialogue_id": "f2cffb5f-fc96-455c-92c2-25b921315d91",
+      "character": "Taya Buchanan",
+      "stage_id": 9,
+      "qa_count": 12,
+      "turn_count": 1856
+    },
+    {
+      "dialogue_id": "421d5ba4-16b2-48e4-a279-b7eb024c6ca0",
+      "character": "Kye Solis",
+      "stage_id": 9,
+      "qa_count": 11,
+      "turn_count": 1892
+    },
+    {
+      "dialogue_id": "52aa9a61-1f23-4ca5-ad98-f35dee647cfb",
+      "character": "Taha Glenn",
+      "stage_id": 9,
+      "qa_count": 12,
+      "turn_count": 2029
+    },
+    {
+      "dialogue_id": "dffd4ac1-ea62-4e7c-8477-0d199d6ab01a",
+      "character": "Carol Gallegos",
+      "stage_id": 9,
+      "qa_count": 11,
+      "turn_count": 2126
+    },
+    {
+      "dialogue_id": "858addcd-93a8-4ea9-9758-6dc7937e0a8a",
+      "character": "Sami Lynn",
+      "stage_id": 9,
+      "qa_count": 11,
+      "turn_count": 1814
+    },
+    {
+      "dialogue_id": "f2cb57bf-08a1-42f9-98e6-1d36b1b9be2c",
+      "character": "Delores Booth",
+      "stage_id": 9,
+      "qa_count": 18,
+      "turn_count": 2087
+    },
+    {
+      "dialogue_id": "723025ad-8423-4848-b771-4cbeb4451777",
+      "character": "Celia Shah",
+      "stage_id": 9,
+      "qa_count": 10,
+      "turn_count": 1903
+    },
+    {
+      "dialogue_id": "ca7afa29-e7f8-4202-80c8-a67049334c9f",
+      "character": "Jamie Padilla",
+      "stage_id": 9,
+      "qa_count": 11,
+      "turn_count": 1962
+    },
+    {
+      "dialogue_id": "ed6d181c-08bf-4fe4-97d3-adfea784b0c9",
+      "character": "Keeley Underwood",
+      "stage_id": 9,
+      "qa_count": 10,
+      "turn_count": 2041
+    },
+    {
+      "dialogue_id": "3c45f1d9-47d4-4672-bc14-2d527e2dbfc0",
+      "character": "Finnley Mercado",
+      "stage_id": 10,
+      "qa_count": 9,
+      "turn_count": 2098
+    },
+    {
+      "dialogue_id": "f1de4e31-3aec-413b-8734-69c38e6faa74",
+      "character": "Roosevelt Marquez",
+      "stage_id": 10,
+      "qa_count": 9,
+      "turn_count": 2101
+    },
+    {
+      "dialogue_id": "a2157b5d-e2fd-454b-86ca-b9867d5a481f",
+      "character": "Simeon Perkins",
+      "stage_id": 10,
+      "qa_count": 14,
+      "turn_count": 2090
+    },
+    {
+      "dialogue_id": "97589247-161a-4686-94d3-278e314a7e8d",
+      "character": "Aminah Byrne",
+      "stage_id": 10,
+      "qa_count": 11,
+      "turn_count": 1946
+    },
+    {
+      "dialogue_id": "29bca3dd-3b7e-477a-beee-d9c976a2b9de",
+      "character": "Layton Hebert",
+      "stage_id": 10,
+      "qa_count": 12,
+      "turn_count": 2048
+    },
+    {
+      "dialogue_id": "c9dc92be-c3c1-446c-bc7a-61e72446ac41",
+      "character": "Fern Campos",
+      "stage_id": 10,
+      "qa_count": 10,
+      "turn_count": 2014
+    },
+    {
+      "dialogue_id": "72d1ae26-5e74-4349-b0f6-cbe566b0be99",
+      "character": "Jazmin Key",
+      "stage_id": 10,
+      "qa_count": 17,
+      "turn_count": 1910
+    },
+    {
+      "dialogue_id": "cd8dfe02-7df7-4507-bb13-60043c6e3234",
+      "character": "Ava McIntyre",
+      "stage_id": 10,
+      "qa_count": 15,
+      "turn_count": 2110
+    },
+    {
+      "dialogue_id": "72ee68d9-99b1-4306-8086-73805434bb2d",
+      "character": "Maria Bird",
+      "stage_id": 10,
+      "qa_count": 10,
+      "turn_count": 1934
+    },
+    {
+      "dialogue_id": "a78496b4-3795-4e50-80ce-f7f1c1750f5b",
+      "character": "Isobel Walter",
+      "stage_id": 10,
+      "qa_count": 11,
+      "turn_count": 2054
+    },
+    {
+      "dialogue_id": "f6abe23a-d736-48c1-9024-6a760a1e5646",
+      "character": "Lacie Nguyen",
+      "stage_id": 10,
+      "qa_count": 12,
+      "turn_count": 2061
+    },
+    {
+      "dialogue_id": "de418e42-61cf-488b-a30f-43ac36434b61",
+      "character": "Sonia Mullins",
+      "stage_id": 10,
+      "qa_count": 11,
+      "turn_count": 2026
+    },
+    {
+      "dialogue_id": "a2c6f8b0-3030-4d2f-8559-3f6bb8556306",
+      "character": "Dillon Harmon",
+      "stage_id": 10,
+      "qa_count": 10,
+      "turn_count": 1933
+    },
+    {
+      "dialogue_id": "96cf44f6-8081-45f5-8b1e-890ae7663393",
+      "character": "Jenson Waller",
+      "stage_id": 10,
+      "qa_count": 11,
+      "turn_count": 2089
+    },
+    {
+      "dialogue_id": "ae60bc3e-b040-41c6-b537-e8e163432620",
+      "character": "Zahraa Velasquez",
+      "stage_id": 10,
+      "qa_count": 12,
+      "turn_count": 2006
+    },
+    {
+      "dialogue_id": "83f5fa6f-8077-4faf-8bb4-3ad246f3b04a",
+      "character": "Mark Ramirez",
+      "stage_id": 10,
+      "qa_count": 11,
+      "turn_count": 1970
+    },
+    {
+      "dialogue_id": "7a65c484-17a5-4363-83b8-d2608cb11741",
+      "character": "Aya Burch",
+      "stage_id": 10,
+      "qa_count": 10,
+      "turn_count": 2020
+    },
+    {
+      "dialogue_id": "cf7ddd91-f7d8-4b2c-8c70-4b9ca650a4ad",
+      "character": "Elinor Fisher",
+      "stage_id": 10,
+      "qa_count": 16,
+      "turn_count": 2244
+    },
+    {
+      "dialogue_id": "aca599ba-558d-495c-8af2-82712cd6bb62",
+      "character": "Howard Randolph",
+      "stage_id": 10,
+      "qa_count": 14,
+      "turn_count": 2046
+    },
+    {
+      "dialogue_id": "088bc06f-8d49-4a5e-a000-09619903e4e3",
+      "character": "Joan Holmes",
+      "stage_id": 10,
+      "qa_count": 18,
+      "turn_count": 1947
+    },
+    {
+      "dialogue_id": "6064336e-ec1d-43a4-9575-d8c870473bc4",
+      "character": "Aiden Acevedo",
+      "stage_id": 10,
+      "qa_count": 10,
+      "turn_count": 1989
+    },
+    {
+      "dialogue_id": "a3a7547f-78a1-4ee0-8d2b-5f24d8d5460a",
+      "character": "Lacie Moss",
+      "stage_id": 10,
+      "qa_count": 16,
+      "turn_count": 2153
+    },
+    {
+      "dialogue_id": "57436101-d246-43ca-9d3e-d7a4cddb3b61",
+      "character": "Alisa Welch",
+      "stage_id": 10,
+      "qa_count": 9,
+      "turn_count": 1881
+    },
+    {
+      "dialogue_id": "07cc9dba-1ffe-4f5a-ac95-51ebbf95cb7e",
+      "character": "Lilly-Rose Padilla",
+      "stage_id": 10,
+      "qa_count": 15,
+      "turn_count": 1884
+    },
+    {
+      "dialogue_id": "3ed03cbc-9bc2-4b76-92bf-af804e7bd853",
+      "character": "Liliana Carson",
+      "stage_id": 10,
+      "qa_count": 11,
+      "turn_count": 2127
+    },
+    {
+      "dialogue_id": "de01ce1e-ad22-4ed6-a4a7-9dfb9f3a8d3a",
+      "character": "Kamran Fernandez",
+      "stage_id": 10,
+      "qa_count": 11,
+      "turn_count": 2028
+    },
+    {
+      "dialogue_id": "3428f41d-70be-42ec-8c5f-132275e99291",
+      "character": "Sara Burke",
+      "stage_id": 10,
+      "qa_count": 12,
+      "turn_count": 2215
+    },
+    {
+      "dialogue_id": "9e945aad-2913-4e20-a07b-f7e5d97407dc",
+      "character": "Kaya Archer",
+      "stage_id": 10,
+      "qa_count": 9,
+      "turn_count": 2047
+    },
+    {
+      "dialogue_id": "1fba09be-729b-4119-b741-0b470904e230",
+      "character": "Kajus Burgess",
+      "stage_id": 10,
+      "qa_count": 17,
+      "turn_count": 2008
+    },
+    {
+      "dialogue_id": "7ae3f777-1b6c-4b3b-934c-fa35039e35d2",
+      "character": "Tyrone Haas",
+      "stage_id": 10,
+      "qa_count": 16,
+      "turn_count": 2019
+    },
+    {
+      "dialogue_id": "81203544-ea1b-47a7-8e70-ed170247d02c",
+      "character": "Ammar Vega",
+      "stage_id": 10,
+      "qa_count": 16,
+      "turn_count": 2037
+    },
+    {
+      "dialogue_id": "7123c916-a327-490a-b492-1e1addc6486c",
+      "character": "Asa Goodman",
+      "stage_id": 10,
+      "qa_count": 12,
+      "turn_count": 1883
+    },
+    {
+      "dialogue_id": "a776195d-18ab-4e69-ab65-afec8200f6b5",
+      "character": "Euan Bullock",
+      "stage_id": 10,
+      "qa_count": 11,
+      "turn_count": 2099
+    },
+    {
+      "dialogue_id": "59a4f861-cf42-4beb-95cf-3d67ba4781c0",
+      "character": "Mehmet Hawkins",
+      "stage_id": 10,
+      "qa_count": 12,
+      "turn_count": 1949
+    },
+    {
+      "dialogue_id": "fe0e00e1-a1cb-47c3-ae8c-6186ae0c65e3",
+      "character": "Natasha Boyle",
+      "stage_id": 10,
+      "qa_count": 9,
+      "turn_count": 2140
+    },
+    {
+      "dialogue_id": "08e153a5-839f-497b-a6a4-4f07c2de22ec",
+      "character": "Levi Armstrong",
+      "stage_id": 10,
+      "qa_count": 9,
+      "turn_count": 1956
+    },
+    {
+      "dialogue_id": "cbe3277c-ad76-4fa3-9b95-e42df5a2c72f",
+      "character": "Ayrton Browning",
+      "stage_id": 10,
+      "qa_count": 11,
+      "turn_count": 2086
+    },
+    {
+      "dialogue_id": "e6e377e1-902a-42f6-a4ab-1c96eeace533",
+      "character": "Henri Fox",
+      "stage_id": 10,
+      "qa_count": 11,
+      "turn_count": 2092
+    },
+    {
+      "dialogue_id": "5a6dfa68-c438-4444-8ed5-919f4ac927c7",
+      "character": "Scarlet Thomas",
+      "stage_id": 10,
+      "qa_count": 13,
+      "turn_count": 2049
+    },
+    {
+      "dialogue_id": "e91a59e1-d725-41dd-9b03-e516641c4d3e",
+      "character": "Haleema Rios",
+      "stage_id": 10,
+      "qa_count": 11,
+      "turn_count": 1913
+    },
+    {
+      "dialogue_id": "de46e2bd-748f-4898-9e70-e88fd3ae6720",
+      "character": "Zak Ware",
+      "stage_id": 10,
+      "qa_count": 10,
+      "turn_count": 2038
+    },
+    {
+      "dialogue_id": "645de040-ccc1-4127-bb69-f5680487d51a",
+      "character": "Kamil Matthams",
+      "stage_id": 10,
+      "qa_count": 15,
+      "turn_count": 1950
+    },
+    {
+      "dialogue_id": "fe866167-c54b-44e9-8b37-7d226028d810",
+      "character": "Wendy Douglas",
+      "stage_id": 10,
+      "qa_count": 12,
+      "turn_count": 2070
+    },
+    {
+      "dialogue_id": "b8e3ec4b-8a33-4333-82f4-0e85aa65f197",
+      "character": "Daniella Whitehead",
+      "stage_id": 10,
+      "qa_count": 9,
+      "turn_count": 1993
+    },
+    {
+      "dialogue_id": "5177695c-c941-48e5-bdda-52c6c70988b9",
+      "character": "Safa Acosta",
+      "stage_id": 10,
+      "qa_count": 17,
+      "turn_count": 1867
+    },
+    {
+      "dialogue_id": "79f1f6bc-df7c-4bdf-8a57-27a9d16cc22c",
+      "character": "Trystan Arroyo",
+      "stage_id": 10,
+      "qa_count": 10,
+      "turn_count": 1891
+    },
+    {
+      "dialogue_id": "499b59a9-00ff-4958-ad0b-ffa3cf781420",
+      "character": "Kasey Grimes",
+      "stage_id": 10,
+      "qa_count": 11,
+      "turn_count": 2048
+    },
+    {
+      "dialogue_id": "a8c73ed8-39f9-4484-8d90-887437513432",
+      "character": "Ashleigh Bell",
+      "stage_id": 10,
+      "qa_count": 10,
+      "turn_count": 1947
+    },
+    {
+      "dialogue_id": "6ad8126e-49e9-41a9-890e-f4d2436ab8fe",
+      "character": "Everly Mathews",
+      "stage_id": 10,
+      "qa_count": 13,
+      "turn_count": 1980
+    },
+    {
+      "dialogue_id": "45958da3-7820-4f1a-b294-dc203f9ecea6",
+      "character": "Sydney Gilmore",
+      "stage_id": 10,
+      "qa_count": 17,
+      "turn_count": 2094
+    },
+    {
+      "dialogue_id": "d11b5838-5685-48df-98d5-60e8e8e4a5a6",
+      "character": "Demi-Leigh Diaz",
+      "stage_id": 10,
+      "qa_count": 11,
+      "turn_count": 2135
+    },
+    {
+      "dialogue_id": "a2f4897f-37da-4f32-b1b5-f12003f4b810",
+      "character": "Aisha Santana",
+      "stage_id": 10,
+      "qa_count": 12,
+      "turn_count": 2014
+    },
+    {
+      "dialogue_id": "d0f73f20-4765-4f99-8671-0e01b46bff65",
+      "character": "Nate Chan",
+      "stage_id": 10,
+      "qa_count": 11,
+      "turn_count": 1966
+    },
+    {
+      "dialogue_id": "21526c55-8edc-4e4c-a202-65552686db29",
+      "character": "Lenny Mejia",
+      "stage_id": 10,
+      "qa_count": 11,
+      "turn_count": 2107
+    },
+    {
+      "dialogue_id": "51ad0a02-2069-4afe-b288-dd8e0c4d3d81",
+      "character": "Humza Wu",
+      "stage_id": 10,
+      "qa_count": 9,
+      "turn_count": 1988
+    },
+    {
+      "dialogue_id": "19b5961c-6799-4ccf-9d9a-a141132becda",
+      "character": "Cruz Wells",
+      "stage_id": 10,
+      "qa_count": 12,
+      "turn_count": 2012
+    },
+    {
+      "dialogue_id": "429f843f-c07d-4aaf-ad80-8aba0df76dd3",
+      "character": "Anas Simpson",
+      "stage_id": 10,
+      "qa_count": 12,
+      "turn_count": 2032
+    },
+    {
+      "dialogue_id": "b1e29abf-17e4-4847-a51c-0aa269e6f750",
+      "character": "Anjali Gomez",
+      "stage_id": 10,
+      "qa_count": 12,
+      "turn_count": 2029
+    },
+    {
+      "dialogue_id": "b55b3998-9f0a-44ba-9a82-0574649e6fb4",
+      "character": "Safwan Dalton",
+      "stage_id": 10,
+      "qa_count": 10,
+      "turn_count": 1931
+    },
+    {
+      "dialogue_id": "b93e6510-681e-4482-8f70-131bc7a0bd3f",
+      "character": "Carolyn Best",
+      "stage_id": 10,
+      "qa_count": 11,
+      "turn_count": 2087
+    },
+    {
+      "dialogue_id": "e8c025ec-b367-4b4f-9b8e-29464163219f",
+      "character": "Ayla Gill",
+      "stage_id": 10,
+      "qa_count": 16,
+      "turn_count": 1925
+    },
+    {
+      "dialogue_id": "68497d60-8b19-4f3a-aede-39bb5da48f6f",
+      "character": "Yaseen Robertson",
+      "stage_id": 10,
+      "qa_count": 9,
+      "turn_count": 1948
+    },
+    {
+      "dialogue_id": "fe8e2aac-a638-4dde-8a82-66c775c1b96c",
+      "character": "Zain Petty",
+      "stage_id": 10,
+      "qa_count": 11,
+      "turn_count": 2117
+    },
+    {
+      "dialogue_id": "cccfccf9-7a71-49b1-93e9-7fef076303a4",
+      "character": "Dylan Wright",
+      "stage_id": 10,
+      "qa_count": 12,
+      "turn_count": 2030
+    },
+    {
+      "dialogue_id": "39fe20d6-9acb-4e5f-8766-574724677c2d",
+      "character": "Dafydd Michael",
+      "stage_id": 10,
+      "qa_count": 12,
+      "turn_count": 2053
+    },
+    {
+      "dialogue_id": "35cae78f-3f60-478a-b1d4-8f624944c7e4",
+      "character": "Mariah Kline",
+      "stage_id": 10,
+      "qa_count": 10,
+      "turn_count": 1836
+    },
+    {
+      "dialogue_id": "4b09965c-b3ea-442f-8758-472d85cce4fc",
+      "character": "Ciara Combs",
+      "stage_id": 10,
+      "qa_count": 9,
+      "turn_count": 1965
+    },
+    {
+      "dialogue_id": "313e8ffe-dc1c-4e24-ac94-5c285d1c271c",
+      "character": "Ivan Johnson",
+      "stage_id": 10,
+      "qa_count": 12,
+      "turn_count": 2180
+    },
+    {
+      "dialogue_id": "73d78a33-ceac-4a77-8784-86422e84e748",
+      "character": "Anita Boyd",
+      "stage_id": 10,
+      "qa_count": 11,
+      "turn_count": 2030
+    },
+    {
+      "dialogue_id": "8a3f157b-f0f2-460b-bcc9-451beeb1e865",
+      "character": "Emelia Decker",
+      "stage_id": 10,
+      "qa_count": 12,
+      "turn_count": 1891
+    },
+    {
+      "dialogue_id": "e8203f80-1466-45fb-9e90-14cbe07328bf",
+      "character": "Kitty Wolf",
+      "stage_id": 10,
+      "qa_count": 10,
+      "turn_count": 1945
+    },
+    {
+      "dialogue_id": "153d87c3-ff79-49de-913a-68ca8564bbd6",
+      "character": "Cian Matthams",
+      "stage_id": 10,
+      "qa_count": 9,
+      "turn_count": 2065
+    },
+    {
+      "dialogue_id": "dcf5b57e-58ba-48e4-970c-6c87e533356e",
+      "character": "Jemima Mason",
+      "stage_id": 10,
+      "qa_count": 12,
+      "turn_count": 1930
+    },
+    {
+      "dialogue_id": "6f6b760a-a034-4305-9d99-9eaf1d03fc05",
+      "character": "Danyal Ryan",
+      "stage_id": 10,
+      "qa_count": 12,
+      "turn_count": 1924
+    },
+    {
+      "dialogue_id": "1f50acdd-809a-436f-8b35-617fa6b4c706",
+      "character": "Tia Wilson",
+      "stage_id": 10,
+      "qa_count": 16,
+      "turn_count": 2112
+    },
+    {
+      "dialogue_id": "bc4566e5-f81b-46b8-b3b5-10091b9d1b26",
+      "character": "Kenneth Pope",
+      "stage_id": 10,
+      "qa_count": 11,
+      "turn_count": 1924
+    },
+    {
+      "dialogue_id": "7ee4023c-ae50-439f-9f3a-4ffa75cb8c7d",
+      "character": "Maksymilian Hickman",
+      "stage_id": 10,
+      "qa_count": 10,
+      "turn_count": 1924
+    },
+    {
+      "dialogue_id": "d7ef833a-ba0f-4b40-9ac7-18a6f942dbaa",
+      "character": "Morgan Hobbs",
+      "stage_id": 10,
+      "qa_count": 11,
+      "turn_count": 1934
+    },
+    {
+      "dialogue_id": "ccec5f8e-6033-425c-b39b-34f8989cfcd7",
+      "character": "Josef Everett",
+      "stage_id": 10,
+      "qa_count": 11,
+      "turn_count": 1953
+    },
+    {
+      "dialogue_id": "28bf51cb-9e68-4ab6-ba2a-b07788e07905",
+      "character": "Ashleigh Orr",
+      "stage_id": 10,
+      "qa_count": 9,
+      "turn_count": 1936
+    },
+    {
+      "dialogue_id": "15b7d6eb-155c-4b61-805c-b2cef03ce5c3",
+      "character": "Tianna Bond",
+      "stage_id": 10,
+      "qa_count": 10,
+      "turn_count": 1941
+    },
+    {
+      "dialogue_id": "7943a293-553d-4eab-ba53-240f51acb79e",
+      "character": "Abdulrahman Aguirre",
+      "stage_id": 10,
+      "qa_count": 13,
+      "turn_count": 1996
+    },
+    {
+      "dialogue_id": "19125ed2-3055-42fa-b6bf-a8383691b61b",
+      "character": "Steven Holland",
+      "stage_id": 10,
+      "qa_count": 15,
+      "turn_count": 2122
+    },
+    {
+      "dialogue_id": "a07da908-fa7b-45dd-998e-ea715fdba7c7",
+      "character": "Mohamed Powers",
+      "stage_id": 10,
+      "qa_count": 11,
+      "turn_count": 1955
+    },
+    {
+      "dialogue_id": "598d7331-6014-4399-aa94-2bd8998df27f",
+      "character": "Hugo Peck",
+      "stage_id": 10,
+      "qa_count": 11,
+      "turn_count": 2033
+    },
+    {
+      "dialogue_id": "5f8ce4ad-2c2d-46eb-922c-f828ab06c6bb",
+      "character": "Miah Howard",
+      "stage_id": 10,
+      "qa_count": 11,
+      "turn_count": 1942
+    },
+    {
+      "dialogue_id": "7806e3d7-9e68-4454-a4b7-5c9e66bbdd2b",
+      "character": "George Reese",
+      "stage_id": 10,
+      "qa_count": 11,
+      "turn_count": 1963
+    },
+    {
+      "dialogue_id": "2ed99f0b-710a-4931-a9f6-7dddf4e1667f",
+      "character": "Umar Gentry",
+      "stage_id": 10,
+      "qa_count": 11,
+      "turn_count": 2104
+    },
+    {
+      "dialogue_id": "bdb7bb02-0ad1-4200-81f1-55cce1942876",
+      "character": "Omar Orr",
+      "stage_id": 10,
+      "qa_count": 11,
+      "turn_count": 2050
+    },
+    {
+      "dialogue_id": "f88820f9-d018-4136-aaec-f0301feed64e",
+      "character": "Miriam Bishop",
+      "stage_id": 10,
+      "qa_count": 11,
+      "turn_count": 1997
+    },
+    {
+      "dialogue_id": "cfb298e1-4768-4fd5-9d00-8adf738f206f",
+      "character": "Victor Velazquez",
+      "stage_id": 10,
+      "qa_count": 9,
+      "turn_count": 2023
+    },
+    {
+      "dialogue_id": "a876b44d-b487-4f95-9a88-6c8fdd30363c",
+      "character": "Seamus Ortiz",
+      "stage_id": 10,
+      "qa_count": 12,
+      "turn_count": 2104
+    },
+    {
+      "dialogue_id": "b9893387-9cf5-48b7-9907-c420616a7e5e",
+      "character": "Shauna Richardson",
+      "stage_id": 10,
+      "qa_count": 11,
+      "turn_count": 2072
+    },
+    {
+      "dialogue_id": "f1ba284d-5bf7-4e33-a09a-6a4a73e8c420",
+      "character": "Shelby Daniel",
+      "stage_id": 10,
+      "qa_count": 10,
+      "turn_count": 1983
+    },
+    {
+      "dialogue_id": "3950f77f-954f-4122-8ef9-e930cfb832ad",
+      "character": "Sylvie Cruz",
+      "stage_id": 10,
+      "qa_count": 10,
+      "turn_count": 2002
+    },
+    {
+      "dialogue_id": "869156c7-6f81-4428-82e3-7a78e098752e",
+      "character": "Hayley Rubio",
+      "stage_id": 10,
+      "qa_count": 17,
+      "turn_count": 2082
+    },
+    {
+      "dialogue_id": "1c9f74de-3184-4aca-a969-7b088a7694c5",
+      "character": "Kye Shannon",
+      "stage_id": 10,
+      "qa_count": 17,
+      "turn_count": 2046
+    },
+    {
+      "dialogue_id": "0391d891-10f6-4a3c-aa5d-22459e438b70",
+      "character": "Carys Simpson",
+      "stage_id": 10,
+      "qa_count": 11,
+      "turn_count": 2079
+    },
+    {
+      "dialogue_id": "00acbcc9-a3f2-466b-ae2c-5c02d8e85ab9",
+      "character": "Elena Woodard",
+      "stage_id": 10,
+      "qa_count": 16,
+      "turn_count": 2043
+    },
+    {
+      "dialogue_id": "337406e5-990d-4d1e-94c8-3a804cfce03b",
+      "character": "Cheryl Nolan",
+      "stage_id": 10,
+      "qa_count": 14,
+      "turn_count": 2001
+    }
+  ]
+}

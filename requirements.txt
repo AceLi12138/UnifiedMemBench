@@ -1,0 +1,17 @@
+# Core dependencies for API-based construction, audit/repair, contextual
+# evaluation, scoring, result aggregation, and plotting.
+#
+# This file intentionally avoids heavyweight local-inference/training packages
+# such as torch, transformers, vLLM, and PEFT. Install requirements-local.txt
+# when running local model evaluation or parametric training.
+
+httpx>=0.24
+requests>=2.31
+python-dotenv>=1.0
+tqdm>=4.66
+numpy>=1.24
+matplotlib>=3.7
+rapidfuzz>=3.0
+nltk>=3.8
+PyYAML>=6.0
+

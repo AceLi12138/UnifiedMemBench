@@ -1,0 +1,23 @@
+{
+  "evaluation_condition": "parametric_memory_unseen",
+  "input_contains_full_dialogue": false,
+  "source_file": "dialogue_training/project_entity_split_sw_natural_header_qa_upweight24/eval_unseen/memory_eval_stage_01.jsonl",
+  "record": {
+    "id": "7db4c4d8-5309-4b10-b40d-a5c87cc7dcc9::Information Extraction::0",
+    "prompt": "You previously learned a long conversation and must answer from memory.\nCharacter: Seren Clay\nAnswer from memory only. Do not assume you can re-read the original dialogue.\nExtract only the exact fact requested by the question; the direct answer is primary.\n- answer must contain only the core queried fact, not surrounding background or extra narrative.\n- evidence_snippets are auxiliary support; keep them short and directly relevant, and use an empty list if no concise snippet is available.\n- Do not add facts that are true in the dialogue but not needed to answer the question.\nReturn ONLY valid JSON. No markdown, no extra text.\nRequired JSON fields: answer, evidence_snippets\nMinimal valid JSON example:\n{\"answer\": \"Lisbon\", \"evidence_snippets\": [\"We spent two weeks in Lisbon.\"]}\n\n[Question]\nWhat specific location was Seren planning to visit before her trip was canceled?",
+    "reference": "Patagonia. The event description states she was surrounded by hiking gear meant for 'a trek in Patagonia.'",
+    "metadata": {
+      "task_type": "Information Extraction",
+      "dialogue_id": "7db4c4d8-5309-4b10-b40d-a5c87cc7dcc9",
+      "dialogue_stage": 1,
+      "character": "Seren Clay",
+      "query": "What specific location was Seren planning to visit before her trip was canceled?",
+      "answer_components": [
+        "The planned destination was Patagonia."
+      ],
+      "source_event_ids": [
+        "2020_E1"
+      ]
+    }
+  }
+}

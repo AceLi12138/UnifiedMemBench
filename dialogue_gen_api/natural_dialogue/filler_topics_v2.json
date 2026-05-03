@@ -1,0 +1,77 @@
+{
+  "narrative": [
+    "{char_name} tells the story of a time they got completely lost in an unfamiliar city",
+    "{char_name} recounts a funny misunderstanding that happened at work or school",
+    "{char_name} describes the most unexpected gift they ever received",
+    "{char_name} shares the story of how they met their closest friend",
+    "{char_name} recalls a memorable encounter with a stranger that stuck with them",
+    "{char_name} tells about a cooking disaster that became a running joke",
+    "{char_name} describes the most nerve-wracking public speaking or performance moment they had"
+  ],
+  "action": [
+    "{char_name} describes a hands-on project they are currently working on",
+    "{char_name} talks about learning a new skill and the challenges involved",
+    "{char_name} explains how they recently reorganized or redecorated a space",
+    "{char_name} discusses a recipe they have been trying to perfect",
+    "{char_name} describes their process for tackling a difficult problem at work",
+    "{char_name} talks about training for a physical goal or picking up a sport"
+  ],
+  "conflict": [
+    "{char_name} vents about a frustrating commute or travel experience",
+    "{char_name} shares a disagreement they had with someone and how it was resolved",
+    "{char_name} talks about a time they had to stand up for something they believed in",
+    "{char_name} describes a situation where they felt misunderstood",
+    "{char_name} discusses a difficult decision they had to make recently",
+    "{char_name} talks about navigating a tricky workplace or social dynamic"
+  ],
+  "everyday": [
+    "{char_name} discusses a TV show or movie they have been watching",
+    "{char_name} talks about what they had for dinner last night and why it was memorable",
+    "{char_name} describes the weather lately and how it affects their mood",
+    "{char_name} chats about a podcast or book they are into right now",
+    "{char_name} talks about their weekend routine and small pleasures",
+    "{char_name} discusses a recent trip to a market, store, or local spot",
+    "{char_name} mentions a song that has been stuck in their head"
+  ],
+  "opinion": [
+    "{char_name} shares their take on a recent trend in their field or community",
+    "{char_name} discusses whether technology is making life easier or more complicated",
+    "{char_name} talks about what they think makes a good neighbor or friend",
+    "{char_name} shares their opinion on work-life balance and whether it is achievable",
+    "{char_name} discusses something they read in the news that stuck with them",
+    "{char_name} talks about what they value most in their daily life and why"
+  ],
+  "planning": [
+    "{char_name} talks about plans for an upcoming weekend or holiday",
+    "{char_name} discusses a trip or vacation they are dreaming about",
+    "{char_name} describes goals they have set for the next few months",
+    "{char_name} talks about wanting to try a new restaurant or activity",
+    "{char_name} discusses whether they want to move, change jobs, or try something new",
+    "{char_name} plans out loud about hosting a gathering or event"
+  ],
+  "complaint": [
+    "{char_name} grumbles about a minor household appliance or gadget breaking",
+    "{char_name} complains about a subscription service or bill that surprised them",
+    "{char_name} vents about noisy neighbors or an annoying daily inconvenience",
+    "{char_name} talks about a disappointing restaurant or shopping experience",
+    "{char_name} shares frustration about dealing with bureaucracy or paperwork",
+    "{char_name} complains lightheartedly about getting older or a minor health nuisance"
+  ],
+  "reflective": [
+    "{char_name} discusses a vivid childhood memory",
+    "{char_name} shares thoughts on a recent book or movie",
+    "{char_name} reflects on the changing seasons",
+    "{char_name} talks about a strange dream they had",
+    "{char_name} discusses their favorite comfort food",
+    "{char_name} shares a funny misunderstanding they experienced",
+    "{char_name} talks about music that shaped their life",
+    "{char_name} reflects on a place that feels like home",
+    "{char_name} discusses their morning or night routine",
+    "{char_name} shares thoughts on friendship and connection",
+    "{char_name} talks about a skill they wish they had",
+    "{char_name} reflects on how they handle stress",
+    "{char_name} discusses their relationship with technology",
+    "{char_name} shares a travel memory or dream destination",
+    "{char_name} talks about their creative process or hobbies"
+  ]
+}

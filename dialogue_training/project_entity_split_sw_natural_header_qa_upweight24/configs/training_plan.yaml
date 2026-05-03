@@ -1,0 +1,40 @@
+workflow:
+  num_stages: 10
+  project_mode: entity_split
+  entity_train_ratio: 0.8
+  entity_test_ratio: 0.19999999999999996
+  primary_eval: strict_json_v1_unseen
+  auxiliary_eval:
+  - strict_json_v1_seen
+  - relaxed_content_v2_unseen
+  - relaxed_content_v2_seen
+  output_root: dialogue_training/project_entity_split_sw_natural_header_qa_upweight24
+branch_base:
+  description: Base model directly evaluated with vLLM on seen/unseen eval sets.
+branch_pt_only:
+  training_stage: pt
+  dataset_pattern: umb_entitysplit_stage_XX_pt
+  per_device_train_batch_size: 1
+  gradient_accumulation_steps: 1
+  learning_rate: 1.0e-05
+  lr_scheduler_type: cosine
+  warmup_ratio: 0.03
+  num_train_epochs: 1.0
+  bf16: true
+  cutoff_len: 4096
+  evaluation_backend: vllm
+  requires_merge_export: true
+branch_pt_plus_qa_sft:
+  base_model_source: merged_pt_checkpoint
+  training_stage: sft
+  dataset_pattern: umb_entitysplit_stage_XX_qa
+  per_device_train_batch_size: 1
+  gradient_accumulation_steps: 1
+  learning_rate: 5.0e-06
+  lr_scheduler_type: cosine
+  warmup_ratio: 0.03
+  num_train_epochs: 1.0
+  bf16: true
+  cutoff_len: 2048
+  evaluation_backend: vllm
+  requires_merge_export: true

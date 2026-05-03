@@ -1,0 +1,182 @@
+{
+  "umb_entitysplit_stage_01_pt": {
+    "file_name": "../train_pt/stage_01_pt.jsonl",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "umb_entitysplit_stage_01_qa": {
+    "file_name": "../train_qa_sft/stage_01.jsonl",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "umb_entitysplit_stage_02_pt": {
+    "file_name": "../train_pt/stage_02_pt.jsonl",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "umb_entitysplit_stage_02_qa": {
+    "file_name": "../train_qa_sft/stage_02.jsonl",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "umb_entitysplit_stage_03_pt": {
+    "file_name": "../train_pt/stage_03_pt.jsonl",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "umb_entitysplit_stage_03_qa": {
+    "file_name": "../train_qa_sft/stage_03.jsonl",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "umb_entitysplit_stage_04_pt": {
+    "file_name": "../train_pt/stage_04_pt.jsonl",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "umb_entitysplit_stage_04_qa": {
+    "file_name": "../train_qa_sft/stage_04.jsonl",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "umb_entitysplit_stage_05_pt": {
+    "file_name": "../train_pt/stage_05_pt.jsonl",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "umb_entitysplit_stage_05_qa": {
+    "file_name": "../train_qa_sft/stage_05.jsonl",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "umb_entitysplit_stage_06_pt": {
+    "file_name": "../train_pt/stage_06_pt.jsonl",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "umb_entitysplit_stage_06_qa": {
+    "file_name": "../train_qa_sft/stage_06.jsonl",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "umb_entitysplit_stage_07_pt": {
+    "file_name": "../train_pt/stage_07_pt.jsonl",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "umb_entitysplit_stage_07_qa": {
+    "file_name": "../train_qa_sft/stage_07.jsonl",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "umb_entitysplit_stage_08_pt": {
+    "file_name": "../train_pt/stage_08_pt.jsonl",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "umb_entitysplit_stage_08_qa": {
+    "file_name": "../train_qa_sft/stage_08.jsonl",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "umb_entitysplit_stage_09_pt": {
+    "file_name": "../train_pt/stage_09_pt.jsonl",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "umb_entitysplit_stage_09_qa": {
+    "file_name": "../train_qa_sft/stage_09.jsonl",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "umb_entitysplit_stage_10_pt": {
+    "file_name": "../train_pt/stage_10_pt.jsonl",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "umb_entitysplit_stage_10_qa": {
+    "file_name": "../train_qa_sft/stage_10.jsonl",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  }
+}

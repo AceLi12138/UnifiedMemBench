@@ -1,0 +1,7 @@
+task_type,task_short,invalid_json_count,total_count,invalid_json_rate
+Information Extraction,IE,2738,29060,9.42%
+Multi-session Reasoning,MSR,966,29140,3.32%
+Event Summarization,ES,954,25440,3.75%
+Temporal Reasoning,TR,1294,19470,6.65%
+Knowledge Updating,KU,124,8210,1.51%
+Memory Arbitration,MA,734,6630,11.07%

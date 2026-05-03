@@ -1,0 +1,21 @@
+# Optional dependencies for local long-context evaluation, vLLM inference,
+# and parametric training/evaluation.
+#
+# Install these inside the `umb` conda environment on a GPU host only when needed:
+#   conda activate umb
+#   pip install -r requirements-local.txt
+#
+# Parametric training in the original experiments also uses LLaMA-Factory.
+# Set LLAMAFACTORY_ROOT to a local LLaMA-Factory checkout.
+
+-r requirements.txt
+
+torch>=2.1
+transformers>=4.40
+vllm>=0.6
+peft>=0.11
+accelerate>=0.30
+datasets>=2.18
+safetensors>=0.4
+sentencepiece>=0.1.99
+protobuf>=4.25

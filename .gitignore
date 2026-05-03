@@ -1,0 +1,96 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.python-version
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+build/
+dist/
+site/
+.eggs/
+*.egg-info/
+pip-wheel-metadata/
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Local secrets
+.env
+.env.*
+!.env.example
+
+# Logs / temporary files
+*.log
+*.out
+*.err
+*.pid
+*.tmp
+*.temp
+*.bak
+
+# Project-generated datasets and evaluation artifacts
+# Keep source code, small release data, and paper summary artifacts in Git.
+# `data_gen/output/` is intentionally tracked because the current release
+# includes sub-100MB event-source artifacts:
+#   personas_1000_v3.json
+#   stories_v4.json
+#   stories_v4_characters_qa.json
+#   stories_v4_validation_report.json
+data_gen/evaluation/results/
+
+data_gen_dkx/output/
+data_gen_dkx/semantic_state_tracking.jsonl
+
+dialogue_gen_api/output/*
+!dialogue_gen_api/output/final/
+dialogue_gen_api/output/final/*
+!dialogue_gen_api/output/final/clean_v8_budget_direct/
+dialogue_gen_api/output/final/clean_v8_budget_direct/*
+!dialogue_gen_api/output/final/clean_v8_budget_direct/README.md
+!dialogue_gen_api/output/final/clean_v8_budget_direct/dataset_summary.json
+dialogue_gen_api/evaluation/results/
+dialogue_gen_api/evaluation/quality/eval_test/
+
+# dialogue_training generated artifacts
+dialogue_training/**/outputs/
+# PT / SFT / evaluation JSONL files are distributed through
+# UnifiedMemBench-ParametricMemory on HuggingFace, not Git.
+dialogue_training/**/train_pt/*.jsonl
+!dialogue_training/**/train_pt/README.md
+dialogue_training/**/train_qa_sft/*.jsonl
+!dialogue_training/**/train_qa_sft/README.md
+dialogue_training/**/eval_unseen/*.jsonl
+!dialogue_training/**/eval_unseen/README.md
+dialogue_training/**/eval_seen/*.jsonl
+!dialogue_training/**/eval_seen/README.md
+dialogue_training/merged_checkpoints/**
+!dialogue_training/merged_checkpoints/README.md
+
+# Optional: ignore experiment result notes if they should stay local.
+# dialogue_training/result_records/
+
+# Local model-name mapping audits are not part of the release package.
+results/mappings/

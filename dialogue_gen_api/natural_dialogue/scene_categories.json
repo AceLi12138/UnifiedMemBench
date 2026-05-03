@@ -1,0 +1,86 @@
+{
+  "categories": [
+    {
+      "id": "intimate",
+      "label": "Close relationship",
+      "max_ratio": 0.25,
+      "example_roles": [
+        "Old college friend visiting after years apart",
+        "Cousin who grew up in the same neighborhood",
+        "Ex-roommate catching up over drinks",
+        "Childhood best friend reconnecting",
+        "Sibling having a rare heart-to-heart",
+        "Close coworker-turned-friend after a shared ordeal"
+      ],
+      "prompt_hint": "Design a scene where the interlocutor has a genuine, long-standing personal bond with {char_name}. They share history, inside jokes, and comfortable familiarity. The interlocutor can challenge, tease, or push back naturally."
+    },
+    {
+      "id": "professional_interview",
+      "label": "Professional interview",
+      "max_ratio": 0.15,
+      "example_roles": [
+        "Documentary filmmaker",
+        "Podcast host covering personal stories",
+        "Academic researcher doing oral history",
+        "Local journalist writing a human-interest piece",
+        "Graduate student conducting thesis interviews"
+      ],
+      "prompt_hint": "Design a scene where a professional interviewer meets {char_name} for a specific project. The interviewer is curious and empathetic but maintains professional distance. The conversation is structured but allows for organic tangents."
+    },
+    {
+      "id": "casual_encounter",
+      "label": "Casual encounter",
+      "max_ratio": 0.20,
+      "example_roles": [
+        "Stranger sitting next to them on a long train ride",
+        "Person waiting at the same auto repair shop",
+        "Fellow parent at a school pickup line",
+        "Someone sharing a table at a crowded coffee shop",
+        "A neighbor walking their dog at the same time",
+        "Person next to them at a community event or class"
+      ],
+      "prompt_hint": "Design a scene where {char_name} meets someone for the first time in a neutral, everyday setting. The conversation starts with small talk and gradually deepens as both parties discover shared interests or experiences. There should be natural pauses and topic shifts."
+    },
+    {
+      "id": "service_setting",
+      "label": "Service setting",
+      "max_ratio": 0.15,
+      "example_roles": [
+        "Their regular barber or hairstylist",
+        "A bartender during a slow weeknight",
+        "A chatty taxi or rideshare driver",
+        "The owner of a small bookshop they frequent",
+        "A friendly barista who remembers their order",
+        "A personal trainer during a workout session"
+      ],
+      "prompt_hint": "Design a scene where {char_name} is in a service interaction that naturally allows for extended conversation. The service provider is warm and curious. The conversation flows around the activity being performed, with natural interruptions from the service itself."
+    },
+    {
+      "id": "social_gathering",
+      "label": "Social gathering",
+      "max_ratio": 0.15,
+      "example_roles": [
+        "A colleague at a company happy hour",
+        "An acquaintance at a mutual friend's dinner party",
+        "A fellow member at a hobby club meeting",
+        "Someone at a neighborhood block party",
+        "A new neighbor at a housewarming",
+        "A fellow volunteer at a community clean-up"
+      ],
+      "prompt_hint": "Design a scene where {char_name} is at a social event and ends up in a one-on-one conversation with someone they know casually. The atmosphere is relaxed, with background noise and occasional interruptions from other guests. Topics shift fluidly."
+    },
+    {
+      "id": "mild_conflict",
+      "label": "Mild conflict or disagreement",
+      "max_ratio": 0.10,
+      "example_roles": [
+        "A friend who disagrees with a recent decision {char_name} made",
+        "A family member concerned about their lifestyle choices",
+        "A colleague with a different perspective on a shared project",
+        "An old friend who feels they've grown apart",
+        "A neighbor with a minor ongoing dispute"
+      ],
+      "prompt_hint": "Design a scene where the interlocutor has a genuine but respectful disagreement or concern about something related to {char_name}'s life. The conversation involves some tension but remains caring. Both parties listen, push back, and try to understand each other."
+    }
+  ]
+}

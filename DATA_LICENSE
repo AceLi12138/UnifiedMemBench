@@ -1,0 +1,27 @@
+UnifiedMemBench Dataset License
+
+Unless otherwise noted, the dataset artifacts distributed with UnifiedMemBench
+and the dataset components hosted in the UnifiedMemBench HuggingFace collection
+are licensed under the Creative Commons Attribution 4.0 International License
+(CC BY 4.0).
+
+Dataset collection:
+https://huggingface.co/collections/Ace1213812/unifiedmembench-dataset
+
+License text:
+https://creativecommons.org/licenses/by/4.0/
+
+You are free to share and adapt the dataset artifacts, provided that you give
+appropriate credit, provide a link to the license, and indicate if changes were
+made.
+
+External seed data note:
+The initial MBTI-style character seed source used during construction is derived
+from the CharacterChat MBTI-1024 Bank. The raw external seed bank is not
+redistributed in this repository unless separately provided under terms that
+allow redistribution. Generated UnifiedMemBench artifacts are distributed under
+the license above unless otherwise noted.
+
+Code license note:
+This file covers dataset artifacts only. Code in this repository is licensed
+separately under the Apache License 2.0. See LICENSE.

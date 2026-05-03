@@ -1,0 +1,39 @@
+{
+  "evaluation_condition": "contextual_memory",
+  "input_contains_full_dialogue": true,
+  "dialogue_id": "dc48aaae-4030-4b1a-a1e8-ff0158a5f483",
+  "character": "Kristen Buckley",
+  "dialogue_turns_preview": [
+    {
+      "role": "user",
+      "content": "Evening. I'm Alex, a signal engineer from the maintenance team. I just finished a long shift and thought I'd come here to unwind. The rumble of the trains above is oddly comforting. It’s good to be off the tracks and in a warm pub for a change."
+    },
+    {
+      "role": "assistant",
+      "content": "Good evening, Alex. I’m Kristen. It’s a nice choice to end the day here. The low hum from the station does settle the mind. I often come after my own work to just listen. The air is thick with the smell of malt vinegar and damp wool. It’s a familiar, grounding scent."
+    },
+    {
+      "role": "user",
+      "content": "Exactly. It’s a real escape from the bright lights of the control room. I’ve seen you here before, but we’ve never spoken. Do you work for the railway as well? I’m curious what brings you to this particular spot on a Thursday."
+    },
+    {
+      "role": "assistant",
+      "content": "I do work for the railway, yes, in the archives department. I handle historical documents and records. The Railway Tavern feels connected to that past. I appreciate the quiet corners here, the way the light pools under the low lamps. It’s a good place to think without interruption, just the background noise of the arches."
+    }
+  ],
+  "task": {
+    "task_type": "Information Extraction",
+    "source_event_ids": [
+      "2020_E1"
+    ],
+    "query": "What specific types of items did Kristen organize on her shelf when unpacking her flat?",
+    "gold_answer": "She organized her railway rulebooks and technical manuals on a shelf, arranging them by publication date.",
+    "answer_components": [
+      "She organized railway rulebooks",
+      "She organized technical manuals",
+      "She arranged them by publication date"
+    ]
+  },
+  "expected_output": "A task-specific JSON object following dialogue_gen_api/evaluation/task_prompts_v2.json.",
+  "scoring_config": "dialogue_gen_api/evaluation/task_scoring_v1.json"
+}

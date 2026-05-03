@@ -1,0 +1,20 @@
+[
+  {
+    "example_only": true,
+    "index": 0,
+    "mbti": "INTJ",
+    "profile": {
+      "name": "Example Character",
+      "gender": "non-specified",
+      "age": "29",
+      "region": "Example City",
+      "tone": "Calm, precise, and reflective.",
+      "job": "urban planner",
+      "personality": "Analytical, independent, and careful with long-term decisions.",
+      "advantages_and_disadvantages": "Strong at planning and abstraction; may overthink uncertain social situations.",
+      "hobby": "Sketching city maps and collecting transit posters.",
+      "growth_experience": "Learned to balance private ambition with collaborative work after leading a community project.",
+      "family_relationship": "Maintains a supportive but reserved relationship with family members."
+    }
+  }
+]

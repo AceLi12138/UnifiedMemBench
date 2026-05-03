@@ -1,0 +1,53 @@
+{
+  "source_dialogues": "../output/final_dialogues_v8_seg150_tok3000.json",
+  "validation_report": "../output/final/eval_report_v8_full_budget.json",
+  "dialogue_counts": {
+    "raw": 1000,
+    "retained": 1000,
+    "removed_no_valid_qa": 0
+  },
+  "qa_task_counts": {
+    "raw": 12112,
+    "valid_retained": 11795,
+    "removed_incomplete_evidence": 317,
+    "valid_rate": "97.4%"
+  },
+  "by_task_type": {
+    "Event Summarization": {
+      "raw": 2632,
+      "valid": 2544,
+      "removed": 88,
+      "valid_rate": "96.7%"
+    },
+    "Information Extraction": {
+      "raw": 2996,
+      "valid": 2906,
+      "removed": 90,
+      "valid_rate": "97.0%"
+    },
+    "Knowledge Updating": {
+      "raw": 854,
+      "valid": 821,
+      "removed": 33,
+      "valid_rate": "96.1%"
+    },
+    "Memory Arbitration": {
+      "raw": 715,
+      "valid": 663,
+      "removed": 52,
+      "valid_rate": "92.7%"
+    },
+    "Multi-session Reasoning": {
+      "raw": 2940,
+      "valid": 2914,
+      "removed": 26,
+      "valid_rate": "99.1%"
+    },
+    "Temporal Reasoning": {
+      "raw": 1975,
+      "valid": 1947,
+      "removed": 28,
+      "valid_rate": "98.6%"
+    }
+  }
+}

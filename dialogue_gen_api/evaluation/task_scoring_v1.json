@@ -1,0 +1,81 @@
+{
+  "profile": "umb_tasklight_v1",
+  "task_scoring_scheme": "A",
+  "tasks": {
+    "Information Extraction": {
+      "score_mode": "binary",
+      "required_fields": [
+        "answer",
+        "evidence_snippets"
+      ],
+      "judge_allowed_bands": [
+        "correct",
+        "wrong"
+      ]
+    },
+    "Temporal Reasoning": {
+      "score_mode": "binary",
+      "required_fields": [
+        "final_answer",
+        "days",
+        "start_date",
+        "end_date"
+      ],
+      "judge_allowed_bands": [
+        "correct",
+        "wrong"
+      ]
+    },
+    "Knowledge Updating": {
+      "score_mode": "binary",
+      "required_fields": [
+        "latest_state",
+        "as_of_time",
+        "deprecated_state"
+      ],
+      "judge_allowed_bands": [
+        "correct",
+        "wrong"
+      ]
+    },
+    "Multi-session Reasoning": {
+      "score_mode": "three_level",
+      "required_fields": [
+        "event_chain",
+        "final_outcome"
+      ],
+      "judge_allowed_bands": [
+        "correct",
+        "partial",
+        "wrong"
+      ]
+    },
+    "Event Summarization": {
+      "score_mode": "three_level",
+      "required_fields": [
+        "time_span",
+        "key_turning_points",
+        "summary"
+      ],
+      "judge_allowed_bands": [
+        "correct",
+        "partial",
+        "wrong"
+      ]
+    },
+    "Memory Arbitration": {
+      "score_mode": "three_level",
+      "required_fields": [
+        "premise_verdict",
+        "premise_error",
+        "corrected_facts",
+        "final_answer"
+      ],
+      "judge_allowed_bands": [
+        "correct",
+        "partial",
+        "wrong"
+      ]
+    }
+  }
+}

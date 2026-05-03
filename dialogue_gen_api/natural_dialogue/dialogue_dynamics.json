@@ -1,0 +1,40 @@
+{
+  "dynamics": [
+    {
+      "id": "friendly_disagreement",
+      "trigger_rate": 0.08,
+      "instruction": "DYNAMIC: In this segment, the interlocutor politely but genuinely disagrees with or questions something {char_name} says. They offer a different perspective. {char_name} considers it, and the exchange ends with mutual understanding — not necessarily agreement."
+    },
+    {
+      "id": "hesitation",
+      "trigger_rate": 0.10,
+      "instruction": "DYNAMIC: In this segment, {char_name} hesitates or struggles to recall a detail. They might say 'I'm not sure exactly...' or 'Wait, let me think...' before continuing. The interlocutor gently prompts or waits patiently."
+    },
+    {
+      "id": "interruption",
+      "trigger_rate": 0.06,
+      "instruction": "DYNAMIC: A brief real-world interruption occurs during this segment — a waiter comes to refill drinks, a phone buzzes, a dog barks outside, or someone walks by and waves. The interruption is handled naturally in 1-2 turns before the conversation resumes."
+    },
+    {
+      "id": "humor",
+      "trigger_rate": 0.10,
+      "instruction": "DYNAMIC: In this segment, {char_name} or the interlocutor makes a self-deprecating joke, a playful tease, or a humorous observation. The other person laughs or responds lightly. Keep it natural — not a comedy routine."
+    },
+    {
+      "id": "tangent",
+      "trigger_rate": 0.08,
+      "instruction": "DYNAMIC: The conversation briefly drifts to an unrelated topic for 2-3 turns — something one of them notices, a random association, a quick anecdote — before naturally returning to the previous thread. This tangent should feel spontaneous."
+    },
+    {
+      "id": "clarification",
+      "trigger_rate": 0.06,
+      "instruction": "DYNAMIC: The interlocutor didn't quite catch something or wants more detail. They ask {char_name} to clarify, repeat, or elaborate on a point. {char_name} rephrases or adds context."
+    },
+    {
+      "id": "comfortable_silence",
+      "trigger_rate": 0.04,
+      "instruction": "DYNAMIC: There is a brief comfortable pause in the conversation. One party breaks the silence with a new thought or observation. The pause should feel natural, not awkward — maybe they're sipping a drink, looking around, or just reflecting."
+    }
+  ],
+  "max_dynamics_per_dialogue_ratio": 0.35
+}
