@@ -32,73 +32,6 @@ The long-dialogue branch uses six QA families:
 - KU: Knowledge Updating
 - MA: Memory Arbitration
 
-## Current Repository Layout
-
-```text
-UnifiedMemBench/
-  README.md
-  LICENSE
-  DATA_LICENSE
-  CITATION.cff
-  requirements.txt
-  requirements-local.txt
-  .env.example
-  .gitignore
-
-  configs/
-    parametric_stagewise/
-
-  data_gen/
-    generate_evolving_personas.py
-    generate_life_stories.py
-    generate_timestamps4stories.py
-    label_characters_qa_v4_knowledgeupdate.py
-    validate_stories_timeissues.py
-    output/
-      personas_1000_v3.json
-      stories_v4.json
-      stories_v4_characters_qa.json
-      stories_v4_validation_report.json
-
-  dialogue_gen_api/
-    gen_event_dialogue_api_v8_natural.py
-    natural_dialogue/
-    quality_improve/
-    evaluation/
-    output/final/clean_v8_budget_direct/
-
-  dialogue_training/
-    prepare_dialogue_project.py
-    run_stage_training_pipeline.py
-    run_stage_train_eval_range.sh
-    run_local_context_eval.py
-    run_parallel_context_eval.py
-    run_local_memory_eval.py
-    run_parallel_memory_eval.py
-    run_stagewise_memory_eval.py
-    memory_eval_utils.py
-    core.py
-
-  state_track/
-    README.md
-    build_facts.py
-    generate_prompts.py
-    validate_dataset.py
-    eval_api.py
-    eval_local.py
-
-  scripts/
-    plotting/
-    analysis/
-
-  examples/
-
-  results/
-    figures/
-    retention/
-    appendix/
-```
-
 ## Installation
 
 For API-based construction, cleaning, scoring, and result aggregation:
@@ -128,6 +61,28 @@ pip install -r requirements-local.txt
 ```
 
 Parametric training uses LLaMA-Factory in the original experiments. Set `LLAMAFACTORY_ROOT` to your local LLaMA-Factory checkout when running the stagewise training scripts.
+
+## Environment Variables
+
+Before running the examples below, set the repository root and the main dataset
+paths from the repository root directory:
+
+```bash
+export UMB_ROOT=$(pwd)
+export UMB_BENCHMARK=${UMB_ROOT}/dialogue_gen_api/output/final/clean_v8_budget_direct/UMB_dialogue_benchmark.json
+export UMB_PARAMETRIC_PROJECT=${UMB_ROOT}/dialogue_training/project_entity_split_sw_natural_header_qa_upweight24
+```
+
+For local model evaluation or training, also set model-specific paths:
+
+```bash
+export MODEL_PATH=/path/to/local_or_hf_model
+export TOKENIZER_PATH=/path/to/tokenizer_or_base_model
+export LLAMAFACTORY_ROOT=/path/to/LLaMA-Factory
+```
+
+Provider API keys should be placed in `.env` or exported in the shell. Do not
+commit `.env` or private model paths.
 
 ## Data Components
 
@@ -258,7 +213,7 @@ python dialogue_gen_api/evaluation/run_eval.py \
 
 The evaluator uses task prompts from `dialogue_gen_api/evaluation/task_prompts_v2.json` and scoring configuration from `dialogue_gen_api/evaluation/task_scoring_v1.json`. It expects structured JSON outputs and reports task-wise scores, task-balanced overall score, and invalid JSON statistics.
 
-Local long-context evaluation uses:
+For local long-context evaluation, first verify the script entry points:
 
 ```bash
 python dialogue_training/run_local_context_eval.py --help
@@ -266,6 +221,47 @@ python dialogue_training/run_parallel_context_eval.py --help
 ```
 
 These local scripts require GPU inference dependencies from `requirements-local.txt`.
+The exact model path, context length, tensor parallelism, and vLLM settings
+should be adjusted for the evaluated model and available GPUs. A minimal
+single-process vLLM template is:
+
+```bash
+python dialogue_training/run_local_context_eval.py \
+  --dataset_path "${UMB_BENCHMARK}" \
+  --model_name_or_path "${MODEL_PATH}" \
+  --output_dir results/contextual/local_model_smoke \
+  --backend vllm \
+  --batch_size 1 \
+  --max_samples 20 \
+  --max_input_tokens 262144 \
+  --max_new_tokens 1024 \
+  --vllm_tensor_parallel_size 1 \
+  --vllm_gpu_memory_utilization 0.9 \
+  --vllm_max_model_len 262144 \
+  --vllm_max_num_seqs 1 \
+  --vllm_trust_remote_code
+```
+
+For multi-GPU sharded contextual evaluation:
+
+```bash
+python dialogue_training/run_parallel_context_eval.py \
+  --dataset_path "${UMB_BENCHMARK}" \
+  --model_name_or_path "${MODEL_PATH}" \
+  --output_dir results/contextual/local_model_parallel \
+  --gpu_ids 0,1,2,3 \
+  --gpus_per_shard 1 \
+  --backend vllm \
+  --batch_size 1 \
+  --max_samples 100 \
+  --max_input_tokens 262144 \
+  --max_new_tokens 1024 \
+  --vllm_tensor_parallel_size 1 \
+  --vllm_gpu_memory_utilization 0.9 \
+  --vllm_max_model_len 262144 \
+  --vllm_max_num_seqs 1 \
+  --vllm_trust_remote_code
+```
 
 ## Parametric Memory and Retention
 
@@ -290,12 +286,78 @@ https://huggingface.co/datasets/Ace1213812/UnifiedMemBench-ParametricMemory
 
 The public parametric-memory dataset includes PT, SFT, and unseen evaluation files. See `dialogue_training/project_entity_split_sw_natural_header_qa_upweight24/train_pt/README.md`.
 
-Run stagewise training / evaluation:
+For parametric-memory evaluation, first verify the script entry points:
 
 ```bash
 bash dialogue_training/run_stage_train_eval_range.sh --help
 python dialogue_training/run_stagewise_memory_eval.py --help
 python dialogue_training/run_parallel_memory_eval.py --help
+```
+
+If a trained checkpoint is already available, evaluate one checkpoint against
+the learned stages with:
+
+```bash
+python dialogue_training/run_stagewise_memory_eval.py \
+  --project_dir "${UMB_PARAMETRIC_PROJECT}" \
+  --model_name_or_path "${MODEL_PATH}" \
+  --tokenizer_name_or_path "${TOKENIZER_PATH}" \
+  --checkpoint_stage 10 \
+  --stage_from 1 \
+  --stage_to 10 \
+  --splits unseen \
+  --gpu_ids 0,1,2,3 \
+  --output_root results/parametric/local_model \
+  --backend vllm \
+  --batch_size 4 \
+  --max_input_tokens 1024 \
+  --max_new_tokens 512 \
+  --vllm_tensor_parallel_size 1 \
+  --vllm_gpu_memory_utilization 0.9 \
+  --vllm_max_model_len 1536 \
+  --vllm_max_num_seqs 1 \
+  --vllm_trust_remote_code
+```
+
+To run memory-only evaluation on one JSONL split directly:
+
+```bash
+python dialogue_training/run_parallel_memory_eval.py \
+  --dataset_path "${UMB_PARAMETRIC_PROJECT}/eval_unseen/memory_eval_stage_10.jsonl" \
+  --model_name_or_path "${MODEL_PATH}" \
+  --tokenizer_name_or_path "${TOKENIZER_PATH}" \
+  --output_dir results/parametric/local_model/stage_10_unseen \
+  --gpu_ids 0,1,2,3 \
+  --backend vllm \
+  --batch_size 4 \
+  --max_input_tokens 1024 \
+  --max_new_tokens 512 \
+  --vllm_tensor_parallel_size 1 \
+  --vllm_gpu_memory_utilization 0.9 \
+  --vllm_max_model_len 1536 \
+  --vllm_max_num_seqs 1 \
+  --vllm_trust_remote_code
+```
+
+Full stagewise training depends on LLaMA-Factory and local GPU resources. The
+following is a template that should be customized before use:
+
+```bash
+export BASE_MODEL=/path/to/base_model
+
+bash dialogue_training/run_stage_train_eval_range.sh \
+  --start-stage 1 \
+  --end-stage 10 \
+  --initial-model-path "${BASE_MODEL}" \
+  --tokenizer-name-or-path "${TOKENIZER_PATH}" \
+  --project-dir "${UMB_PARAMETRIC_PROJECT}" \
+  --train-conda-env umb \
+  --eval-conda-env umb \
+  --pt-gpus 0,1,2,3,4,5,6,7 \
+  --sft-gpus 0,1,2,3 \
+  --eval-gpus 0,1,2,3,4,5,6,7 \
+  --vllm-tokenizer-mode slow \
+  --vllm-trust-remote-code
 ```
 
 ## Dense State-Tracking
