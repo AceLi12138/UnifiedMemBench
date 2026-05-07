@@ -298,6 +298,28 @@ python dialogue_training/run_stagewise_memory_eval.py --help
 python dialogue_training/run_parallel_memory_eval.py --help
 ```
 
+## Dense State-Tracking
+
+The dense state-tracking branch lives under `state_track/`. It builds atomic
+facts from the event source, clusters them into state schemas, and generates the
+`schema_longest` prompt ladder used for high-density state-tracking evaluation.
+
+The release artifact is distributed as `UnifiedMemBench-StateTracking`:
+
+https://huggingface.co/datasets/Ace1213812/UnifiedMemBench-StateTracking
+
+Typical entry points:
+
+```bash
+cd state_track
+python validate_dataset.py
+python eval_api.py --provider mimo --input fact_track_schema_longest --num-samples 5
+python eval_local.py --dry-run --input fact_track_schema_longest
+```
+
+See `state_track/README.md` for the full build path, dataset contract, prompt
+schema, and evaluation options.
+
 ## Result Figures and Tables
 
 Small result summaries and figure data are stored under `results/`.
