@@ -79,6 +79,14 @@ UnifiedMemBench/
     memory_eval_utils.py
     core.py
 
+  state_track/
+    README.md
+    build_facts.py
+    generate_prompts.py
+    validate_dataset.py
+    eval_api.py
+    eval_local.py
+
   scripts/
     plotting/
     analysis/
@@ -157,6 +165,10 @@ the full benchmark.
 Stagewise parametric-memory configuration files are collected under
 `configs/parametric_stagewise/`. They mirror the main setup used to generate the
 stagewise training and evaluation scaffold.
+
+Dense state-tracking data, prompt-ladder generation, validation, and evaluation
+utilities are collected under `state_track/`. See `state_track/README.md` for
+the detailed Fact Track Memory workflow and command reference.
 
 ## Main Construction Pipeline
 
