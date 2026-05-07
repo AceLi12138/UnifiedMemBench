@@ -382,21 +382,6 @@ python eval_local.py --dry-run --input fact_track_schema_longest
 See `state_track/README.md` for the full build path, dataset contract, prompt
 schema, and evaluation options.
 
-## Result Figures and Tables
-
-Small result summaries and figure data are stored under `results/`.
-
-```text
-results/figures/paper_images/
-```
-
-Plotting and analysis scripts are in:
-
-```text
-scripts/plotting/
-scripts/analysis/
-```
-
 ## License
 
 Code in this repository is licensed under the Apache License 2.0. Dataset artifacts are licensed under Creative Commons Attribution 4.0 International (CC BY 4.0). See `LICENSE` and `DATA_LICENSE`.
